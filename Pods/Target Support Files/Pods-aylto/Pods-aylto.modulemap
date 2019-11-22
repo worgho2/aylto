@@ -1,0 +1,6 @@
+framework module Pods_aylto {
+  umbrella header "Pods-aylto-umbrella.h"
+
+  export *
+  module * { export * }
+}

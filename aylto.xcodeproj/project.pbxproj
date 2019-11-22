@@ -13,6 +13,8 @@
 		29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */; };
 		29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */; };
 		29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */; };
+		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
+		F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		29CCEC422388514800BF7A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListaEventosStoryboard.storyboard; sourceTree = "<group>"; };
 		29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEventosViewController.swift; sourceTree = "<group>"; };
+		31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aylto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
+		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
+		F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				29CCEC332388514700BF7A91 /* aylto */,
 				29CCEC322388514700BF7A91 /* Products */,
+				8CEBE84DDA289ED485BDDD08 /* Pods */,
+				3868D20F2AE28DAE8411A75E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +75,7 @@
 				29CCEC3D2388514800BF7A91 /* Assets.xcassets */,
 				29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */,
 				29CCEC422388514800BF7A91 /* Info.plist */,
+				F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */,
 			);
 			path = aylto;
 			sourceTree = "<group>";
@@ -115,6 +125,24 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		3868D20F2AE28DAE8411A75E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CEBE84DDA289ED485BDDD08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */,
+				74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29CCEC452388514800BF7A91 /* Build configuration list for PBXNativeTarget "aylto" */;
 			buildPhases = (
+				AD492084E0BD06E4B8BCB2B6 /* [CP] Check Pods Manifest.lock */,
 				29CCEC2D2388514700BF7A91 /* Sources */,
 				29CCEC2E2388514700BF7A91 /* Frameworks */,
 				29CCEC2F2388514700BF7A91 /* Resources */,
+				30DF0824FDD2772E5301B0A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,12 +204,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
+				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30DF0824FDD2772E5301B0A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aylto/Pods-aylto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aylto/Pods-aylto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aylto/Pods-aylto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD492084E0BD06E4B8BCB2B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aylto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29CCEC2D2388514700BF7A91 /* Sources */ = {
@@ -322,10 +395,11 @@
 		};
 		29CCEC462388514800BF7A91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9M62WF3J6;
+				DEVELOPMENT_TEAM = Y8J5WK586H;
 				INFOPLIST_FILE = aylto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,10 +414,11 @@
 		};
 		29CCEC472388514800BF7A91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9M62WF3J6;
+				DEVELOPMENT_TEAM = Y8J5WK586H;
 				INFOPLIST_FILE = aylto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
