@@ -7,6 +7,7 @@ target 'aylto' do
 
   # Pods for aylto
   pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
 
 
 end
