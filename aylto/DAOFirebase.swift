@@ -24,6 +24,17 @@ class DAOFirebase {
             }
         }
     }
+    
+    static func remove(id: String) {
+        let db = Firestore.firestore()
+        db.collection("itens").document(id).delete() { err in
+            if let err = err {
+                print("Error removing document: \(err.localizedDescription)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+    }
 }
 
 
