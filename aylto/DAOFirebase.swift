@@ -11,9 +11,19 @@ import Firebase
 class DAOFirebase {
     
     static func save(item: Item) {
+        let db = Firestore.firestore()
+        var ref: DocumentReference? = nil
         
+        let itemData: [String : Any] = item.mapToDictionary()
+        
+        ref = db.collection("itens").addDocument(data: itemData) { err in
+            if let err = err {
+                print("Error adding document: \(err.localizedDescription)")
+            } else {
+                print("Document added with ID \(ref!.documentID)")
+            }
+        }
     }
-    
 }
 
 
