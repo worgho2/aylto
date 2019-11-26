@@ -49,8 +49,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTb-ff-wlZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite código abaixo:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgW-dX-QPe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite código do evento abaixo:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgW-dX-QPe">
+                                                        <rect key="frame" x="0.0" y="51.5" width="414" height="121.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -59,7 +59,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstItem="dgW-dX-QPe" firstAttribute="height" secondItem="lTb-ff-wlZ" secondAttribute="height" id="3Or-1h-fEQ"/>
-                                                    <constraint firstItem="dgW-dX-QPe" firstAttribute="centerY" secondItem="lTb-ff-wlZ" secondAttribute="centerY" id="5vA-xM-CL0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dgW-dX-QPe" secondAttribute="bottom" multiplier="0.7" id="Bws-Qd-dTi"/>
                                                     <constraint firstItem="dgW-dX-QPe" firstAttribute="width" secondItem="lTb-ff-wlZ" secondAttribute="width" id="LB8-fu-T8w"/>
                                                     <constraint firstItem="dgW-dX-QPe" firstAttribute="centerX" secondItem="lTb-ff-wlZ" secondAttribute="centerX" id="jbG-cE-UHw"/>
                                                 </constraints>
@@ -145,6 +145,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfY-gI-Xh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="269.56521739130437" y="38.839285714285715"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="8qe-0E-MGq">
+            <objects>
+                <viewController id="UiL-Tw-11u" customClass="HomeViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RhJ-GT-LGk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WAb-53-AEX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Lc-BP-kco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="39"/>
         </scene>
     </scenes>
 </document>

@@ -23,6 +23,7 @@
 		3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */; };
 		3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A861238C5F76007CB05A /* Figurinha.swift */; };
 		3FA7A864238C5F87007CB05A /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A863238C5F87007CB05A /* Evento.swift */; };
+		3FA7A866238D9382007CB05A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A865238D9381007CB05A /* HomeViewController.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNumberViewController.swift; sourceTree = "<group>"; };
 		3FA7A861238C5F76007CB05A /* Figurinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Figurinha.swift; path = aylto/Controllers/Figurinha.swift; sourceTree = SOURCE_ROOT; };
 		3FA7A863238C5F87007CB05A /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = aylto/Controllers/Evento.swift; sourceTree = SOURCE_ROOT; };
+		3FA7A865238D9381007CB05A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */,
 				3FA7A859238C565C007CB05A /* WelcomeViewController.swift */,
 				3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */,
+				3FA7A865238D9381007CB05A /* HomeViewController.swift */,
 				3FA7A85D238C576C007CB05A /* AddEventViewController.swift */,
 				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
 				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
@@ -301,6 +304,7 @@
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */,
+				3FA7A866238D9382007CB05A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
