@@ -27,10 +27,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
             
         // Set this scene's window's background color.
-        self.window!.backgroundColor = UIColor.red
+//        self.window!.backgroundColor = UIColor.clear
         
         // Create a ViewController object and set it as the scene's window's root view controller.
-        self.window!.rootViewController = ListaEventosViewController()
+//        self.window!.rootViewController = ListaEventosViewController()
+        
+        self.window?.rootViewController = UIStoryboard(name: "ListaEventosStoryboard", bundle: nil).instantiateInitialViewController()
         
         // Make this scene's window be visible.
         self.window!.makeKeyAndVisible()

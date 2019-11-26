@@ -7,9 +7,10 @@
 //
 
 import Firebase
+import FirebaseFirestore
 
 class DAOFirebase {
-    
+        
     static func save(item: Item) {
         let db = Firestore.firestore()
         var ref: DocumentReference? = nil
@@ -35,28 +36,23 @@ class DAOFirebase {
             }
         }
     }
+    
+    static func load(completion: @escaping () -> ()) {
+        let db = Firestore.firestore()
+        db.collection("itens").getDocuments() {(querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let item = Item.mapToObject(dict: document.data(), document: document)
+                    Model.shared.name = item.nome
+                    completion()
+                }
+            }
+        }
+    }
 }
 
 
 
-class Item {
-    internal init(nome: String, num: Int) {
-        self.nome = nome
-        self.num = num
-    }
-    var nome: String
-    var num: Int
-    
-    func mapToDictionary() -> [String : Any] {
-    var itemData: [String: Any] = [ : ]
-        itemData["nome"] = self.nome
-        itemData["num"] = self.num
-        return itemData
-    }
-    
-    func mapToObject(dict: [String : Any], document: QueryDocumentSnapshot) -> Item {
-        let nome = dict["nome"] as! String
-        let num = dict["num"] as! Int
-        return Item(nome: nome, num: num)
-    }
-}
+

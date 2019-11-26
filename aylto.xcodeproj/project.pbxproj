@@ -15,6 +15,8 @@
 		29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */; };
+		F9C30E2D238D9E140044DF63 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2C238D9E140044DF63 /* Model.swift */; };
+		F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2E238D9FA60044DF63 /* Item.swift */; };
 		F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
 		F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
+		F9C30E2C238D9E140044DF63 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F9C30E2E238D9FA60044DF63 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = aylto/Models/Item.swift; sourceTree = SOURCE_ROOT; };
 		F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,8 @@
 		29CCEC482388526D00BF7A91 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F9C30E2E238D9FA60044DF63 /* Item.swift */,
+				F9C30E2C238D9E140044DF63 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C30E2D238D9E140044DF63 /* Model.swift in Sources */,
 				29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */,
 				F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
+				F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,12 +10,26 @@ import UIKit
 
 class ListaEventosViewController: UIViewController {
 
+    @IBOutlet weak var labelTest: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        labelTest.text = Model.shared.name
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func load(_ sender: Any) {
+        DAOFirebase.load {
+            print("Finished loading")
+        }
+    }
+    
+    @IBAction func update(_ sender: Any) {
+        labelTest.text = Model.shared.name
+    }
 
     /*
     // MARK: - Navigation
