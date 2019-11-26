@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */; };
 		29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
+		F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */; };
 		F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aylto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
+		F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
 		F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 		29CCEC4C2388528300BF7A91 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -139,7 +142,6 @@
 				B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */,
 				74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -260,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */,
+				F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 			);
