@@ -9,22 +9,34 @@
 import UIKit
 
 class EventNumberViewController: UIViewController {
+        
+        @IBOutlet var fields: Array<UITextField>!
+        @IBOutlet weak var checkLabel: UILabel!
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            // Do any additional setup after loading the view.
+            
+            for field in fields {
+                field.keyboardType = .numberPad
+            }
+        }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        override func viewDidAppear(_ animated: Bool) {
+            fields.first?.becomeFirstResponder()
+            
+        }
+        
+        @IBAction func textChanged(_ sender: UITextField) {
+            let nextIndex = sender.tag + 1
+            fields[nextIndex].becomeFirstResponder()
+        }
+        
+        @IBAction func checkCode(_ sender: Any) {
+            // Code
+            checkLabel.isHidden = false
+            view.endEditing(true)
+            performSegue(withIdentifier: "home", sender: self)
+        }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
