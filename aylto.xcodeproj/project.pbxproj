@@ -13,6 +13,9 @@
 		29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */; };
 		29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */; };
 		29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */; };
+		3F048FCC238F0F270033B6C6 /* CreateCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FCB238F0F270033B6C6 /* CreateCard.storyboard */; };
+		3F048FCE238F16B60033B6C6 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCD238F16B60033B6C6 /* CreateCardViewController.swift */; };
+		3F048FD0239043180033B6C6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCF239043180033B6C6 /* UIView.swift */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
 		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
@@ -38,6 +41,9 @@
 		29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListaEventosStoryboard.storyboard; sourceTree = "<group>"; };
 		29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEventosViewController.swift; sourceTree = "<group>"; };
 		31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aylto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F048FCB238F0F270033B6C6 /* CreateCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCard.storyboard; sourceTree = "<group>"; };
+		3F048FCD238F16B60033B6C6 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
+		3F048FCF239043180033B6C6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = aylto/Controllers/UIView.swift; sourceTree = SOURCE_ROOT; };
 		3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3FA7A852238C55CD007CB05A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				3FA7A85D238C576C007CB05A /* AddEventViewController.swift */,
 				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
 				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
+				3F048FCD238F16B60033B6C6 /* CreateCardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 		29CCEC4B2388527D00BF7A91 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3F048FCF239043180033B6C6 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
 				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
 				3FA7A85B238C570F007CB05A /* AddEvent.storyboard */,
+				3F048FCB238F0F270033B6C6 /* CreateCard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				3FA7A85C238C570F007CB05A /* AddEvent.storyboard in Resources */,
 				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
+				3F048FCC238F0F270033B6C6 /* CreateCard.storyboard in Resources */,
 				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
@@ -295,9 +305,11 @@
 			files = (
 				29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
+				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
 				3FA7A864238C5F87007CB05A /* Evento.swift in Sources */,
 				3FA7A85E238C576C007CB05A /* AddEventViewController.swift in Sources */,
 				3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */,
+				3F048FCE238F16B60033B6C6 /* CreateCardViewController.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
