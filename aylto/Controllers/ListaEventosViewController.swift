@@ -8,15 +8,37 @@
 
 import UIKit
 
-class ListaEventosViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class ListaEventosViewController: UIViewController, ObserverDelegate {
+    
+    func notify() {
+        labelTest.text = Model.shared.name
     }
     
 
+    @IBOutlet weak var labelTest: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        labelTest.text = Model.shared.name
+        DAOFirebase.observeOsGays()
+        Model.shared.dataObservers.append(self)
+        
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func load(_ sender: Any) {
+        DAOFirebase.load {
+            print("Finished loading")
+        }
+    }
+    
+    @IBAction func update(_ sender: Any) {
+        labelTest.text = Model.shared.name
+    }
+
+    
+  
     /*
     // MARK: - Navigation
 

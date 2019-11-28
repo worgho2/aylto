@@ -10,7 +10,7 @@
         <!--Lista Eventos View Controller-->
         <scene sceneID="EGX-kF-aeA">
             <objects>
-                <viewController id="HOj-iX-gda" customClass="ListaEventosViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="HOj-iX-gda" customClass="ListaEventosViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5gi-Hg-Vlg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,10 +27,13 @@
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="dJN-Id-SQO"/>
                     </view>
+                    <connections>
+                        <outlet property="labelTest" destination="BQb-FK-v58" id="lHU-5k-Or5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsj-sp-zAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="107" y="90"/>
+            <point key="canvasLocation" x="105.79710144927537" y="89.732142857142847"/>
         </scene>
         <!--AddEvent-->
         <scene sceneID="V77-mP-acy">
