@@ -8,14 +8,20 @@
 
 import UIKit
 
-class ListaEventosViewController: UIViewController {
+class ListaEventosViewController: UIViewController, ObserverDelegate {
+    
+    func notify() {
+        labelTest.text = Model.shared.name
+    }
+    
 
     @IBOutlet weak var labelTest: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         labelTest.text = Model.shared.name
-        
+        DAOFirebase.observeOsGays()
+        Model.shared.dataObservers.append(self)
         
         
         // Do any additional setup after loading the view.
@@ -31,6 +37,8 @@ class ListaEventosViewController: UIViewController {
         labelTest.text = Model.shared.name
     }
 
+    
+  
     /*
     // MARK: - Navigation
 

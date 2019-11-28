@@ -46,8 +46,19 @@ class DAOFirebase {
                 for document in querySnapshot!.documents {
                     let item = Item.mapToObject(dict: document.data(), document: document)
                     Model.shared.name = item.nome
+                    
                     completion()
                 }
+            }
+        }
+    }
+    
+    static func observeOsGays() {
+        let db = Firestore.firestore()
+        
+        db.collection("itens").addSnapshotListener { (QuerySnapshot, Error) in
+            self.load {
+                print("Finished loading")
             }
         }
     }

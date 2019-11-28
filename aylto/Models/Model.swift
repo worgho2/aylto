@@ -16,6 +16,12 @@ class Model {
         
     }
     
-    var name = "abebad"
+    var dataObservers = [ObserverDelegate]()
+    
+    var name = "abebad" {
+        didSet {
+            Model.shared.dataObservers.forEach( { $0.notify() } )
+        }
+    }
     
 }
