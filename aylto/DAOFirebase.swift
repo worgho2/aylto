@@ -11,13 +11,12 @@ import FirebaseFirestore
 
 class DAOFirebase {
         
-    static func save(item: Item) {
+    static func save(collection: String, itemData: [String : Any]) {
         let db = Firestore.firestore()
         var ref: DocumentReference? = nil
         
-        let itemData: [String : Any] = item.mapToDictionary()
         
-        ref = db.collection("itens").addDocument(data: itemData) { err in
+        ref = db.collection(collection).addDocument(data: itemData) { err in
             if let err = err {
                 print("Error adding document: \(err.localizedDescription)")
             } else {
@@ -26,9 +25,9 @@ class DAOFirebase {
         }
     }
     
-    static func remove(id: String) {
+    static func remove(collection: String, id: String) {
         let db = Firestore.firestore()
-        db.collection("itens").document(id).delete() { err in
+        db.collection(collection).document(id).delete() { err in
             if let err = err {
                 print("Error removing document: \(err.localizedDescription)")
             } else {
@@ -37,9 +36,9 @@ class DAOFirebase {
         }
     }
     
-    static func load(completion: @escaping () -> ()) {
+    static func load(collection: String, completion: @escaping () -> ()) {
         let db = Firestore.firestore()
-        db.collection("itens").getDocuments() {(querySnapshot, err) in
+        db.collection(collection).getDocuments() {(querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -56,11 +55,13 @@ class DAOFirebase {
     static func observeOsGays() {
         let db = Firestore.firestore()
         
-        db.collection("itens").addSnapshotListener { (QuerySnapshot, Error) in
-            self.load {
-                print("Finished loading")
-            }
-        }
+        
+//        db.collection("itens").addSnapshotListener { (QuerySnapshot, Error) in
+//            self.load(collection: "itens") {
+//                print("Finished loading")
+//            }
+//        }
+        
     }
 }
 

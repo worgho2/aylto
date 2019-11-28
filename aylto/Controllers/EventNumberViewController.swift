@@ -36,7 +36,14 @@ class EventNumberViewController: UIViewController {
             // Code
             checkLabel.isHidden = false
             view.endEditing(true)
-            performSegue(withIdentifier: "home", sender: self)
+            
+            
+            
+            
+//            performSegue(withIdentifier: "home", sender: self)
+            
+            
+            
         }
     }
 

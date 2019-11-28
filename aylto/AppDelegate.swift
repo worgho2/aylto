@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        DAOFirebase.save(collection: "eventos", itemData: Evento(idDoEvento: 123456, nomeDoEvento: "Primeiro Evento", dataDoEvento: "13/12/2019", fotoDeCapa: "foto.jpeg").mapToDictionary())
         return true
     }
 
