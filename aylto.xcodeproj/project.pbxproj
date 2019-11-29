@@ -13,6 +13,8 @@
 		29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */; };
 		29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */; };
 		29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */; };
+		3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FD123918BEC0033B6C6 /* LauchScreen2.storyboard */; };
+		3F048FD423918DA50033B6C6 /* testeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FD323918DA50033B6C6 /* testeViewController.swift */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
 		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
@@ -42,6 +44,8 @@
 		29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListaEventosStoryboard.storyboard; sourceTree = "<group>"; };
 		29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEventosViewController.swift; sourceTree = "<group>"; };
 		31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aylto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F048FD123918BEC0033B6C6 /* LauchScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LauchScreen2.storyboard; sourceTree = "<group>"; };
+		3F048FD323918DA50033B6C6 /* testeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeViewController.swift; sourceTree = "<group>"; };
 		3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3FA7A852238C55CD007CB05A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 				3FA7A85D238C576C007CB05A /* AddEventViewController.swift */,
 				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
 				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
+				3F048FD323918DA50033B6C6 /* testeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
 				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
 				3FA7A85B238C570F007CB05A /* AddEvent.storyboard */,
+				3F048FD123918BEC0033B6C6 /* LauchScreen2.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
 				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
+				3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +322,7 @@
 				3FA7A864238C5F87007CB05A /* Evento.swift in Sources */,
 				3FA7A85E238C576C007CB05A /* AddEventViewController.swift in Sources */,
 				3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */,
+				3F048FD423918DA50033B6C6 /* testeViewController.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
