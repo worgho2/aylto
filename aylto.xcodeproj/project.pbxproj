@@ -17,6 +17,7 @@
 		3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCD238F16B60033B6C6 /* EventName.swift */; };
 		3F048FD0239043180033B6C6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCF239043180033B6C6 /* UIView.swift */; };
 		3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */; };
+		3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FD123918BEC0033B6C6 /* LauchScreen2.storyboard */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
 		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
@@ -267,6 +268,7 @@
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
 				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
+				3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
