@@ -16,8 +16,8 @@
 		3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FCB238F0F270033B6C6 /* EventName.storyboard */; };
 		3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCD238F16B60033B6C6 /* EventName.swift */; };
 		3F048FD0239043180033B6C6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCF239043180033B6C6 /* UIView.swift */; };
+		3F048FD223918BED0033B6C6 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */; };
-		3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FD123918BEC0033B6C6 /* LauchScreen2.storyboard */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
 		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
@@ -29,6 +29,8 @@
 		3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A861238C5F76007CB05A /* Figurinha.swift */; };
 		3FA7A864238C5F87007CB05A /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A863238C5F87007CB05A /* Evento.swift */; };
 		3FA7A866238D9382007CB05A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A865238D9381007CB05A /* HomeViewController.swift */; };
+		4B76BBF62391B17B0097ECF2 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B76BBF52391B17B0097ECF2 /* LauchScreen2.storyboard */; };
+		4B76BBF82391B2C20097ECF2 /* testeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76BBF72391B2C20097ECF2 /* testeViewController.swift */; };
 		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
 		7A7D46202391A1DC004E92E9 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
@@ -65,6 +67,8 @@
 		3FA7A861238C5F76007CB05A /* Figurinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Figurinha.swift; path = aylto/Controllers/Figurinha.swift; sourceTree = SOURCE_ROOT; };
 		3FA7A863238C5F87007CB05A /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = aylto/Controllers/Evento.swift; sourceTree = SOURCE_ROOT; };
 		3FA7A865238D9381007CB05A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4B76BBF52391B17B0097ECF2 /* LauchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LauchScreen2.storyboard; sourceTree = "<group>"; };
+		4B76BBF72391B2C20097ECF2 /* testeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeViewController.swift; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		29CCEC4A2388527700BF7A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4B76BBF72391B2C20097ECF2 /* testeViewController.swift */,
 				29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */,
 				3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */,
 				3FA7A859238C565C007CB05A /* WelcomeViewController.swift */,
@@ -180,6 +185,7 @@
 		29CCEC4D238852C400BF7A91 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4B76BBF52391B17B0097ECF2 /* LauchScreen2.storyboard */,
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
 				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
 				3FA7A85B238C570F007CB05A /* AddEvent.storyboard */,
@@ -280,9 +286,10 @@
 				3FA7A85C238C570F007CB05A /* AddEvent.storyboard in Resources */,
 				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
+				4B76BBF62391B17B0097ECF2 /* LauchScreen2.storyboard in Resources */,
 				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
-				3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */,
+				3F048FD223918BED0033B6C6 /* (null) in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B76BBF82391B2C20097ECF2 /* testeViewController.swift in Sources */,
 				F9C30E2D238D9E140044DF63 /* Model.swift in Sources */,
 				29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */,
 				F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */,
