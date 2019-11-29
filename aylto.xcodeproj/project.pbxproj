@@ -29,6 +29,8 @@
 		3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A861238C5F76007CB05A /* Figurinha.swift */; };
 		3FA7A864238C5F87007CB05A /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A863238C5F87007CB05A /* Evento.swift */; };
 		3FA7A866238D9382007CB05A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A865238D9381007CB05A /* HomeViewController.swift */; };
+		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
+		7A7D46202391A1DC004E92E9 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBD238F0BE500AAA791 /* Observer.swift */; };
 		F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */; };
@@ -64,6 +66,8 @@
 		3FA7A863238C5F87007CB05A /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = aylto/Controllers/Evento.swift; sourceTree = SOURCE_ROOT; };
 		3FA7A865238D9381007CB05A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
+		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
 		F90F5BBD238F0BE500AAA791 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
@@ -166,6 +170,7 @@
 		29CCEC4C2388528300BF7A91 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7A7D461C2391A190004E92E9 /* QRCode */,
 				F90F5BBD238F0BE500AAA791 /* Observer.swift */,
 				F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */,
 			);
@@ -191,6 +196,15 @@
 				31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A7D461C2391A190004E92E9 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */,
+				7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		8CEBE84DDA289ED485BDDD08 /* Pods */ = {
@@ -329,6 +343,7 @@
 				F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */,
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
+				7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
 				3FA7A864238C5F87007CB05A /* Evento.swift in Sources */,
 				3FA7A85E238C576C007CB05A /* AddEventViewController.swift in Sources */,
@@ -338,6 +353,7 @@
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
+				7A7D46202391A1DC004E92E9 /* QRCodeReader.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */,
