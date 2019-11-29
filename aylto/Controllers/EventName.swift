@@ -2,16 +2,22 @@
 //  CreateCardViewController.swift
 //  aylto
 //
-//  Created by Lary Tertuliano on 29/11/19.
+//  Created by Lary Tertuliano on 27/11/19.
 //  Copyright © 2019 Gabriel Taques. All rights reserved.
 //
 
 import UIKit
 
-class CreateCardViewController: UIViewController {
-
+class EventName: UIViewController {
+    
+    
+    @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var phraseTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        profilePicture.makeRounded()
 
         // Do any additional setup after loading the view.
     }
