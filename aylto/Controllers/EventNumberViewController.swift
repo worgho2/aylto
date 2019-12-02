@@ -10,26 +10,36 @@ import UIKit
 
 class EventNumberViewController: UIViewController {
         
-        @IBOutlet var fields: Array<UITextField>!
-        @IBOutlet weak var checkLabel: UILabel!
-        
+    @IBOutlet var fields: Array<UITextField>!
+    @IBOutlet weak var checkLabel: UILabel!
+    @IBOutlet weak var insertEventCodeHereView: UIView!
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            
+
             for field in fields {
                 field.keyboardType = .numberPad
+                print(field.tag)
+                field.roundCorners(radius: 4.0)
             }
+            insertEventCodeHereView.roundCorners(radius: 40.0)
+            fields.first?.layer.borderWidth = 1
+            fields.first?.layer.borderColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         }
 
         override func viewDidAppear(_ animated: Bool) {
-            fields.first?.becomeFirstResponder()
+//            fields.first?.becomeFirstResponder()
+            
             
         }
         
         @IBAction func textChanged(_ sender: UITextField) {
             let nextIndex = sender.tag + 1
             fields[nextIndex].becomeFirstResponder()
+            fields[nextIndex].layer.borderWidth = 1
+            fields[nextIndex].layer.borderColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            fields[sender.tag].layer.borderWidth = 0
         }
         
         @IBAction func checkCode(_ sender: Any) {
@@ -38,5 +48,6 @@ class EventNumberViewController: UIViewController {
             view.endEditing(true)
             performSegue(withIdentifier: "home", sender: self)
         }
+    
     }
 

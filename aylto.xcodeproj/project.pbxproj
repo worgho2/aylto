@@ -16,8 +16,10 @@
 		3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FCB238F0F270033B6C6 /* EventName.storyboard */; };
 		3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCD238F16B60033B6C6 /* EventName.swift */; };
 		3F048FD0239043180033B6C6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCF239043180033B6C6 /* UIView.swift */; };
+		3F048FD223918BED0033B6C6 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */; };
-		3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FD123918BEC0033B6C6 /* LauchScreen2.storyboard */; };
+		3F048FDD2395A6210033B6C6 /* testeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FDC2395A6210033B6C6 /* testeViewController.swift */; };
+		3F048FDF2395A6310033B6C6 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
 		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
@@ -52,6 +54,8 @@
 		3F048FCF239043180033B6C6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = aylto/Controllers/UIView.swift; sourceTree = SOURCE_ROOT; };
 		3F048FD52391A4700033B6C6 /* CreateCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCard.storyboard; sourceTree = "<group>"; };
 		3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
+		3F048FDC2395A6210033B6C6 /* testeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeViewController.swift; sourceTree = "<group>"; };
+		3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LauchScreen2.storyboard; path = aylto/Views/Storyboards/LauchScreen2.storyboard; sourceTree = SOURCE_ROOT; };
 		3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3FA7A852238C55CD007CB05A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */,
 				3FA7A859238C565C007CB05A /* WelcomeViewController.swift */,
 				3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */,
+				3F048FDC2395A6210033B6C6 /* testeViewController.swift */,
 				3FA7A865238D9381007CB05A /* HomeViewController.swift */,
 				3FA7A85D238C576C007CB05A /* AddEventViewController.swift */,
 				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
@@ -175,6 +180,7 @@
 		29CCEC4D238852C400BF7A91 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */,
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
 				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
 				3FA7A85B238C570F007CB05A /* AddEvent.storyboard */,
@@ -266,9 +272,10 @@
 				3FA7A85C238C570F007CB05A /* AddEvent.storyboard in Resources */,
 				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
+				3F048FDF2395A6310033B6C6 /* LauchScreen2.storyboard in Resources */,
 				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
-				3F048FD223918BED0033B6C6 /* LauchScreen2.storyboard in Resources */,
+				3F048FD223918BED0033B6C6 /* (null) in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +345,7 @@
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
+				3F048FDD2395A6210033B6C6 /* testeViewController.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */,
