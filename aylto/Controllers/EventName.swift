@@ -20,6 +20,7 @@ class EventName: UIViewController {
         profilePicture.makeRounded()
 
         // Do any additional setup after loading the view.
+        // Teste  do gitkraken
     }
     
 
