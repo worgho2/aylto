@@ -13,7 +13,10 @@ class EventName: UIViewController {
     
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var phraseTextField: UITextField!
+    @IBOutlet weak var phraseTextField: UITextView!
+    @IBOutlet weak var personsOnEventTextField: UITextField!
+    @IBOutlet weak var personsConnectedTextField: UITextField!
+    @IBOutlet weak var personsNotConnectedTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
