@@ -18,7 +18,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-Ic-jSP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="62U-Dm-BTL">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome-1" translatesAutoresizingMaskIntoConstraints="NO" id="62U-Dm-BTL">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
                                 </subviews>
@@ -47,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Welcome" width="414" height="896"/>
+        <image name="Welcome-1" width="414" height="896"/>
     </resources>
 </document>

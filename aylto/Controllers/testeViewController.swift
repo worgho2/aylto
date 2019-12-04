@@ -12,6 +12,7 @@ class TesteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("entrou tudo")
         
         Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (Timer) in
             self.performSegue(withIdentifier: "teste", sender: nil)

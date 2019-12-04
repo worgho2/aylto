@@ -13,8 +13,9 @@ class EventNumberViewController: UIViewController {
     @IBOutlet var fields: Array<UITextField>!
     @IBOutlet weak var checkLabel: UILabel!
     @IBOutlet weak var insertEventCodeHereView: UIView!
+    @IBOutlet weak var backgroundView: UIView!
     
-        override func viewDidLoad() {
+    override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
 
@@ -26,11 +27,16 @@ class EventNumberViewController: UIViewController {
             insertEventCodeHereView.roundCorners(radius: 40.0)
             fields.first?.layer.borderWidth = 1
             fields.first?.layer.borderColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            self.backgroundView.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            self.backgroundView.alpha = 0
         }
 
         override func viewDidAppear(_ animated: Bool) {
 //            fields.first?.becomeFirstResponder()
             
+            UIView.animate(withDuration: 0.09) {
+                self.backgroundView.alpha = 0.7
+            }
             
         }
         

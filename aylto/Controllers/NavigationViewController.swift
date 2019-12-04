@@ -1,18 +1,18 @@
 //
-//  AddEventViewController.swift
+//  NavigationViewController.swift
 //  aylto
 //
-//  Created by Lary Tertuliano on 25/11/19.
+//  Created by Lary Tertuliano on 04/12/19.
 //  Copyright © 2019 Gabriel Taques. All rights reserved.
 //
 
 import UIKit
 
-class AddEventViewController: UIViewController {
+class NavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.title = "Events"
         // Do any additional setup after loading the view.
     }
     

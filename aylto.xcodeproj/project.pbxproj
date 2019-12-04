@@ -20,21 +20,21 @@
 		3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */; };
 		3F048FDD2395A6210033B6C6 /* testeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FDC2395A6210033B6C6 /* testeViewController.swift */; };
 		3F048FDF2395A6310033B6C6 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */; };
+		3F1850FC2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */; };
+		3F1850FD2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */; };
+		3F1851032398238700B55835 /* FigurinhasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1851022398238700B55835 /* FigurinhasViewController.swift */; };
+		3F1851062398245A00B55835 /* EventAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */; };
+		3F1851072398245A00B55835 /* EventAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
 		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
 		3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */; };
 		3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A859238C565C007CB05A /* WelcomeViewController.swift */; };
-		3FA7A85C238C570F007CB05A /* AddEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A85B238C570F007CB05A /* AddEvent.storyboard */; };
-		3FA7A85E238C576C007CB05A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A85D238C576C007CB05A /* AddEventViewController.swift */; };
+		3FA7A85C238C570F007CB05A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A85B238C570F007CB05A /* Home.storyboard */; };
 		3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */; };
 		3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A861238C5F76007CB05A /* Figurinha.swift */; };
 		3FA7A864238C5F87007CB05A /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A863238C5F87007CB05A /* Evento.swift */; };
-		3FA7A866238D9382007CB05A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A865238D9381007CB05A /* HomeViewController.swift */; };
-		4B76BBF62391B17B0097ECF2 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B76BBF52391B17B0097ECF2 /* LauchScreen2.storyboard */; };
-		4B76BBF82391B2C20097ECF2 /* testeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76BBF72391B2C20097ECF2 /* testeViewController.swift */; };
 		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
-		7A7D46202391A1DC004E92E9 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBD238F0BE500AAA791 /* Observer.swift */; };
 		F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */; };
@@ -60,19 +60,20 @@
 		3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
 		3F048FDC2395A6210033B6C6 /* testeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeViewController.swift; sourceTree = "<group>"; };
 		3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LauchScreen2.storyboard; path = aylto/Views/Storyboards/LauchScreen2.storyboard; sourceTree = SOURCE_ROOT; };
+		3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigurinhaCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FigurinhaCollectionViewCell.xib; sourceTree = "<group>"; };
+		3F1851022398238700B55835 /* FigurinhasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigurinhasViewController.swift; sourceTree = "<group>"; };
+		3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
 		3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3FA7A852238C55CD007CB05A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		3FA7A859238C565C007CB05A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		3FA7A85B238C570F007CB05A /* AddEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddEvent.storyboard; sourceTree = "<group>"; };
-		3FA7A85D238C576C007CB05A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		3FA7A85B238C570F007CB05A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNumberViewController.swift; sourceTree = "<group>"; };
 		3FA7A861238C5F76007CB05A /* Figurinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Figurinha.swift; path = aylto/Controllers/Figurinha.swift; sourceTree = SOURCE_ROOT; };
 		3FA7A863238C5F87007CB05A /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = aylto/Controllers/Evento.swift; sourceTree = SOURCE_ROOT; };
-		3FA7A865238D9381007CB05A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4B76BBF52391B17B0097ECF2 /* LauchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LauchScreen2.storyboard; sourceTree = "<group>"; };
-		4B76BBF72391B2C20097ECF2 /* testeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeViewController.swift; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
@@ -153,18 +154,18 @@
 		29CCEC4A2388527700BF7A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4B76BBF72391B2C20097ECF2 /* testeViewController.swift */,
 				29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */,
 				3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */,
 				3FA7A859238C565C007CB05A /* WelcomeViewController.swift */,
 				3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */,
 				3F048FDC2395A6210033B6C6 /* testeViewController.swift */,
-				3FA7A865238D9381007CB05A /* HomeViewController.swift */,
-				3FA7A85D238C576C007CB05A /* AddEventViewController.swift */,
 				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
+				3F1851022398238700B55835 /* FigurinhasViewController.swift */,
 				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
+				3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */,
 				3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */,
 				3F048FCD238F16B60033B6C6 /* EventName.swift */,
+				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,7 +194,9 @@
 				3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */,
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
 				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
-				3FA7A85B238C570F007CB05A /* AddEvent.storyboard */,
+				3FA7A85B238C570F007CB05A /* Home.storyboard */,
+				3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */,
+				3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */,
 				3F048FCB238F0F270033B6C6 /* EventName.storyboard */,
 				3F048FD52391A4700033B6C6 /* CreateCard.storyboard */,
 				29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */,
@@ -287,8 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1850FD2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib in Resources */,
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
-				3FA7A85C238C570F007CB05A /* AddEvent.storyboard in Resources */,
+				3FA7A85C238C570F007CB05A /* Home.storyboard in Resources */,
 				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
 				3F048FDF2395A6310033B6C6 /* LauchScreen2.storyboard in Resources */,
@@ -296,6 +300,7 @@
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
+				3F1851072398245A00B55835 /* EventAlbumCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,29 +353,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B76BBF82391B2C20097ECF2 /* testeViewController.swift in Sources */,
 				F9C30E2D238D9E140044DF63 /* Model.swift in Sources */,
 				29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */,
 				F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */,
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
+				3F1851032398238700B55835 /* FigurinhasViewController.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
 				7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
 				3FA7A864238C5F87007CB05A /* Evento.swift in Sources */,
-				3FA7A85E238C576C007CB05A /* AddEventViewController.swift in Sources */,
 				3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */,
 				3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */,
 				3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */,
+				3F1851062398245A00B55835 /* EventAlbumCollectionViewCell.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
 				3F048FDD2395A6210033B6C6 /* testeViewController.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
+				3F1850FC2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift in Sources */,
 				3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */,
-				3FA7A866238D9382007CB05A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
