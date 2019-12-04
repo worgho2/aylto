@@ -2,19 +2,21 @@
 //  HomeViewController.swift
 //  aylto
 //
-//  Created by Lary Tertuliano on 26/11/19.
+//  Created by Lary Tertuliano on 03/12/19.
 //  Copyright © 2019 Gabriel Taques. All rights reserved.
 //
 
 import UIKit
 
-
-
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, Datasource, Delegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+
+        self.collectionView.register(MyCell.self, forCellWithReuseIdentifier: "addEventAlbumCell")
         // Do any additional setup after loading the view.
     }
     

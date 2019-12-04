@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HOj-iX-gda">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -24,7 +24,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="dJN-Id-SQO"/>
                     </view>
                 </viewController>
@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="89.732142857142847"/>
         </scene>
-        <!--AddEvent-->
+        <!--Home-->
         <scene sceneID="V77-mP-acy">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddEvent" id="cOQ-37-e5K" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="cOQ-37-e5K" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="2hx-QR-Jbh"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="um8-lc-4xU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
