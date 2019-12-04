@@ -52,7 +52,18 @@ class EventNumberViewController: UIViewController {
             // Code
             checkLabel.isHidden = false
             view.endEditing(true)
-            performSegue(withIdentifier: "home", sender: self)
+            
+            
+            DAOFirebase.load(collection: "eventos") {
+                for evento in Model.shared.eventos {
+                    print(evento.idDoEvento)
+                }
+            }
+            
+//            performSegue(withIdentifier: "home", sender: self)
+            
+            
+            
         }
     
     }

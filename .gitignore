@@ -91,6 +91,8 @@ Pods/
 
 Carthage/Build/
 
+Pods/
+
 # Accio dependency management
 Dependencies/
 .accio/

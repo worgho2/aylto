@@ -15,13 +15,24 @@ class QRCodeView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(imageView)
+        self.commonInit()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.commonInit()
+    }
+    
+    init() {
+        super.init(frame: .zero)
+        self.commonInit()
+    }
+    
+    func commonInit() {
+        
         self.addSubview(imageView)
     }
+    
     
     override func layoutSubviews() {
         super.layoutSubviews()

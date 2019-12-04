@@ -28,7 +28,7 @@ class ListaEventosViewController: UIViewController, ObserverDelegate {
     }
     
     @IBAction func load(_ sender: Any) {
-        DAOFirebase.load {
+        DAOFirebase.load(collection: "itens") {
             print("Finished loading")
         }
     }
