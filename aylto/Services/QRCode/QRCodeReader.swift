@@ -6,7 +6,6 @@
 //  Copyright © 2019 Gabriel Taques. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import AVFoundation
 
