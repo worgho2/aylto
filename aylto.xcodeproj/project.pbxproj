@@ -74,6 +74,16 @@
 		4B76BBF52391B17B0097ECF2 /* LauchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LauchScreen2.storyboard; sourceTree = "<group>"; };
 		4B76BBF72391B2C20097ECF2 /* testeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeViewController.swift; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
+		7A1B27DB23983E98007A7508 /* IntroWithLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWithLoop.swift; sourceTree = "<group>"; };
+		7A1B27DC23983E98007A7508 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		7A1B27DD23983E98007A7508 /* AudioLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLibrary.swift; sourceTree = "<group>"; };
+		7A1B27DE23983E98007A7508 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		7A1B27DF23983E98007A7508 /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		7A1B27E223983F9A007A7508 /* intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro.mp3; sourceTree = "<group>"; };
+		7A1B27E323983F9A007A7508 /* click-double.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "click-double.mp3"; sourceTree = "<group>"; };
+		7A1B27E423983F9A007A7508 /* night-at-the-club.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "night-at-the-club.mp3"; sourceTree = "<group>"; };
+		7A1B27E523983F9A007A7508 /* click-synth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "click-synth.mp3"; sourceTree = "<group>"; };
+		7A1B27E623983F9B007A7508 /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
 		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +190,8 @@
 		29CCEC4C2388528300BF7A91 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7A1B27E723983FA5007A7508 /* SoudTracks */,
+				7A1B27DA23983E98007A7508 /* SoundModule */,
 				7A7D461C2391A190004E92E9 /* QRCode */,
 				F90F5BBD238F0BE500AAA791 /* Observer.swift */,
 				F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */,
@@ -207,6 +219,30 @@
 				31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A1B27DA23983E98007A7508 /* SoundModule */ = {
+			isa = PBXGroup;
+			children = (
+				7A1B27DD23983E98007A7508 /* AudioLibrary.swift */,
+				7A1B27DE23983E98007A7508 /* AudioManager.swift */,
+				7A1B27DB23983E98007A7508 /* IntroWithLoop.swift */,
+				7A1B27DC23983E98007A7508 /* Song.swift */,
+				7A1B27DF23983E98007A7508 /* SoundEffects.swift */,
+			);
+			path = SoundModule;
+			sourceTree = "<group>";
+		};
+		7A1B27E723983FA5007A7508 /* SoudTracks */ = {
+			isa = PBXGroup;
+			children = (
+				7A1B27E323983F9A007A7508 /* click-double.mp3 */,
+				7A1B27E523983F9A007A7508 /* click-synth.mp3 */,
+				7A1B27E223983F9A007A7508 /* intro.mp3 */,
+				7A1B27E623983F9B007A7508 /* loop.mp3 */,
+				7A1B27E423983F9A007A7508 /* night-at-the-club.mp3 */,
+			);
+			path = SoudTracks;
 			sourceTree = "<group>";
 		};
 		7A7D461C2391A190004E92E9 /* QRCode */ = {
