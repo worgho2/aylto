@@ -24,4 +24,12 @@ class Model {
         }
     }
     
+    var eventos: [Evento] = []
+    var albuns: [Album] = []
+    var outrasFigurinhas: [Figurinha] = []
+    var minhasFigurinhas: [Figurinha] = []
+    var figurinhas: [Figurinha] = []
+    var usuario: Usuario = Usuario(idDoUsuario: 9999, idDasFigurinhas: [999,999,999], idDosAlbuns: [999,999,999], nome: "err", email: "err")
+    
+    
 }

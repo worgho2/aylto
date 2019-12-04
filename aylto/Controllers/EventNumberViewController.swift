@@ -38,7 +38,11 @@ class EventNumberViewController: UIViewController {
             view.endEditing(true)
             
             
-            
+            DAOFirebase.load(collection: "eventos") {
+                for evento in Model.shared.eventos {
+                    print(evento.idDoEvento)
+                }
+            }
             
 //            performSegue(withIdentifier: "home", sender: self)
             

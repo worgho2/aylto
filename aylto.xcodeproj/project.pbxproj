@@ -26,6 +26,8 @@
 		3FA7A866238D9382007CB05A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A865238D9381007CB05A /* HomeViewController.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBD238F0BE500AAA791 /* Observer.swift */; };
+		F90F5BC02390586700AAA791 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBF2390586700AAA791 /* Album.swift */; };
+		F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BC12390587C00AAA791 /* Usuario.swift */; };
 		F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */; };
 		F9C30E2D238D9E140044DF63 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2C238D9E140044DF63 /* Model.swift */; };
 		F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2E238D9FA60044DF63 /* Item.swift */; };
@@ -56,6 +58,8 @@
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
 		F90F5BBD238F0BE500AAA791 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		F90F5BBF2390586700AAA791 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		F90F5BC12390587C00AAA791 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
 		F9C30E2C238D9E140044DF63 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F9C30E2E238D9FA60044DF63 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = aylto/Models/Item.swift; sourceTree = SOURCE_ROOT; };
@@ -117,6 +121,8 @@
 				3FA7A863238C5F87007CB05A /* Evento.swift */,
 				F9C30E2E238D9FA60044DF63 /* Item.swift */,
 				F9C30E2C238D9E140044DF63 /* Model.swift */,
+				F90F5BBF2390586700AAA791 /* Album.swift */,
+				F90F5BC12390587C00AAA791 /* Usuario.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 				F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */,
+				F90F5BC02390586700AAA791 /* Album.swift in Sources */,
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
+				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
 				3FA7A864238C5F87007CB05A /* Evento.swift in Sources */,
 				3FA7A85E238C576C007CB05A /* AddEventViewController.swift in Sources */,
 				3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */,

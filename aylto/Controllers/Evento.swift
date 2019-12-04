@@ -10,13 +10,15 @@ import FirebaseFirestore
 
 class Evento {
     
-    internal init(idDoEvento: Int, nomeDoEvento: String, dataDoEvento: String, fotoDeCapa: String) {
+    internal init(idDoEvento: Int, idDosAlbuns: [Int], nomeDoEvento: String, dataDoEvento: String, fotoDeCapa: String) {
         self.idDoEvento = idDoEvento
+        self.idDosAlbuns = idDosAlbuns
         self.nomeDoEvento = nomeDoEvento
         self.dataDoEvento = dataDoEvento
         self.fotoDeCapa = fotoDeCapa
     }
     var idDoEvento: Int
+    var idDosAlbuns: [Int]
     var nomeDoEvento: String
     var dataDoEvento: String
     var fotoDeCapa: String
@@ -24,6 +26,7 @@ class Evento {
     func mapToDictionary() -> [String : Any] {
         var itemData: [String: Any] = [ : ]
         itemData["idDoEvento"] = self.idDoEvento
+        itemData["idDosAlbuns"] = self.idDosAlbuns
         itemData["nomeDoEvento"] = self.nomeDoEvento
         itemData["dataDoEvento"] = self.dataDoEvento
         itemData["fotoDeCapa"] = self.fotoDeCapa
@@ -32,9 +35,10 @@ class Evento {
     
     static func mapToObject(dict: [String : Any], document: QueryDocumentSnapshot) -> Evento {
         let idDoEvento = dict["idDoEvento"] as! Int
+        let idDosAlbuns = dict["idDosAlbuns"] as! [Int]
         let nomeDoEvento = dict["nomeDoEvento"] as! String
         let dataDoEvento = dict["dataDoEvento"] as! String
         let fotoDeCapa = dict["fotoDeCapa"] as! String
-        return Evento(idDoEvento: idDoEvento, nomeDoEvento: nomeDoEvento, dataDoEvento: dataDoEvento, fotoDeCapa: fotoDeCapa)
+        return Evento(idDoEvento: idDoEvento, idDosAlbuns: idDosAlbuns, nomeDoEvento: nomeDoEvento, dataDoEvento: dataDoEvento, fotoDeCapa: fotoDeCapa)
     }
 }
