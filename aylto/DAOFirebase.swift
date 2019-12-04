@@ -62,8 +62,6 @@ class DAOFirebase {
                 for document in querySnapshot!.documents {
                     let item = Evento.mapToObject(dict: document.data(), document: document)
                     Model.shared.eventos.append(item)
-                    
-                    
                 }
             }
             completion()
