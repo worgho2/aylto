@@ -59,6 +59,7 @@ class EventNumberViewController: UIViewController {
                     print(evento.idDoEvento)
                 }
             }
+            performSegue(withIdentifier: "eventNameSegue", sender: self)
             
 //            performSegue(withIdentifier: "home", sender: self)
             

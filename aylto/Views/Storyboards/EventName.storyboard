@@ -166,7 +166,26 @@ to him :)</string>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWg-5m-dIP">
                                         <rect key="frame" x="0.0" y="277" width="414" height="619"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5rW-hC-1PC">
+                                                <rect key="frame" x="43" y="43" width="371" height="533"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SPZ-nm-zaR">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="leading" secondItem="TWg-5m-dIP" secondAttribute="leading" constant="43" id="F5N-jD-cHd"/>
+                                            <constraint firstAttribute="bottom" secondItem="5rW-hC-1PC" secondAttribute="bottom" constant="43" id="GMm-ej-vT7"/>
+                                            <constraint firstAttribute="trailing" secondItem="5rW-hC-1PC" secondAttribute="trailing" id="e4s-Z1-A44"/>
+                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="top" secondItem="TWg-5m-dIP" secondAttribute="top" constant="43" id="h6q-CE-bSP"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,6 +211,8 @@ to him :)</string>
                         <viewLayoutGuide key="safeArea" id="deo-ZK-ErH"/>
                     </view>
                     <connections>
+                        <outlet property="albumCollectionView" destination="5rW-hC-1PC" id="ajH-bf-DO2"/>
+                        <outlet property="albumCoverView" destination="TWg-5m-dIP" id="Ob1-8y-5PS"/>
                         <outlet property="nameLabel" destination="6KM-tJ-8TU" id="myM-i6-aFj"/>
                         <outlet property="personsConnectedTextField" destination="mON-Jp-GZs" id="Pg5-PA-weY"/>
                         <outlet property="personsNotConnectedTextField" destination="7Sy-iw-heG" id="m6Z-7K-wcS"/>
