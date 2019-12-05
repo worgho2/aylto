@@ -162,6 +162,7 @@
 		29CCEC492388527300BF7A91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7A13DE1023997890007E32E4 /* Xibs */,
 				29CCEC4D238852C400BF7A91 /* Storyboards */,
 			);
 			path = Views;
@@ -211,8 +212,6 @@
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
 				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
 				3FA7A85B238C570F007CB05A /* Home.storyboard */,
-				3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */,
-				3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */,
 				3F048FCB238F0F270033B6C6 /* EventName.storyboard */,
 				3F048FD52391A4700033B6C6 /* CreateCard.storyboard */,
 				29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */,
@@ -243,6 +242,15 @@
 				7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7A13DE1023997890007E32E4 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */,
+				3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		7A1B27DA23983E98007A7508 /* Sound */ = {
