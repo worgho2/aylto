@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HAh-kp-xjj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HAh-kp-xjj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -60,7 +60,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="R5p-hS-JVa" firstAttribute="centerX" secondItem="I0J-Mw-V7W" secondAttribute="centerX" id="0fa-gI-gTu"/>
                                     <constraint firstItem="R5p-hS-JVa" firstAttribute="height" secondItem="I0J-Mw-V7W" secondAttribute="height" id="Agg-p7-dt8"/>
@@ -104,7 +104,7 @@
                                 <state key="normal" title="Create card"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="WAb-53-AEX"/>
                     </view>
                     <navigationItem key="navigationItem" id="5U4-Id-1UK"/>
@@ -112,6 +112,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Lc-BP-kco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3194.202898550725" y="38.839285714285715"/>
+        </scene>
+        <!--EventName-->
+        <scene sceneID="wns-Ft-XdS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EventName" id="Wku-Z6-gSe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oBo-L2-lzh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwH-8U-QCN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="456"/>
         </scene>
         <!--CreateCard-->
         <scene sceneID="CqV-R6-l9P">
@@ -208,7 +218,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert event code here:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUC-vT-ZOo">
-                                                <rect key="frame" x="37" y="22" width="340.5" height="38.5"/>
+                                                <rect key="frame" x="36.5" y="22" width="341" height="38.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -234,7 +244,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="MrW-B3-cbp" firstAttribute="width" secondItem="nR6-v7-Vsd" secondAttribute="width" id="54e-Ou-PGh"/>
                                     <constraint firstItem="tsL-uF-aO9" firstAttribute="top" secondItem="MrW-B3-cbp" secondAttribute="bottom" id="CXA-QX-tom"/>
@@ -276,6 +286,7 @@
                         <outletCollection property="fields" destination="im1-Qy-MFv" collectionClass="NSMutableArray" id="SiI-CX-lwm"/>
                         <outletCollection property="fields" destination="uVm-wE-fAd" collectionClass="NSMutableArray" id="WIE-np-MXo"/>
                         <segue destination="UiL-Tw-11u" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="f2C-BK-ZGN"/>
+                        <segue destination="Wku-Z6-gSe" kind="show" identifier="eventNameSegue" id="Ats-pd-jIp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ri-zz-4ku" sceneMemberID="firstResponder"/>
