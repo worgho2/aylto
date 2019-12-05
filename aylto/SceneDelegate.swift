@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  aylto
-//
-//  Created by Gabriel Taques on 22/11/19.
-//  Copyright © 2019 Gabriel Taques. All rights reserved.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -30,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        self.window!.backgroundColor = UIColor.red
         
         // Create a ViewController object and set it as the scene's window's root view controller.
-        self.window!.rootViewController =  UIStoryboard(name: "LauchScreen2", bundle: nil).instantiateInitialViewController()
+        self.window!.rootViewController =  UIStoryboard(name: "LaunchScreen2", bundle: nil).instantiateInitialViewController()
         
         // Make this scene's window be visible.
         self.window!.makeKeyAndVisible()
