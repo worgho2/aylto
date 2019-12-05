@@ -7,7 +7,5 @@
 //
 
 protocol ObserverDelegate {
-    
     func notify()
-    
 }
