@@ -18,16 +18,12 @@
 		3F048FD0239043180033B6C6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCF239043180033B6C6 /* UIView.swift */; };
 		3F048FD223918BED0033B6C6 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */; };
-		3F048FDD2395A6210033B6C6 /* testeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FDC2395A6210033B6C6 /* testeViewController.swift */; };
-		3F048FDF2395A6310033B6C6 /* LauchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */; };
+		3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FDC2395A6210033B6C6 /* LauchScreen2ViewController.swift */; };
 		3F1850FC2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */; };
 		3F1850FD2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */; };
 		3F1851032398238700B55835 /* FigurinhasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1851022398238700B55835 /* FigurinhasViewController.swift */; };
 		3F1851062398245A00B55835 /* EventAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */; };
 		3F1851072398245A00B55835 /* EventAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */; };
-		3F18510B239977F700B55835 /* DisciplinesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F18510A239977F700B55835 /* DisciplinesCollectionViewCell.swift */; };
-		3F18510D23997DB000B55835 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F18510C23997DB000B55835 /* Card.storyboard */; };
-		3F38CBDE23998DEF00DDB9E1 /* InterestsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38CBDD23998DEF00DDB9E1 /* InterestsCollectionViewCell.swift */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
 		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
@@ -37,12 +33,16 @@
 		3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */; };
 		3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A861238C5F76007CB05A /* Figurinha.swift */; };
 		3FA7A864238C5F87007CB05A /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A863238C5F87007CB05A /* Evento.swift */; };
+		4B7C10432399771D005E3372 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */; };
+		4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */; };
+		7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */; };
+		7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE112399796D007E32E4 /* UIImageView.swift */; };
+		7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */; };
 		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBD238F0BE500AAA791 /* Observer.swift */; };
 		F90F5BC02390586700AAA791 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBF2390586700AAA791 /* Album.swift */; };
 		F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BC12390587C00AAA791 /* Usuario.swift */; };
-		F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */; };
 		F9C30E2D238D9E140044DF63 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2C238D9E140044DF63 /* Model.swift */; };
 		F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2E238D9FA60044DF63 /* Item.swift */; };
 		F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */; };
@@ -61,17 +61,14 @@
 		3F048FCB238F0F270033B6C6 /* EventName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventName.storyboard; sourceTree = "<group>"; };
 		3F048FCD238F16B60033B6C6 /* EventName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventName.swift; sourceTree = "<group>"; };
 		3F048FCF239043180033B6C6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = aylto/Controllers/UIView.swift; sourceTree = SOURCE_ROOT; };
+		3F048FD52391A4700033B6C6 /* CreateCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCard.storyboard; sourceTree = "<group>"; };
 		3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
-		3F048FDC2395A6210033B6C6 /* testeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeViewController.swift; sourceTree = "<group>"; };
-		3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LauchScreen2.storyboard; path = aylto/Views/Storyboards/LauchScreen2.storyboard; sourceTree = SOURCE_ROOT; };
+		3F048FDC2395A6210033B6C6 /* LauchScreen2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauchScreen2ViewController.swift; sourceTree = "<group>"; };
 		3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigurinhaCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FigurinhaCollectionViewCell.xib; sourceTree = "<group>"; };
 		3F1851022398238700B55835 /* FigurinhasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigurinhasViewController.swift; sourceTree = "<group>"; };
 		3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
-		3F18510A239977F700B55835 /* DisciplinesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplinesCollectionViewCell.swift; sourceTree = "<group>"; };
-		3F18510C23997DB000B55835 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
-		3F38CBDD23998DEF00DDB9E1 /* InterestsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		3FA7A852238C55CD007CB05A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +78,12 @@
 		3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNumberViewController.swift; sourceTree = "<group>"; };
 		3FA7A861238C5F76007CB05A /* Figurinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Figurinha.swift; path = aylto/Controllers/Figurinha.swift; sourceTree = SOURCE_ROOT; };
 		3FA7A863238C5F87007CB05A /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = aylto/Controllers/Evento.swift; sourceTree = SOURCE_ROOT; };
+		4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
+		7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/Services/Firebase/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
+		7A13DE112399796D007E32E4 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen2.storyboard; sourceTree = "<group>"; };
 		7A1B27DB23983E98007A7508 /* IntroWithLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWithLoop.swift; sourceTree = "<group>"; };
 		7A1B27DC23983E98007A7508 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		7A1B27DD23983E98007A7508 /* AudioLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLibrary.swift; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 		F90F5BBD238F0BE500AAA791 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		F90F5BBF2390586700AAA791 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		F90F5BC12390587C00AAA791 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
-		F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
 		F9C30E2C238D9E140044DF63 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F9C30E2E238D9FA60044DF63 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = aylto/Models/Item.swift; sourceTree = SOURCE_ROOT; };
 		F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -137,16 +138,16 @@
 		29CCEC332388514700BF7A91 /* aylto */ = {
 			isa = PBXGroup;
 			children = (
+				29CCEC422388514800BF7A91 /* Info.plist */,
+				29CCEC3D2388514800BF7A91 /* Assets.xcassets */,
 				29CCEC342388514700BF7A91 /* AppDelegate.swift */,
 				29CCEC362388514700BF7A91 /* SceneDelegate.swift */,
 				29CCEC4C2388528300BF7A91 /* Services */,
+				7A13DE0C23997756007E32E4 /* Protocols */,
 				29CCEC4B2388527D00BF7A91 /* Extensions */,
+				29CCEC482388526D00BF7A91 /* Models */,
 				29CCEC4A2388527700BF7A91 /* Controllers */,
 				29CCEC492388527300BF7A91 /* Views */,
-				29CCEC482388526D00BF7A91 /* Models */,
-				29CCEC3D2388514800BF7A91 /* Assets.xcassets */,
-				29CCEC422388514800BF7A91 /* Info.plist */,
-				F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */,
 			);
 			path = aylto;
 			sourceTree = "<group>";
@@ -167,6 +168,7 @@
 		29CCEC492388527300BF7A91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7A13DE1023997890007E32E4 /* Xibs */,
 				29CCEC4D238852C400BF7A91 /* Storyboards */,
 			);
 			path = Views;
@@ -175,20 +177,18 @@
 		29CCEC4A2388527700BF7A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3F048FDC2395A6210033B6C6 /* testeViewController.swift */,
-				3FA7A859238C565C007CB05A /* WelcomeViewController.swift */,
+				7A13DE1423997A4D007E32E4 /* LauchScreen */,
 				29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */,
-				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
-				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
 				3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */,
-				3F048FCD238F16B60033B6C6 /* EventName.swift */,
+				3FA7A859238C565C007CB05A /* WelcomeViewController.swift */,
 				3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */,
-				3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */,
+				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
 				3F1851022398238700B55835 /* FigurinhasViewController.swift */,
-				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
+				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
+				3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */,
 				3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */,
-				3F38CBDD23998DEF00DDB9E1 /* InterestsCollectionViewCell.swift */,
-				3F18510A239977F700B55835 /* DisciplinesCollectionViewCell.swift */,
+				3F048FCD238F16B60033B6C6 /* EventName.swift */,
+				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				3F048FCF239043180033B6C6 /* UIView.swift */,
+				7A13DE112399796D007E32E4 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -204,11 +205,9 @@
 		29CCEC4C2388528300BF7A91 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7A1B27E723983FA5007A7508 /* SoudTracks */,
-				7A1B27DA23983E98007A7508 /* SoundModule */,
+				7A1B27DA23983E98007A7508 /* Sound */,
 				7A7D461C2391A190004E92E9 /* QRCode */,
-				F90F5BBD238F0BE500AAA791 /* Observer.swift */,
-				F91F0BA0238C605B0079AF4B /* DAOFirebase.swift */,
+				7A13DE0D23997770007E32E4 /* Firebase */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -216,15 +215,13 @@
 		29CCEC4D238852C400BF7A91 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				3F048FDE2395A6310033B6C6 /* LauchScreen2.storyboard */,
+				7A13DE1323997A20007E32E4 /* LauchScreen */,
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
 				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
 				3FA7A85B238C570F007CB05A /* Home.storyboard */,
-				3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */,
-				3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */,
 				3F048FCB238F0F270033B6C6 /* EventName.storyboard */,
-				29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */,
-				3F18510C23997DB000B55835 /* Card.storyboard */,
+				3F048FD52391A4700033B6C6 /* CreateCard.storyboard */,
+				4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -237,16 +234,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7A1B27DA23983E98007A7508 /* SoundModule */ = {
+		7A13DE0C23997756007E32E4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F90F5BBD238F0BE500AAA791 /* Observer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7A13DE0D23997770007E32E4 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */,
+				7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7A13DE1023997890007E32E4 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */,
+				4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */,
+				3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		7A13DE1323997A20007E32E4 /* LauchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */,
+				7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */,
+			);
+			path = LauchScreen;
+			sourceTree = "<group>";
+		};
+		7A13DE1423997A4D007E32E4 /* LauchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F048FDC2395A6210033B6C6 /* LauchScreen2ViewController.swift */,
+			);
+			path = LauchScreen;
+			sourceTree = "<group>";
+		};
+		7A1B27DA23983E98007A7508 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				7A1B27E723983FA5007A7508 /* SoudTracks */,
 				7A1B27DD23983E98007A7508 /* AudioLibrary.swift */,
 				7A1B27DE23983E98007A7508 /* AudioManager.swift */,
 				7A1B27DB23983E98007A7508 /* IntroWithLoop.swift */,
 				7A1B27DC23983E98007A7508 /* Song.swift */,
 				7A1B27DF23983E98007A7508 /* SoundEffects.swift */,
 			);
-			path = SoundModule;
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		7A1B27E723983FA5007A7508 /* SoudTracks */ = {
@@ -340,14 +382,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1850FD2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib in Resources */,
+				7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */,
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				3FA7A85C238C570F007CB05A /* Home.storyboard in Resources */,
 				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
+				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
-				3F048FDF2395A6310033B6C6 /* LauchScreen2.storyboard in Resources */,
 				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
-				3F18510D23997DB000B55835 /* Card.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 				3F1851072398245A00B55835 /* EventAlbumCollectionViewCell.xib in Resources */,
@@ -405,7 +447,6 @@
 			files = (
 				F9C30E2D238D9E140044DF63 /* Model.swift in Sources */,
 				29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */,
-				F91F0BA1238C605B0079AF4B /* DAOFirebase.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */,
 				F90F5BC02390586700AAA791 /* Album.swift in Sources */,
@@ -414,18 +455,19 @@
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
 				7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
+				7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */,
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
-				3F18510B239977F700B55835 /* DisciplinesCollectionViewCell.swift in Sources */,
 				3FA7A864238C5F87007CB05A /* Evento.swift in Sources */,
 				3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */,
 				3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */,
 				3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */,
-				3F38CBDE23998DEF00DDB9E1 /* InterestsCollectionViewCell.swift in Sources */,
+				7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */,
 				3F1851062398245A00B55835 /* EventAlbumCollectionViewCell.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
-				3F048FDD2395A6210033B6C6 /* testeViewController.swift in Sources */,
+				4B7C10432399771D005E3372 /* CardCollectionViewCell.swift in Sources */,
+				3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				3F1850FC2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift in Sources */,
