@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -167,24 +168,51 @@ to him :)</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWg-5m-dIP">
                                         <rect key="frame" x="0.0" y="277" width="414" height="619"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyN-vd-fwO">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
+                                                <color key="backgroundColor" red="0.99607843137254903" green="0.98431372549019602" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5rW-hC-1PC">
-                                                <rect key="frame" x="43" y="43" width="371" height="533"/>
+                                                <rect key="frame" x="0.0" y="60" width="414" height="499"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SPZ-nm-zaR">
-                                                    <size key="itemSize" width="50" height="50"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="SPZ-nm-zaR">
+                                                    <size key="itemSize" width="264" height="266"/>
+                                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                                    <size key="footerReferenceSize" width="50" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="50" maxX="0.0" maxY="50"/>
                                                 </collectionViewFlowLayout>
-                                                <cells/>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCollectionViewCell" id="kW6-CL-mcM">
+                                                        <rect key="frame" x="50" y="124.5" width="250" height="250"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NXt-2J-umJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="250" height="250"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AlbumCollectionReusableView" id="8da-Yt-6rK" customClass="AlbumCollectionReusableView" customModule="aylto" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="499"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </collectionReusableView>
+                                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterCollectionReusableView" id="CVi-nW-B3q" customClass="FooterCollectionReusableView" customModule="aylto" customModuleProvider="target">
+                                                    <rect key="frame" x="300" y="0.0" width="50" height="499"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionReusableView>
                                             </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="leading" secondItem="TWg-5m-dIP" secondAttribute="leading" constant="43" id="F5N-jD-cHd"/>
-                                            <constraint firstAttribute="bottom" secondItem="5rW-hC-1PC" secondAttribute="bottom" constant="43" id="GMm-ej-vT7"/>
+                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="leading" secondItem="TWg-5m-dIP" secondAttribute="leading" id="F5N-jD-cHd"/>
+                                            <constraint firstAttribute="bottom" secondItem="5rW-hC-1PC" secondAttribute="bottom" constant="60" id="GMm-ej-vT7"/>
                                             <constraint firstAttribute="trailing" secondItem="5rW-hC-1PC" secondAttribute="trailing" id="e4s-Z1-A44"/>
-                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="top" secondItem="TWg-5m-dIP" secondAttribute="top" constant="43" id="h6q-CE-bSP"/>
+                                            <constraint firstAttribute="trailing" secondItem="hyN-vd-fwO" secondAttribute="trailing" id="eMS-Mf-3JQ"/>
+                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="top" secondItem="TWg-5m-dIP" secondAttribute="top" constant="60" id="h6q-CE-bSP"/>
+                                            <constraint firstItem="hyN-vd-fwO" firstAttribute="leading" secondItem="TWg-5m-dIP" secondAttribute="leading" id="ik6-Zq-Kpu"/>
+                                            <constraint firstAttribute="bottom" secondItem="hyN-vd-fwO" secondAttribute="bottom" id="qnu-Rn-Icm"/>
+                                            <constraint firstItem="hyN-vd-fwO" firstAttribute="top" secondItem="TWg-5m-dIP" secondAttribute="top" id="vnP-UN-b1d"/>
                                         </constraints>
                                     </view>
                                 </subviews>

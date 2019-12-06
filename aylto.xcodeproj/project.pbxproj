@@ -35,6 +35,8 @@
 		3FA7A864238C5F87007CB05A /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A863238C5F87007CB05A /* Evento.swift */; };
 		4B7C10432399771D005E3372 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */; };
 		4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */; };
+		4B7C104A23999774005E3372 /* AlbumCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */; };
+		4B7C104C239AD6F2005E3372 /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */; };
 		7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */; };
 		7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE112399796D007E32E4 /* UIImageView.swift */; };
 		7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */; };
@@ -80,6 +82,8 @@
 		3FA7A863238C5F87007CB05A /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = aylto/Controllers/Evento.swift; sourceTree = SOURCE_ROOT; };
 		4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionReusableView.swift; sourceTree = "<group>"; };
+		4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/Services/Firebase/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
 		7A13DE112399796D007E32E4 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */,
 				3F048FCD238F16B60033B6C6 /* EventName.swift */,
 				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
+				4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */,
+				4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 				3F1851032398238700B55835 /* FigurinhasViewController.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
 				7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */,
+				4B7C104A23999774005E3372 /* AlbumCollectionReusableView.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
 				7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */,
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
@@ -472,6 +479,7 @@
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				3F1850FC2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift in Sources */,
 				3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */,
+				4B7C104C239AD6F2005E3372 /* FooterCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
