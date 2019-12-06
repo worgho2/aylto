@@ -195,7 +195,18 @@ to him :)</string>
                                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AlbumCollectionReusableView" id="8da-Yt-6rK" customClass="AlbumCollectionReusableView" customModule="aylto" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="499"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slice_left" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-Xw-7kj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="499"/>
+                                                        </imageView>
+                                                    </subviews>
                                                     <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="gQX-Xw-7kj" firstAttribute="height" secondItem="8da-Yt-6rK" secondAttribute="height" id="7xs-ZY-3a0"/>
+                                                        <constraint firstItem="gQX-Xw-7kj" firstAttribute="centerX" secondItem="8da-Yt-6rK" secondAttribute="centerX" id="VXi-Nq-bLb"/>
+                                                        <constraint firstItem="gQX-Xw-7kj" firstAttribute="width" secondItem="8da-Yt-6rK" secondAttribute="width" id="kZr-LV-3yt"/>
+                                                        <constraint firstItem="gQX-Xw-7kj" firstAttribute="centerY" secondItem="8da-Yt-6rK" secondAttribute="centerY" id="tSb-9Y-slY"/>
+                                                    </constraints>
                                                 </collectionReusableView>
                                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterCollectionReusableView" id="CVi-nW-B3q" customClass="FooterCollectionReusableView" customModule="aylto" customModuleProvider="target">
                                                     <rect key="frame" x="300" y="0.0" width="50" height="499"/>
@@ -254,4 +265,7 @@ to him :)</string>
             <point key="canvasLocation" x="-262.31884057971018" y="172.76785714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="slice_left" width="80" height="170"/>
+    </resources>
 </document>
