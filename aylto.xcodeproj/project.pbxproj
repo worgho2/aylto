@@ -38,6 +38,9 @@
 		7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */; };
 		7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE112399796D007E32E4 /* UIImageView.swift */; };
 		7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */; };
+		7A13DE18239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */; };
+		7A13DE1A239ACC50007E32E4 /* InterestsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE19239ACC50007E32E4 /* InterestsCollectionViewCell.swift */; };
+		7A13DE1C239ACCDD007E32E4 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1B239ACCDD007E32E4 /* Card.storyboard */; };
 		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBD238F0BE500AAA791 /* Observer.swift */; };
@@ -84,6 +87,9 @@
 		7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/Services/Firebase/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
 		7A13DE112399796D007E32E4 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen2.storyboard; sourceTree = "<group>"; };
+		7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplinesCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A13DE19239ACC50007E32E4 /* InterestsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A13DE1B239ACCDD007E32E4 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
 		7A1B27DB23983E98007A7508 /* IntroWithLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWithLoop.swift; sourceTree = "<group>"; };
 		7A1B27DC23983E98007A7508 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		7A1B27DD23983E98007A7508 /* AudioLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLibrary.swift; sourceTree = "<group>"; };
@@ -189,6 +195,9 @@
 				3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */,
 				3F048FCD238F16B60033B6C6 /* EventName.swift */,
 				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
+				7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */,
+				7A13DE19239ACC50007E32E4 /* InterestsCollectionViewCell.swift */,
+				4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,7 +230,7 @@
 				3FA7A85B238C570F007CB05A /* Home.storyboard */,
 				3F048FCB238F0F270033B6C6 /* EventName.storyboard */,
 				3F048FD52391A4700033B6C6 /* CreateCard.storyboard */,
-				4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */,
+				7A13DE1B239ACCDD007E32E4 /* Card.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -389,6 +398,7 @@
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
 				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
+				7A13DE1C239ACCDD007E32E4 /* Card.storyboard in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
@@ -453,6 +463,7 @@
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
 				3F1851032398238700B55835 /* FigurinhasViewController.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
+				7A13DE18239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift in Sources */,
 				7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
 				7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */,
@@ -462,6 +473,7 @@
 				3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */,
 				3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */,
 				7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */,
+				7A13DE1A239ACC50007E32E4 /* InterestsCollectionViewCell.swift in Sources */,
 				3F1851062398245A00B55835 /* EventAlbumCollectionViewCell.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
