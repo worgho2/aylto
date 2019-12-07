@@ -1,11 +1,3 @@
-//
-//  FigurinhaCollectionViewCell.swift
-//  aylto
-//
-//  Created by Lary Tertuliano on 03/12/19.
-//  Copyright © 2019 Gabriel Taques. All rights reserved.
-//
-
 import UIKit
 
 class FigurinhaCollectionViewCell: UICollectionViewCell {

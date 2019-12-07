@@ -168,6 +168,7 @@
 		29CCEC492388527300BF7A91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7AF8307D239C217700E2FBC4 /* Components */,
 				7A13DE1023997890007E32E4 /* Xibs */,
 				29CCEC4D238852C400BF7A91 /* Storyboards */,
 			);
@@ -182,13 +183,8 @@
 				29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */,
 				3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */,
 				3F1851022398238700B55835 /* FigurinhasViewController.swift */,
-				3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */,
 				3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */,
 				3F048FCD238F16B60033B6C6 /* EventName.swift */,
-				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
-				7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */,
-				7A13DE19239ACC50007E32E4 /* InterestsCollectionViewCell.swift */,
-				4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */,
 				4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */,
 				4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */,
 			);
@@ -332,6 +328,18 @@
 				7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		7AF8307D239C217700E2FBC4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */,
+				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
+				7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */,
+				7A13DE19239ACC50007E32E4 /* InterestsCollectionViewCell.swift */,
+				4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		8CEBE84DDA289ED485BDDD08 /* Pods */ = {
