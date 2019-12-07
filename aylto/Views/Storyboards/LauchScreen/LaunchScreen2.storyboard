@@ -18,16 +18,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNg-9d-awi">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome-2" translatesAutoresizingMaskIntoConstraints="NO" id="GKU-TM-i3a">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgS-qP-xgm">
+                                        <rect key="frame" x="166" y="413.5" width="82" height="69"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.2861481011" green="0.51843595499999995" blue="0.98435920480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="GKU-TM-i3a" firstAttribute="height" secondItem="hNg-9d-awi" secondAttribute="height" id="Swb-B8-goI"/>
-                                    <constraint firstItem="GKU-TM-i3a" firstAttribute="centerX" secondItem="hNg-9d-awi" secondAttribute="centerX" id="T1h-5K-g8t"/>
-                                    <constraint firstItem="GKU-TM-i3a" firstAttribute="width" secondItem="hNg-9d-awi" secondAttribute="width" id="VVQ-zG-yl8"/>
-                                    <constraint firstItem="GKU-TM-i3a" firstAttribute="centerY" secondItem="hNg-9d-awi" secondAttribute="centerY" id="ohz-ID-hYB"/>
+                                    <constraint firstItem="xgS-qP-xgm" firstAttribute="centerY" secondItem="hNg-9d-awi" secondAttribute="centerY" id="afd-u7-1R5"/>
+                                    <constraint firstItem="xgS-qP-xgm" firstAttribute="centerX" secondItem="hNg-9d-awi" secondAttribute="centerX" id="o3O-aM-0Ba"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -41,6 +42,7 @@
                         <viewLayoutGuide key="safeArea" id="Joi-IN-xGp"/>
                     </view>
                     <connections>
+                        <outlet property="nameLabel" destination="xgS-qP-xgm" id="B3l-Cc-jhU"/>
                         <segue destination="7bX-Gz-GbO" kind="presentation" identifier="GoToHomeSegue" modalPresentationStyle="fullScreen" id="rZb-en-VwG"/>
                     </connections>
                 </viewController>
@@ -59,7 +61,4 @@
             <point key="canvasLocation" x="362" y="179"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Welcome-2" width="414" height="896"/>
-    </resources>
 </document>

@@ -1,12 +1,3 @@
-//
-//  QRCodeGenerator.swift
-//  aylto
-//
-//  Created by Otávio Baziewicz Filho on 29/11/19.
-//  Copyright © 2019 Gabriel Taques. All rights reserved.
-//
-
-import Foundation
 import UIKit
 
 class QRCodeView: UIView {

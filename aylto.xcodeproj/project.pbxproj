@@ -25,10 +25,8 @@
 		3F1851062398245A00B55835 /* EventAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */; };
 		3F1851072398245A00B55835 /* EventAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
-		3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A852238C55CD007CB05A /* Onboarding.storyboard */; };
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
 		3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */; };
-		3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A859238C565C007CB05A /* WelcomeViewController.swift */; };
 		3FA7A85C238C570F007CB05A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A85B238C570F007CB05A /* Home.storyboard */; };
 		3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */; };
 		4B7C10432399771D005E3372 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */; };
@@ -38,6 +36,7 @@
 		7A045CEC239C03D200C3B4F0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEB239C03D200C3B4F0 /* Item.swift */; };
 		7A045CF0239C05A400C3B4F0 /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEE239C05A300C3B4F0 /* Figurinha.swift */; };
 		7A045CF1239C05A400C3B4F0 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEF239C05A300C3B4F0 /* Evento.swift */; };
+		7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A045CF4239C0C5000C3B4F0 /* Onboarding.storyboard */; };
 		7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE112399796D007E32E4 /* UIImageView.swift */; };
 		7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */; };
 		7A13DE18239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */; };
@@ -73,10 +72,8 @@
 		3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
 		3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
-		3FA7A852238C55CD007CB05A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
-		3FA7A859238C565C007CB05A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FA7A85B238C570F007CB05A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNumberViewController.swift; sourceTree = "<group>"; };
 		4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -87,6 +84,7 @@
 		7A045CEB239C03D200C3B4F0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7A045CEE239C05A300C3B4F0 /* Figurinha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Figurinha.swift; sourceTree = "<group>"; };
 		7A045CEF239C05A300C3B4F0 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		7A045CF4239C0C5000C3B4F0 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		7A13DE112399796D007E32E4 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen2.storyboard; sourceTree = "<group>"; };
 		7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplinesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -179,14 +177,11 @@
 		29CCEC4A2388527700BF7A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7A045CF2239C093F00C3B4F0 /* Onboarding */,
 				7A13DE1423997A4D007E32E4 /* LauchScreen */,
 				29CCEC502388531F00BF7A91 /* ListaEventosViewController.swift */,
-				3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */,
-				3FA7A859238C565C007CB05A /* WelcomeViewController.swift */,
 				3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */,
-				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
 				3F1851022398238700B55835 /* FigurinhasViewController.swift */,
-				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
 				3F1851042398245A00B55835 /* EventAlbumCollectionViewCell.swift */,
 				3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */,
 				3F048FCD238F16B60033B6C6 /* EventName.swift */,
@@ -221,9 +216,9 @@
 		29CCEC4D238852C400BF7A91 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				7A045CF3239C0BEE00C3B4F0 /* Onboarding */,
 				7A13DE1323997A20007E32E4 /* LauchScreen */,
 				29CCEC4E238852DA00BF7A91 /* ListaEventosStoryboard.storyboard */,
-				3FA7A852238C55CD007CB05A /* Onboarding.storyboard */,
 				3FA7A85B238C570F007CB05A /* Home.storyboard */,
 				3F048FCB238F0F270033B6C6 /* EventName.storyboard */,
 				3F048FD52391A4700033B6C6 /* CreateCard.storyboard */,
@@ -250,6 +245,24 @@
 				F90F5BC12390587C00AAA791 /* Usuario.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		7A045CF2239C093F00C3B4F0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */,
+				3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */,
+				3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7A045CF3239C0BEE00C3B4F0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7A045CF4239C0C5000C3B4F0 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		7A13DE0C23997756007E32E4 /* Protocols */ = {
@@ -392,8 +405,8 @@
 				3F1850FD2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib in Resources */,
 				7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */,
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
+				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
 				3FA7A85C238C570F007CB05A /* Home.storyboard in Resources */,
-				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
 				7A13DE1C239ACCDD007E32E4 /* Card.storyboard in Resources */,
@@ -463,7 +476,6 @@
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				3F1850FC2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift in Sources */,
-				3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */,
 				4B7C104C239AD6F2005E3372 /* FooterCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,7 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MB2HURBT77;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MB2HURBT77;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

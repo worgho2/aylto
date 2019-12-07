@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,16 +18,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-Ic-jSP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome-1" translatesAutoresizingMaskIntoConstraints="NO" id="62U-Dm-BTL">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZo-AF-Pvu">
+                                        <rect key="frame" x="166" y="413.5" width="82" height="69"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                        <color key="textColor" red="0.33787459139999998" green="0.52356564999999999" blue="0.95298391579999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="62U-Dm-BTL" firstAttribute="width" secondItem="JU4-Ic-jSP" secondAttribute="width" id="3G8-ga-fmA"/>
-                                    <constraint firstItem="62U-Dm-BTL" firstAttribute="centerY" secondItem="JU4-Ic-jSP" secondAttribute="centerY" id="Jic-Tg-DHC"/>
-                                    <constraint firstItem="62U-Dm-BTL" firstAttribute="centerX" secondItem="JU4-Ic-jSP" secondAttribute="centerX" id="Sbl-1I-b2b"/>
-                                    <constraint firstItem="62U-Dm-BTL" firstAttribute="height" secondItem="JU4-Ic-jSP" secondAttribute="height" id="UIN-cc-skk"/>
+                                    <constraint firstItem="jZo-AF-Pvu" firstAttribute="centerY" secondItem="JU4-Ic-jSP" secondAttribute="centerY" id="Bqy-I3-1iE"/>
+                                    <constraint firstItem="jZo-AF-Pvu" firstAttribute="centerX" secondItem="JU4-Ic-jSP" secondAttribute="centerX" id="UBU-0R-QuT"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -46,7 +47,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Welcome-1" width="414" height="896"/>
-    </resources>
 </document>
