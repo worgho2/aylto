@@ -8,45 +8,17 @@
 
 import UIKit
 
-class ListaEventosViewController: UIViewController, ObserverDelegate {
-    
-    func notify() {
-        labelTest.text = Model.shared.name
-    }
-    
+class ListaEventosViewController: UIViewController {
 
     @IBOutlet weak var labelTest: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelTest.text = Model.shared.name
-        DAOFirebase.observeOsGays()
-        Model.shared.dataObservers.append(self)
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func load(_ sender: Any) {
-        DAOFirebase.load(collection: "itens") {
-            print("Finished loading")
-        }
     }
     
     @IBAction func update(_ sender: Any) {
-        labelTest.text = Model.shared.name
     }
-
-    
-  
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -1,11 +1,3 @@
-//
-//  EventNumberViewController.swift
-//  aylto
-//
-//  Created by Lary Tertuliano on 25/11/19.
-//  Copyright © 2019 Gabriel Taques. All rights reserved.
-//
-
 import UIKit
 
 class EventNumberViewController: UIViewController {
@@ -17,7 +9,6 @@ class EventNumberViewController: UIViewController {
     
     override func viewDidLoad() {
             super.viewDidLoad()
-            // Do any additional setup after loading the view.
 
             for field in fields {
                 field.keyboardType = .numberPad
@@ -49,22 +40,9 @@ class EventNumberViewController: UIViewController {
         }
         
         @IBAction func checkCode(_ sender: Any) {
-            // Code
             checkLabel.isHidden = false
             view.endEditing(true)
-            
-            
-            DAOFirebase.load(collection: "eventos") {
-                for evento in Model.shared.eventos {
-                    print(evento.idDoEvento)
-                }
-            }
             performSegue(withIdentifier: "eventNameSegue", sender: self)
-            
-//            performSegue(withIdentifier: "home", sender: self)
-            
-            
-            
         }
     
     }

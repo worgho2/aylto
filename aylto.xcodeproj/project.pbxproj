@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,13 +31,13 @@
 		3FA7A85A238C565C007CB05A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A859238C565C007CB05A /* WelcomeViewController.swift */; };
 		3FA7A85C238C570F007CB05A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7A85B238C570F007CB05A /* Home.storyboard */; };
 		3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */; };
-		3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A861238C5F76007CB05A /* Figurinha.swift */; };
-		3FA7A864238C5F87007CB05A /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A863238C5F87007CB05A /* Evento.swift */; };
 		4B7C10432399771D005E3372 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */; };
 		4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */; };
 		4B7C104A23999774005E3372 /* AlbumCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */; };
 		4B7C104C239AD6F2005E3372 /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */; };
-		7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */; };
+		7A045CEC239C03D200C3B4F0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEB239C03D200C3B4F0 /* Item.swift */; };
+		7A045CF0239C05A400C3B4F0 /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEE239C05A300C3B4F0 /* Figurinha.swift */; };
+		7A045CF1239C05A400C3B4F0 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEF239C05A300C3B4F0 /* Evento.swift */; };
 		7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE112399796D007E32E4 /* UIImageView.swift */; };
 		7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */; };
 		7A13DE18239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */; };
@@ -49,8 +49,6 @@
 		F90F5BC02390586700AAA791 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBF2390586700AAA791 /* Album.swift */; };
 		F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BC12390587C00AAA791 /* Usuario.swift */; };
 		F9C30E2D238D9E140044DF63 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2C238D9E140044DF63 /* Model.swift */; };
-		F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2E238D9FA60044DF63 /* Item.swift */; };
-		F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,14 +79,14 @@
 		3FA7A859238C565C007CB05A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FA7A85B238C570F007CB05A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		3FA7A85F238C57B8007CB05A /* EventNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNumberViewController.swift; sourceTree = "<group>"; };
-		3FA7A861238C5F76007CB05A /* Figurinha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Figurinha.swift; path = aylto/Controllers/Figurinha.swift; sourceTree = SOURCE_ROOT; };
-		3FA7A863238C5F87007CB05A /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Evento.swift; path = aylto/Controllers/Evento.swift; sourceTree = SOURCE_ROOT; };
 		4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionReusableView.swift; sourceTree = "<group>"; };
 		4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
-		7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAOFirebase.swift; path = aylto/Services/Firebase/DAOFirebase.swift; sourceTree = SOURCE_ROOT; };
+		7A045CEB239C03D200C3B4F0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7A045CEE239C05A300C3B4F0 /* Figurinha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Figurinha.swift; sourceTree = "<group>"; };
+		7A045CEF239C05A300C3B4F0 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		7A13DE112399796D007E32E4 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen2.storyboard; sourceTree = "<group>"; };
 		7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplinesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -111,8 +109,6 @@
 		F90F5BBF2390586700AAA791 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		F90F5BC12390587C00AAA791 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		F9C30E2C238D9E140044DF63 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		F9C30E2E238D9FA60044DF63 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = aylto/Models/Item.swift; sourceTree = SOURCE_ROOT; };
-		F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,27 +148,23 @@
 				29CCEC3D2388514800BF7A91 /* Assets.xcassets */,
 				29CCEC342388514700BF7A91 /* AppDelegate.swift */,
 				29CCEC362388514700BF7A91 /* SceneDelegate.swift */,
-				29CCEC4C2388528300BF7A91 /* Services */,
+				29CCEC4C2388528300BF7A91 /* Modules */,
 				7A13DE0C23997756007E32E4 /* Protocols */,
 				29CCEC4B2388527D00BF7A91 /* Extensions */,
-				29CCEC482388526D00BF7A91 /* Models */,
+				29CCEC482388526D00BF7A91 /* Model */,
 				29CCEC4A2388527700BF7A91 /* Controllers */,
 				29CCEC492388527300BF7A91 /* Views */,
 			);
 			path = aylto;
 			sourceTree = "<group>";
 		};
-		29CCEC482388526D00BF7A91 /* Models */ = {
+		29CCEC482388526D00BF7A91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3FA7A861238C5F76007CB05A /* Figurinha.swift */,
-				3FA7A863238C5F87007CB05A /* Evento.swift */,
-				F9C30E2E238D9FA60044DF63 /* Item.swift */,
 				F9C30E2C238D9E140044DF63 /* Model.swift */,
-				F90F5BBF2390586700AAA791 /* Album.swift */,
-				F90F5BC12390587C00AAA791 /* Usuario.swift */,
+				7A045CED239C04FF00C3B4F0 /* Classes */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		29CCEC492388527300BF7A91 /* Views */ = {
@@ -199,13 +191,9 @@
 				3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */,
 				3F048FCD238F16B60033B6C6 /* EventName.swift */,
 				3F1850FA2396ED7F00B55835 /* FigurinhaCollectionViewCell.swift */,
-				4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */,
-				4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */,
 				7A13DE17239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift */,
 				7A13DE19239ACC50007E32E4 /* InterestsCollectionViewCell.swift */,
 				4B7C10412399771D005E3372 /* CardCollectionViewCell.swift */,
-				4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */,
-				4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */,
 				4B7C104923999774005E3372 /* AlbumCollectionReusableView.swift */,
 				4B7C104B239AD6F2005E3372 /* FooterCollectionReusableView.swift */,
 			);
@@ -221,14 +209,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		29CCEC4C2388528300BF7A91 /* Services */ = {
+		29CCEC4C2388528300BF7A91 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				7A1B27DA23983E98007A7508 /* Sound */,
 				7A7D461C2391A190004E92E9 /* QRCode */,
-				7A13DE0D23997770007E32E4 /* Firebase */,
 			);
-			path = Services;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		29CCEC4D238852C400BF7A91 /* Storyboards */ = {
@@ -253,21 +240,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A045CED239C04FF00C3B4F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7A045CEF239C05A300C3B4F0 /* Evento.swift */,
+				7A045CEE239C05A300C3B4F0 /* Figurinha.swift */,
+				7A045CEB239C03D200C3B4F0 /* Item.swift */,
+				F90F5BBF2390586700AAA791 /* Album.swift */,
+				F90F5BC12390587C00AAA791 /* Usuario.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7A13DE0C23997756007E32E4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				F90F5BBD238F0BE500AAA791 /* Observer.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		7A13DE0D23997770007E32E4 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				F9D20DFB23885BD800DA9EE9 /* GoogleService-Info.plist */,
-				7A13DE0E2399779F007E32E4 /* DAOFirebase.swift */,
-			);
-			path = Firebase;
 			sourceTree = "<group>";
 		};
 		7A13DE1023997890007E32E4 /* Xibs */ = {
@@ -351,7 +341,6 @@
 				29CCEC2D2388514700BF7A91 /* Sources */,
 				29CCEC2E2388514700BF7A91 /* Frameworks */,
 				29CCEC2F2388514700BF7A91 /* Resources */,
-				30DF0824FDD2772E5301B0A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,7 +358,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Gabriel Taques";
 				TargetAttributes = {
 					29CCEC302388514700BF7A91 = {
@@ -407,7 +396,6 @@
 				3FA7A856238C55CE007CB05A /* Onboarding.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
-				F9D20DFC23885BD800DA9EE9 /* GoogleService-Info.plist in Resources */,
 				7A13DE1C239ACCDD007E32E4 /* Card.storyboard in Resources */,
 				29CCEC4F238852DA00BF7A91 /* ListaEventosStoryboard.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
@@ -419,23 +407,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30DF0824FDD2772E5301B0A7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-aylto/Pods-aylto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-aylto/Pods-aylto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aylto/Pods-aylto-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AD492084E0BD06E4B8BCB2B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,28 +439,26 @@
 				F9C30E2D238D9E140044DF63 /* Model.swift in Sources */,
 				29CCEC512388531F00BF7A91 /* ListaEventosViewController.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
-				F9C30E2F238D9FA60044DF63 /* Item.swift in Sources */,
 				F90F5BC02390586700AAA791 /* Album.swift in Sources */,
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
+				7A045CEC239C03D200C3B4F0 /* Item.swift in Sources */,
 				3F1851032398238700B55835 /* FigurinhasViewController.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* EventNumberViewController.swift in Sources */,
 				7A13DE18239ACC25007E32E4 /* DisciplinesCollectionViewCell.swift in Sources */,
 				7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */,
 				4B7C104A23999774005E3372 /* AlbumCollectionReusableView.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
-				7A13DE0F2399779F007E32E4 /* DAOFirebase.swift in Sources */,
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
-				3FA7A864238C5F87007CB05A /* Evento.swift in Sources */,
-				3FA7A862238C5F76007CB05A /* Figurinha.swift in Sources */,
 				3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */,
 				3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */,
 				7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */,
 				7A13DE1A239ACC50007E32E4 /* InterestsCollectionViewCell.swift in Sources */,
 				3F1851062398245A00B55835 /* EventAlbumCollectionViewCell.swift in Sources */,
-				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
 				4B7C10432399771D005E3372 /* CardCollectionViewCell.swift in Sources */,
+				7A045CF1239C05A400C3B4F0 /* Evento.swift in Sources */,
+				7A045CF0239C05A400C3B4F0 /* Figurinha.swift in Sources */,
 				3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,

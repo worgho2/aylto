@@ -1,6 +1,7 @@
 import UIKit
-import Firebase
-import FirebaseFirestore
+//import Firebase
+//import FirebaseFirestore
+//AS PASTAS DO FIREBASE ESTÃO NO PROJETO, MAS NÃO ESTÃO REFERENCIADAS
 
 
 @UIApplicationMain
@@ -10,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+        //FirebaseApp.configure()
         
         
 //                // SETS BANCO DE DADOS ************** TESTE **************
