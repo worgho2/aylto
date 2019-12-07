@@ -5,7 +5,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
     var pageHeadings = ["Interact", "Connect", "Exchange"]
-    var pageImages = ["placeholder", "placeholder", "placeholder"]
+    var pageImages = ["Interact", "Connect", "Exchange"]
     var pageSubheadings = ["Join events and create a card to share with others", "Discover like-minded people and network", "Share your card and exchange experiences with new people"]
     
     var currentIndex = 0
