@@ -52,6 +52,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="eventsColletionView" destination="5vr-ul-883" id="jBK-Sa-2lz"/>
+                        <segue destination="H7B-6y-LeV" kind="presentation" identifier="teste" id="T0K-9t-bft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9P2-si-6Aj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -85,6 +86,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4S-As-E4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1202.8985507246377" y="38.839285714285715"/>
+        </scene>
+        <!--AddEvent-->
+        <scene sceneID="aW5-rK-yd2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddEvent" id="H7B-6y-LeV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1Y9-iG-9IP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLM-2x-tRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2837" y="39"/>
         </scene>
     </scenes>
 </document>

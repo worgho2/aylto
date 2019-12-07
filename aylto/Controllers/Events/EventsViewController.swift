@@ -4,6 +4,13 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var eventsColletionView: UICollectionView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.eventsColletionView.delegate = self
+        self.eventsColletionView.dataSource = self
+        self.eventsColletionView.register(UINib(nibName: "EventCoverCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "EventCoverCell")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -16,15 +23,10 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
+        performSegue(withIdentifier: "teste", sender: nil)
     }
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.eventsColletionView.delegate = self
-        self.eventsColletionView.dataSource = self
-        self.eventsColletionView.register(UINib(nibName: "EventCoverCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "EventCoverCell")
-    }
     
 
 }
