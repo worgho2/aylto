@@ -21,7 +21,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="addEventAlbumCell" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84C-0g-TUb">
                                 <rect key="frame" x="0.0" y="0.0" width="130" height="170"/>
-                                <state key="normal" title="Button" image="carteira-de-trabalho-add"/>
+                                <state key="normal" title="Button" image="EventCover"/>
                                 <connections>
                                     <action selector="buttonTApped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="uwC-eU-2ML"/>
                                 </connections>
@@ -51,6 +51,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="carteira-de-trabalho-add" width="151" height="200"/>
+        <image name="EventCover" width="151" height="200"/>
     </resources>
 </document>

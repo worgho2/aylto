@@ -88,17 +88,17 @@
                         <outlet property="nextButton" destination="BPh-Mr-jxx" id="Nzv-Dt-ZpD"/>
                         <outlet property="pageControl" destination="uCy-PR-f4W" id="WU6-D4-RRK"/>
                         <outlet property="skipButton" destination="KRQ-cO-Plh" id="SHx-Xr-wQr"/>
-                        <segue destination="rGl-QU-zi6" kind="presentation" identifier="GoToHomeSegue" modalPresentationStyle="fullScreen" id="a50-RU-8t1"/>
+                        <segue destination="rGl-QU-zi6" kind="presentation" identifier="GoToEventsSegue" modalPresentationStyle="fullScreen" id="a50-RU-8t1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ck-Jd-jys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-833.33333333333337" y="82.366071428571431"/>
         </scene>
-        <!--Home-->
+        <!--Events-->
         <scene sceneID="ZAK-gR-5At">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="rGl-QU-zi6" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Events" id="rGl-QU-zi6" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="U0a-DR-LMK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJz-8p-uZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

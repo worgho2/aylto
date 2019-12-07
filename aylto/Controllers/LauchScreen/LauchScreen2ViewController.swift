@@ -11,8 +11,6 @@ class TesteViewController: UIViewController {
         super.viewDidLoad()
         
         Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
-            
-            
             if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") || self.alwaysShowOnboarding {
                 let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
                 if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
@@ -20,7 +18,7 @@ class TesteViewController: UIViewController {
                     self.present(walkthroughViewController, animated: true)
                 }
             } else {
-                self.performSegue(withIdentifier: "GoToHomeSegue", sender: nil)
+                self.performSegue(withIdentifier: "GoToEventsSegue", sender: nil)
             }
         }
     }
@@ -31,6 +29,7 @@ class TesteViewController: UIViewController {
         UIView.transition(with: self.nameLabel, duration: 2, options: .transitionCrossDissolve, animations: {
             self.nameLabel.textColor = .white
         }, completion: nil)
+        
         UIView.transition(with: self.view, duration: 4, options: .transitionCrossDissolve, animations: {
             self.view.backgroundColor = #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
         }, completion: nil)

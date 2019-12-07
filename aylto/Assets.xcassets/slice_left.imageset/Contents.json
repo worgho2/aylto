@@ -1,6 +1,8 @@
 {
   "images" : [
     {
+      "idiom" : "universal",
+      "filename" : "slice_left.png",
       "resizing" : {
         "mode" : "9-part",
         "center" : {
@@ -14,18 +16,7 @@
           "right" : 0,
           "left" : 38
         }
-      },
-      "idiom" : "universal",
-      "filename" : "slice_left.png",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      }
     }
   ],
   "info" : {

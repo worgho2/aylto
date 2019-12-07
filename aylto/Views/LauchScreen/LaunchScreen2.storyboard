@@ -43,22 +43,20 @@
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="xgS-qP-xgm" id="B3l-Cc-jhU"/>
-                        <segue destination="7bX-Gz-GbO" kind="presentation" identifier="GoToHomeSegue" modalPresentationStyle="fullScreen" id="rZb-en-VwG"/>
+                        <segue destination="cAx-xQ-s94" kind="presentation" identifier="GoToEventsSegue" modalPresentationStyle="fullScreen" id="y69-XY-LS3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0lC-IU-BPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-230" y="179"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="L3d-Cl-8Vc">
+        <!--Events-->
+        <scene sceneID="5LD-1f-rtk">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="7bX-Gz-GbO" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Xm8-OW-bmm"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pW3-zO-VY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Events" id="cAx-xQ-s94" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5E-RC-HKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="179"/>
+            <point key="canvasLocation" x="375" y="179"/>
         </scene>
     </scenes>
 </document>

@@ -23,7 +23,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
 
     @IBAction func skipButtonTapped(sender: UIButton) {
         UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-        self.performSegue(withIdentifier: "GoToHomeSegue", sender: nil)
+        self.performSegue(withIdentifier: "GoToEventsSegue", sender: nil)
 
     }
     
@@ -34,7 +34,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
                 walkthroughPageViewController?.forwardPage()
             case 2:
                 UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-                self.performSegue(withIdentifier: "GoToHomeSegue", sender: nil)
+                self.performSegue(withIdentifier: "GoToEventsSegue", sender: nil)
             default: break
             }
         }

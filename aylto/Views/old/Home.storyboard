@@ -123,14 +123,6 @@
             </objects>
             <point key="canvasLocation" x="3688" y="456"/>
         </scene>
-        <!--CreateCard-->
-        <scene sceneID="CqV-R6-l9P">
-            <objects>
-                <viewControllerPlaceholder storyboardName="CreateCard" id="gnN-As-EzG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lup-co-Prs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3910.144927536232" y="-50.223214285714285"/>
-        </scene>
         <!--Event Number View Controller-->
         <scene sceneID="A66-OF-XbO">
             <objects>
