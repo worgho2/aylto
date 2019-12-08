@@ -260,19 +260,20 @@ to him :)</string>
                         <outlet property="profilePicture" destination="hll-7g-oF8" id="aJ3-kA-X0t"/>
                         <segue destination="JnD-0C-xzR" kind="presentation" identifier="GoToShowQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="tzE-1o-G80"/>
                         <segue destination="C2y-Pv-dPb" kind="presentation" identifier="GoToScanQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="LmR-F5-jNg"/>
+                        <segue destination="x4w-2e-KTz" kind="presentation" identifier="GoToCardDetailCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="yMS-KH-gRT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="an6-AE-IEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-262.31884057971018" y="172.76785714285714"/>
         </scene>
-        <!--CardDetail-->
+        <!--ScanQR-->
         <scene sceneID="T9c-6a-KvR">
             <objects>
-                <viewControllerPlaceholder storyboardName="CardDetail" id="C2y-Pv-dPb" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ScanQR" id="C2y-Pv-dPb" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTG-q0-Hyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="106"/>
+            <point key="canvasLocation" x="414" y="108"/>
         </scene>
         <!--ShowQR-->
         <scene sceneID="3lt-XT-mdE">
@@ -281,6 +282,14 @@ to him :)</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-YD-kqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="418" y="173"/>
+        </scene>
+        <!--CardDetail-->
+        <scene sceneID="X4D-ws-MfA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardDetail" id="x4w-2e-KTz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sah-W3-LY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="244"/>
         </scene>
     </scenes>
     <resources>
