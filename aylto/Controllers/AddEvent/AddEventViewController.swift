@@ -31,10 +31,7 @@ class AddEventViewController: UIViewController {
     }
     
     @IBAction func onCreateCard(_ sender: Any) {
-        self.dismiss(animated: true) {
-            print("create card")
-//            self.performSegue(withIdentifier: "", sender: nil)
-        }
+        self.performSegue(withIdentifier: "GoToCreateCardSegue", sender: nil)
     }
     
 
@@ -51,7 +48,6 @@ class AddEventViewController: UIViewController {
         UIView.animate(withDuration: 0.3) {
             self.backgroundView.alpha = 0.7
         }
-        
     }
         
     @IBAction func textChanged(_ sender: UITextField) {

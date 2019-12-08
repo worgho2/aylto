@@ -194,6 +194,7 @@
                         <outletCollection property="fields" destination="hJR-Au-bRF" collectionClass="NSMutableArray" id="pfY-PZ-ePQ"/>
                         <outletCollection property="fields" destination="fMP-dI-AfE" collectionClass="NSMutableArray" id="kdE-nm-T9G"/>
                         <outletCollection property="fields" destination="Se7-jp-Z0A" collectionClass="NSMutableArray" id="gWf-9M-c9o"/>
+                        <segue destination="bxV-Vz-sSA" kind="presentation" identifier="GoToCreateCardSegue" modalPresentationStyle="fullScreen" id="r2f-zd-RJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwd-ad-aDb" sceneMemberID="firstResponder"/>
@@ -204,6 +205,14 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2197.1014492753625" y="38.839285714285715"/>
+        </scene>
+        <!--CreateCard-->
+        <scene sceneID="PIB-LB-JMD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateCard" id="bxV-Vz-sSA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q91-bk-K3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2786" y="39"/>
         </scene>
     </scenes>
 </document>

@@ -52,7 +52,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="eventsColletionView" destination="5vr-ul-883" id="jBK-Sa-2lz"/>
-                        <segue destination="H7B-6y-LeV" kind="presentation" identifier="teste" id="T0K-9t-bft"/>
+                        <segue destination="H7B-6y-LeV" kind="presentation" identifier="GoToAddEventSegue" id="T0K-9t-bft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9P2-si-6Aj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

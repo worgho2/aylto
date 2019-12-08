@@ -23,7 +23,7 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
-        performSegue(withIdentifier: "teste", sender: nil)
+        performSegue(withIdentifier: "GoToAddEventSegue", sender: nil)
     }
     
 
