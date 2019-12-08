@@ -19,13 +19,10 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
         profilePicture.makeRounded()
         
         albumCollectionView.register(UINib(nibName: "ParticipantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ParticipantCell")
-        
-        // Do any additional setup after loading the view.
-        // Teste  do gitkraken
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.showQRCodeOptions()
+        performSegue(withIdentifier: "GoToCardDetailSegue", sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -86,6 +83,12 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
       }
         
     }
+    
+    
+    @IBAction func onScanReadButton(_ sender: Any) {
+        self.showQRCodeOptions()
+    }
+    
 
 }
 

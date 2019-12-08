@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aQo-hD-sow">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYn-FG-khA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Event Album View Controller-->
+        <!--Event Album-->
         <scene sceneID="Vpw-Jx-NJa">
             <objects>
                 <viewController id="aQo-hD-sow" customClass="EventAlbumViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,8 +19,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-v1-Aai">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-kl-lJl">
-                                        <rect key="frame" x="0.0" y="33" width="414" height="244"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-kl-lJl">
+                                        <rect key="frame" x="0.0" y="91" width="414" height="186"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hll-7g-oF8">
                                                 <rect key="frame" x="28" y="21" width="105" height="105"/>
@@ -166,14 +166,14 @@ to him :)</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWg-5m-dIP">
-                                        <rect key="frame" x="0.0" y="277" width="414" height="619"/>
+                                        <rect key="frame" x="0.0" y="335" width="414" height="561"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyN-vd-fwO">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="561"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5rW-hC-1PC">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="559"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="501"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SPZ-nm-zaR">
                                                     <size key="itemSize" width="264" height="266"/>
@@ -183,7 +183,7 @@ to him :)</string>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCollectionViewCell" id="kW6-CL-mcM">
-                                                        <rect key="frame" x="50" y="20" width="250" height="250"/>
+                                                        <rect key="frame" x="50" y="125.5" width="250" height="250"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NXt-2J-umJ">
                                                             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
@@ -194,11 +194,11 @@ to him :)</string>
                                                     </collectionViewCell>
                                                 </cells>
                                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AlbumCollectionReusableView" id="8da-Yt-6rK" customClass="AlbumCollectionReusableView" customModule="ICE" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="559"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="501"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slice_left" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-Xw-7kj">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="559"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="501"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,7 +210,7 @@ to him :)</string>
                                                     </constraints>
                                                 </collectionReusableView>
                                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterCollectionReusableView" id="CVi-nW-B3q" customClass="FooterCollectionReusableView" customModule="ICE" customModuleProvider="target">
-                                                    <rect key="frame" x="300" y="0.0" width="50" height="559"/>
+                                                    <rect key="frame" x="300" y="0.0" width="50" height="501"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </collectionReusableView>
                                             </collectionView>
@@ -232,7 +232,7 @@ to him :)</string>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="TWg-5m-dIP" secondAttribute="trailing" id="BI8-iH-lH8"/>
                                     <constraint firstItem="TWg-5m-dIP" firstAttribute="leading" secondItem="4bi-v1-Aai" secondAttribute="leading" id="JJc-6I-lBw"/>
-                                    <constraint firstItem="SEW-kl-lJl" firstAttribute="top" secondItem="4bi-v1-Aai" secondAttribute="top" constant="33" id="OLC-Oq-JbA"/>
+                                    <constraint firstItem="SEW-kl-lJl" firstAttribute="top" secondItem="4bi-v1-Aai" secondAttribute="top" constant="91" id="OLC-Oq-JbA"/>
                                     <constraint firstItem="TWg-5m-dIP" firstAttribute="centerX" secondItem="4bi-v1-Aai" secondAttribute="centerX" id="Pi5-Pg-OCC"/>
                                     <constraint firstItem="TWg-5m-dIP" firstAttribute="top" secondItem="SEW-kl-lJl" secondAttribute="bottom" id="Uyz-PH-Ga7"/>
                                     <constraint firstAttribute="bottom" secondItem="TWg-5m-dIP" secondAttribute="bottom" id="VjG-Jh-r0J"/>
@@ -250,6 +250,13 @@ to him :)</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="deo-ZK-ErH"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Event Album" id="h6t-Mi-fL0">
+                        <barButtonItem key="rightBarButtonItem" title="SCAN / READ" id="Cwa-7t-ugV">
+                            <connections>
+                                <action selector="onScanReadButton:" destination="aQo-hD-sow" id="4qM-Xk-qo7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="albumCollectionView" destination="5rW-hC-1PC" id="ajH-bf-DO2"/>
                         <outlet property="albumCoverView" destination="TWg-5m-dIP" id="Ob1-8y-5PS"/>
@@ -261,12 +268,12 @@ to him :)</string>
                         <outlet property="profilePicture" destination="hll-7g-oF8" id="aJ3-kA-X0t"/>
                         <segue destination="JnD-0C-xzR" kind="presentation" identifier="GoToShowQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="tzE-1o-G80"/>
                         <segue destination="C2y-Pv-dPb" kind="presentation" identifier="GoToScanQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="LmR-F5-jNg"/>
-                        <segue destination="x4w-2e-KTz" kind="presentation" identifier="GoToCardDetailCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="yMS-KH-gRT"/>
+                        <segue destination="x4w-2e-KTz" kind="presentation" identifier="GoToCardDetailSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="yMS-KH-gRT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="an6-AE-IEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262.31884057971018" y="172.76785714285714"/>
+            <point key="canvasLocation" x="647.82608695652175" y="172.76785714285714"/>
         </scene>
         <!--ScanQR-->
         <scene sceneID="T9c-6a-KvR">
@@ -274,7 +281,7 @@ to him :)</string>
                 <viewControllerPlaceholder storyboardName="ScanQR" id="C2y-Pv-dPb" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTG-q0-Hyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="108"/>
+            <point key="canvasLocation" x="1323.1884057971015" y="107.8125"/>
         </scene>
         <!--ShowQR-->
         <scene sceneID="3lt-XT-mdE">
@@ -282,7 +289,7 @@ to him :)</string>
                 <viewControllerPlaceholder storyboardName="ShowQR" id="JnD-0C-xzR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-YD-kqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="173"/>
+            <point key="canvasLocation" x="1326.8115942028987" y="172.76785714285714"/>
         </scene>
         <!--CardDetail-->
         <scene sceneID="X4D-ws-MfA">
@@ -290,7 +297,35 @@ to him :)</string>
                 <viewControllerPlaceholder storyboardName="CardDetail" id="x4w-2e-KTz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sah-W3-LY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262" y="603"/>
+            <point key="canvasLocation" x="649" y="598"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qJT-jJ-Pfi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gYn-FG-khA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9ht-3c-Vbl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aQo-hD-sow" kind="relationship" relationship="rootViewController" id="X7E-Ij-vCO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7f-9D-pne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262.31884057971018" y="172.76785714285714"/>
         </scene>
     </scenes>
     <resources>

@@ -2,6 +2,8 @@ import UIKit
 
 class EventsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    let isDebbug: Bool = true
+    
     @IBOutlet weak var eventsColletionView: UICollectionView!
     
     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -25,7 +27,12 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectionFeedback.selectionChanged()
-        performSegue(withIdentifier: "GoToAddEventSegue", sender: nil)
+
+        if indexPath.item == 0 || isDebbug {
+            performSegue(withIdentifier: "GoToAddEventSegue", sender: nil)
+        } else {
+            performSegue(withIdentifier: "GoToEventAlbumSegue", sender: nil)
+        }
     }
     
 

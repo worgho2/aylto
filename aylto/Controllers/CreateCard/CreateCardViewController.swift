@@ -192,6 +192,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     @IBAction func onDone(_ sender: Any) {
         view.endEditing(true)
+        performSegue(withIdentifier: "GoToEventAlbumSegue", sender: nil)
     }
     
     @IBAction func tapGestureRecognizer(_ sender: Any) {

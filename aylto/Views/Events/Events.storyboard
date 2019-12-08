@@ -11,7 +11,7 @@
         <!--Events-->
         <scene sceneID="3bl-P0-dwO">
             <objects>
-                <viewController id="b9p-th-jzk" customClass="EventsViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b9p-th-jzk" customClass="EventsViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Jd-3j-FfT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventCoverCell" id="YNi-W2-XW5" customClass="EventCoverCollectionViewCell" customModule="aylto" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventCoverCell" id="YNi-W2-XW5" customClass="EventCoverCollectionViewCell" customModule="ICE" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="137" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yaF-ZI-TXG">
@@ -53,6 +53,7 @@
                     <connections>
                         <outlet property="eventsColletionView" destination="5vr-ul-883" id="jBK-Sa-2lz"/>
                         <segue destination="H7B-6y-LeV" kind="presentation" identifier="GoToAddEventSegue" id="T0K-9t-bft"/>
+                        <segue destination="RRY-oK-rK2" kind="presentation" identifier="GoToEventAlbumSegue" modalPresentationStyle="fullScreen" id="9pc-Dg-R4U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9P2-si-6Aj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -85,6 +86,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4S-As-E4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1202.8985507246377" y="38.839285714285715"/>
+        </scene>
+        <!--EventAlbum-->
+        <scene sceneID="r2m-MB-rHQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EventAlbum" id="RRY-oK-rK2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFu-BM-Pmt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112" y="474"/>
         </scene>
         <!--AddEvent-->
         <scene sceneID="aW5-rK-yd2">

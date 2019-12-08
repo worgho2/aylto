@@ -341,6 +341,7 @@
                         <outlet property="phraseTextField" destination="lWJ-qG-l8J" id="u2m-lx-W4F"/>
                         <outlet property="profileImageView" destination="gIR-f8-iP1" id="vBk-4R-DMO"/>
                         <outlet property="profileNameLabel" destination="3XA-ph-hCi" id="cGT-ef-kWY"/>
+                        <segue destination="M3r-UA-chu" kind="presentation" identifier="GoToEventAlbumSegue" modalPresentationStyle="fullScreen" id="B6i-rc-6cd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XX3-E7-yHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -379,6 +380,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6wi-LD-mpv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="47.544642857142854"/>
+        </scene>
+        <!--EventAlbum-->
+        <scene sceneID="dP8-nl-uwW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EventAlbum" id="M3r-UA-chu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXg-5U-cFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="48"/>
         </scene>
     </scenes>
     <resources>
