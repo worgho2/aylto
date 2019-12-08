@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "29CCEC302388514700BF7A91"
-               BuildableName = "aylto.app"
+               BuildableName = "ICE.app"
                BlueprintName = "aylto"
                ReferencedContainer = "container:aylto.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "29CCEC302388514700BF7A91"
-            BuildableName = "aylto.app"
+            BuildableName = "ICE.app"
             BlueprintName = "aylto"
             ReferencedContainer = "container:aylto.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "29CCEC302388514700BF7A91"
-            BuildableName = "aylto.app"
+            BuildableName = "ICE.app"
             BlueprintName = "aylto"
             ReferencedContainer = "container:aylto.xcodeproj">
          </BuildableReference>

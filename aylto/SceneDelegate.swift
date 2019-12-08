@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        self.window!.backgroundColor = UIColor.red
         
         // Create a ViewController object and set it as the scene's window's root view controller.
-        self.window!.rootViewController =  UIStoryboard(name: "EventAlbum", bundle: nil).instantiateInitialViewController()
+        self.window!.rootViewController =  UIStoryboard(name: "LaunchScreen2", bundle: nil).instantiateInitialViewController()
         
         // Make this scene's window be visible.
         self.window!.makeKeyAndVisible()

@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="433" height="616"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taques" translatesAutoresizingMaskIntoConstraints="NO" id="Taa-mB-IUq">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taques_help" translatesAutoresizingMaskIntoConstraints="NO" id="Taa-mB-IUq">
                         <rect key="frame" x="32" y="0.0" width="369" height="531.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Taa-mB-IUq" secondAttribute="height" multiplier="455:655" id="o3h-my-l5M"/>
@@ -60,6 +60,6 @@
     </objects>
     <resources>
         <image name="Ice" width="493" height="755"/>
-        <image name="taques" width="2316" height="3088"/>
+        <image name="taques_help" width="2316" height="3088"/>
     </resources>
 </document>

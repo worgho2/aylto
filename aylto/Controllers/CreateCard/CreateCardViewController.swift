@@ -1,6 +1,6 @@
 import UIKit
 
-class CreateCardViewController: UIViewController, UITextFieldDelegate {
+class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var profileNameLabel: UILabel!
@@ -40,11 +40,14 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var intendToHappyHourLabel: UILabel!
     @IBOutlet weak var intendToNeedAMentorLabel: UILabel!
     
+    var imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupPhraseTextField()
         self.setupIntends()
         self.setupInterests()
+        self.setupCameraForAvatar()
     }
     
     func setupPhraseTextField() {
@@ -109,6 +112,12 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate {
         interesInBusinessButton.backgroundColor = .white
         interesInArtButton.backgroundColor = .white
         interestInSportsButton.backgroundColor = .white
+    }
+    
+    func setupCameraForAvatar() {
+        imagePicker.delegate = self
+        profileImageView.isUserInteractionEnabled = true
+        profileImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openCamera(_:))))
     }
     
     
@@ -184,5 +193,24 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
+    @objc
+    func openCamera(_ sender: UITapGestureRecognizer) {
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage] as? UIImage {
+            profileImageView.image = image
+            profileImageView.contentMode = .scaleAspectFill
+            profileImageView.makeRounded()
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
 }
