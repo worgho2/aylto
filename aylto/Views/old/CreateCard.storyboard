@@ -170,11 +170,6 @@ you alwayes say it:</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="txE-tH-Q0I"/>
                     </view>
-                    <connections>
-                        <outlet property="nameLabel" destination="o5h-4M-1MO" id="JUh-9g-aSf"/>
-                        <outlet property="phraseTextField" destination="rlR-OW-NMF" id="D2E-UZ-OkE"/>
-                        <outlet property="profilePicture" destination="CD9-Ai-0uC" id="WeX-1I-zZC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pa-9z-EIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

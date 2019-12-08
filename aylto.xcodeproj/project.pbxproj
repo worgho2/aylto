@@ -17,7 +17,6 @@
 		3F048FD223918BED0033B6C6 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3F048FD72391A5660033B6C6 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FD62391A5660033B6C6 /* CreateCardViewController.swift */; };
 		3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FDC2395A6210033B6C6 /* LauchScreen2ViewController.swift */; };
-		3F1850FD2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */; };
 		3F1851032398238700B55835 /* FigurinhasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1851022398238700B55835 /* FigurinhasViewController.swift */; };
 		3F1851072398245A00B55835 /* EventAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */; };
 		3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */; };
@@ -36,7 +35,6 @@
 		7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */; };
 		7A13DE1C239ACCDD007E32E4 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1B239ACCDD007E32E4 /* Card.storyboard */; };
 		7A27075B239C46720039B673 /* AddEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A27075A239C46720039B673 /* AddEvent.storyboard */; };
-		7A27075E239C46CA0039B673 /* ListaEventosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A27075D239C46CA0039B673 /* ListaEventosStoryboard.storyboard */; };
 		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
 		7A93B84C239C24C60087B5F2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93B84B239C24C60087B5F2 /* EventsViewController.swift */; };
 		7A93B84F239C251B0087B5F2 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A93B84E239C251B0087B5F2 /* Events.storyboard */; };
@@ -98,7 +96,6 @@
 		7A1B27E523983F9A007A7508 /* click-synth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "click-synth.mp3"; sourceTree = "<group>"; };
 		7A1B27E623983F9B007A7508 /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
 		7A27075A239C46720039B673 /* AddEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddEvent.storyboard; sourceTree = "<group>"; };
-		7A27075D239C46CA0039B673 /* ListaEventosStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListaEventosStoryboard.storyboard; sourceTree = "<group>"; };
 		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		7A93B84B239C24C60087B5F2 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -385,7 +382,6 @@
 				3F1850FB2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib */,
 				4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */,
 				3F1851052398245A00B55835 /* EventAlbumCollectionViewCell.xib */,
-				7A27075D239C46CA0039B673 /* ListaEventosStoryboard.storyboard */,
 				3FA7A85B238C570F007CB05A /* Home.storyboard */,
 				3F048FCB238F0F270033B6C6 /* EventName.storyboard */,
 				3F048FD52391A4700033B6C6 /* CreateCard.storyboard */,
@@ -462,12 +458,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F1850FD2396ED7F00B55835 /* FigurinhaCollectionViewCell.xib in Resources */,
 				7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */,
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
 				3FA7A85C238C570F007CB05A /* Home.storyboard in Resources */,
-				7A27075E239C46CA0039B673 /* ListaEventosStoryboard.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
 				7A13DE1C239ACCDD007E32E4 /* Card.storyboard in Resources */,
@@ -688,7 +682,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -708,7 +702,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
