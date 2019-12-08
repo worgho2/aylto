@@ -34,8 +34,8 @@
 		7A27075B239C46720039B673 /* AddEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A27075A239C46720039B673 /* AddEvent.storyboard */; };
 		7A2A1745239C7DFB0066F9A0 /* CreateCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A1744239C7DFB0066F9A0 /* CreateCard.storyboard */; };
 		7A2A1747239C8BA40066F9A0 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A1746239C8BA40066F9A0 /* CreateCardViewController.swift */; };
-		7A68CC6F239D36D0006D9DB3 /* CardDatail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A68CC6E239D36D0006D9DB3 /* CardDatail.storyboard */; };
-		7A68CC71239D36E5006D9DB3 /* CardDatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CC70239D36E5006D9DB3 /* CardDatailViewController.swift */; };
+		7A68CC6F239D36D0006D9DB3 /* CardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A68CC6E239D36D0006D9DB3 /* CardDetail.storyboard */; };
+		7A68CC71239D36E5006D9DB3 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CC70239D36E5006D9DB3 /* CardDetailViewController.swift */; };
 		7A68CC73239D3A64006D9DB3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CC72239D3A64006D9DB3 /* UIButton.swift */; };
 		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
 		7A93B84C239C24C60087B5F2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93B84B239C24C60087B5F2 /* EventsViewController.swift */; };
@@ -92,8 +92,8 @@
 		7A27075A239C46720039B673 /* AddEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddEvent.storyboard; sourceTree = "<group>"; };
 		7A2A1744239C7DFB0066F9A0 /* CreateCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCard.storyboard; sourceTree = "<group>"; };
 		7A2A1746239C8BA40066F9A0 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
-		7A68CC6E239D36D0006D9DB3 /* CardDatail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDatail.storyboard; sourceTree = "<group>"; };
-		7A68CC70239D36E5006D9DB3 /* CardDatailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDatailViewController.swift; sourceTree = "<group>"; };
+		7A68CC6E239D36D0006D9DB3 /* CardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetail.storyboard; sourceTree = "<group>"; };
+		7A68CC70239D36E5006D9DB3 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		7A68CC72239D3A64006D9DB3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				7A270759239C46460039B673 /* AddEvent */,
 				7A2A173E239C73390066F9A0 /* CreateCard */,
 				7A250132239CCA4B0030CAEC /* EventAlbum */,
-				7A250134239CCA8F0030CAEC /* CardDatail */,
+				7A250134239CCA8F0030CAEC /* CardDetail */,
 				7A68CC6C239CCB2F006D9DB3 /* ShowQR */,
 				7A68CC6D239CCB2F006D9DB3 /* ScanQR */,
 			);
@@ -192,7 +192,7 @@
 				7A27075C239C467D0039B673 /* AddEvent */,
 				7A2A173F239C734D0066F9A0 /* CreateCard */,
 				7A250131239CCA390030CAEC /* EventAlbum */,
-				7A250133239CCA5A0030CAEC /* CardDatail */,
+				7A250133239CCA5A0030CAEC /* CardDetail */,
 				7A68CC6A239CCB11006D9DB3 /* ShowQR */,
 				7A68CC6B239CCB21006D9DB3 /* ScanQR */,
 			);
@@ -324,20 +324,20 @@
 			path = EventAlbum;
 			sourceTree = "<group>";
 		};
-		7A250133239CCA5A0030CAEC /* CardDatail */ = {
+		7A250133239CCA5A0030CAEC /* CardDetail */ = {
 			isa = PBXGroup;
 			children = (
-				7A68CC70239D36E5006D9DB3 /* CardDatailViewController.swift */,
+				7A68CC70239D36E5006D9DB3 /* CardDetailViewController.swift */,
 			);
-			path = CardDatail;
+			path = CardDetail;
 			sourceTree = "<group>";
 		};
-		7A250134239CCA8F0030CAEC /* CardDatail */ = {
+		7A250134239CCA8F0030CAEC /* CardDetail */ = {
 			isa = PBXGroup;
 			children = (
-				7A68CC6E239D36D0006D9DB3 /* CardDatail.storyboard */,
+				7A68CC6E239D36D0006D9DB3 /* CardDetail.storyboard */,
 			);
-			path = CardDatail;
+			path = CardDetail;
 			sourceTree = "<group>";
 		};
 		7A270759239C46460039B673 /* AddEvent */ = {
@@ -508,7 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */,
-				7A68CC6F239D36D0006D9DB3 /* CardDatail.storyboard in Resources */,
+				7A68CC6F239D36D0006D9DB3 /* CardDetail.storyboard in Resources */,
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
@@ -581,7 +581,7 @@
 				3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
-				7A68CC71239D36E5006D9DB3 /* CardDatailViewController.swift in Sources */,
+				7A68CC71239D36E5006D9DB3 /* CardDetailViewController.swift in Sources */,
 				7A68CC73239D3A64006D9DB3 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,7 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9M62WF3J6;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -740,7 +740,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9M62WF3J6;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Card Datail View Controller-->
+        <!--Card Detail View Controller-->
         <scene sceneID="tBH-rn-8F0">
             <objects>
-                <viewController id="CTM-tb-qmG" customClass="CardDatailViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CTM-tb-qmG" customClass="CardDetailViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJd-Iu-c2Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

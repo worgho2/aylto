@@ -1,6 +1,6 @@
 import UIKit
 
-class CardDatailViewController: UIViewController {
+class CardDetailViewController: UIViewController {
     
     @IBOutlet weak var cardDetailView: UIView!
     
