@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29294CA9239D49DB009F04C0 /* ParticipantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29294CA7239D49DB009F04C0 /* ParticipantCollectionViewCell.swift */; };
+		29294CAA239D49DB009F04C0 /* ParticipantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29294CA8239D49DB009F04C0 /* ParticipantCollectionViewCell.xib */; };
 		29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEC342388514700BF7A91 /* AppDelegate.swift */; };
 		29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCEC362388514700BF7A91 /* SceneDelegate.swift */; };
 		29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC3D2388514800BF7A91 /* Assets.xcassets */; };
 		29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEC3F2388514800BF7A91 /* LaunchScreen.storyboard */; };
-		3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FCB238F0F270033B6C6 /* EventName.storyboard */; };
-		3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCD238F16B60033B6C6 /* EventName.swift */; };
+		3F048FCC238F0F270033B6C6 /* EventAlbum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F048FCB238F0F270033B6C6 /* EventAlbum.storyboard */; };
+		3F048FCE238F16B60033B6C6 /* EventAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCD238F16B60033B6C6 /* EventAlbumViewController.swift */; };
 		3F048FD0239043180033B6C6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FCF239043180033B6C6 /* UIView.swift */; };
 		3F048FD223918BED0033B6C6 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F048FDC2395A6210033B6C6 /* LauchScreen2ViewController.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29294CA7239D49DB009F04C0 /* ParticipantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantCollectionViewCell.swift; sourceTree = "<group>"; };
+		29294CA8239D49DB009F04C0 /* ParticipantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantCollectionViewCell.xib; sourceTree = "<group>"; };
 		29CCEC312388514700BF7A91 /* aylto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aylto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CCEC342388514700BF7A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CCEC362388514700BF7A91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +61,8 @@
 		29CCEC402388514800BF7A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CCEC422388514800BF7A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aylto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F048FCB238F0F270033B6C6 /* EventName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventName.storyboard; sourceTree = "<group>"; };
-		3F048FCD238F16B60033B6C6 /* EventName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventName.swift; sourceTree = "<group>"; };
+		3F048FCB238F0F270033B6C6 /* EventAlbum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventAlbum.storyboard; sourceTree = "<group>"; };
+		3F048FCD238F16B60033B6C6 /* EventAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAlbumViewController.swift; sourceTree = "<group>"; };
 		3F048FCF239043180033B6C6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = aylto/Controllers/UIView.swift; sourceTree = SOURCE_ROOT; };
 		3F048FDC2395A6210033B6C6 /* LauchScreen2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauchScreen2ViewController.swift; sourceTree = "<group>"; };
 		3FA7A851238C55CD007CB05A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +309,7 @@
 		7A250131239CCA390030CAEC /* EventAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				3F048FCD238F16B60033B6C6 /* EventAlbumViewController.swift */,
 			);
 			path = EventAlbum;
 			sourceTree = "<group>";
@@ -312,6 +317,9 @@
 		7A250132239CCA4B0030CAEC /* EventAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				3F048FCB238F0F270033B6C6 /* EventAlbum.storyboard */,
+				29294CA7239D49DB009F04C0 /* ParticipantCollectionViewCell.swift */,
+				29294CA8239D49DB009F04C0 /* ParticipantCollectionViewCell.xib */,
 			);
 			path = EventAlbum;
 			sourceTree = "<group>";
@@ -424,11 +432,9 @@
 			children = (
 				7A25012D239CC8FC0030CAEC /* AlbumCollectionReusableView.swift */,
 				7A25012E239CC8FC0030CAEC /* FooterCollectionReusableView.swift */,
-				3F048FCD238F16B60033B6C6 /* EventName.swift */,
 				7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */,
 				7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */,
 				4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */,
-				3F048FCB238F0F270033B6C6 /* EventName.storyboard */,
 			);
 			path = "old(precisaAnalisarSeAlgumaCoisaServe)";
 			sourceTree = "<group>";
@@ -506,11 +512,12 @@
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
-				3F048FCC238F0F270033B6C6 /* EventName.storyboard in Resources */,
+				3F048FCC238F0F270033B6C6 /* EventAlbum.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
 				7A27075B239C46720039B673 /* AddEvent.storyboard in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 				7A2A1745239C7DFB0066F9A0 /* CreateCard.storyboard in Resources */,
+				29294CAA239D49DB009F04C0 /* ParticipantCollectionViewCell.xib in Resources */,
 				7A93B856239C2D850087B5F2 /* EventCoverCollectionViewCell.xib in Resources */,
 				7A93B84F239C251B0087B5F2 /* Events.storyboard in Resources */,
 			);
@@ -560,10 +567,11 @@
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
 				7A93B855239C2D850087B5F2 /* EventCoverCollectionViewCell.swift in Sources */,
+				29294CA9239D49DB009F04C0 /* ParticipantCollectionViewCell.swift in Sources */,
 				7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */,
 				7A250130239CC8FC0030CAEC /* FooterCollectionReusableView.swift in Sources */,
 				7AF8308E239C22BB00E2FBC4 /* CardCollectionViewCell.swift in Sources */,
-				3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */,
+				3F048FCE238F16B60033B6C6 /* EventAlbumViewController.swift in Sources */,
 				7A25012F239CC8FC0030CAEC /* AlbumCollectionReusableView.swift in Sources */,
 				7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
@@ -712,7 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 373U5VR954;
+				DEVELOPMENT_TEAM = Z9M62WF3J6;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -732,7 +740,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 373U5VR954;
+				DEVELOPMENT_TEAM = Z9M62WF3J6;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
