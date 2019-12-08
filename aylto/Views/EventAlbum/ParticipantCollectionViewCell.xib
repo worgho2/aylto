@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ParticipantCell" id="gTV-IL-0wX" customClass="ParticipantCollectionViewCell" customModule="aylto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="616"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="616"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taques" translatesAutoresizingMaskIntoConstraints="NO" id="Taa-mB-IUq">
+                        <rect key="frame" x="32" y="0.0" width="369" height="531.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Taa-mB-IUq" secondAttribute="height" multiplier="455:655" id="o3h-my-l5M"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ice" translatesAutoresizingMaskIntoConstraints="NO" id="GPx-PD-HjI">
+                        <rect key="frame" x="22" y="0.0" width="389" height="616"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="GPx-PD-HjI" secondAttribute="height" multiplier="470:745" id="Ggr-DN-nmE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Pessoa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIh-MR-s5N">
+                        <rect key="frame" x="78" y="554.5" width="277" height="61.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fIh-MR-s5N" firstAttribute="width" secondItem="Taa-mB-IUq" secondAttribute="width" multiplier="0.75" id="68s-hY-tgE"/>
+                <constraint firstItem="GPx-PD-HjI" firstAttribute="bottom" secondItem="fIh-MR-s5N" secondAttribute="bottom" id="Fz3-ZK-DgJ"/>
+                <constraint firstItem="GPx-PD-HjI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aDe-Hg-5Ur"/>
+                <constraint firstItem="fIh-MR-s5N" firstAttribute="centerX" secondItem="Taa-mB-IUq" secondAttribute="centerX" id="aW4-xd-hb9"/>
+                <constraint firstItem="fIh-MR-s5N" firstAttribute="height" secondItem="GPx-PD-HjI" secondAttribute="height" multiplier="0.1" id="jQ5-gH-YMl"/>
+                <constraint firstItem="Taa-mB-IUq" firstAttribute="width" secondItem="GPx-PD-HjI" secondAttribute="width" multiplier="0.95" id="kfr-BQ-UqE"/>
+                <constraint firstItem="GPx-PD-HjI" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="lnM-fl-0S0"/>
+                <constraint firstItem="GPx-PD-HjI" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="pUV-5p-FeG"/>
+                <constraint firstItem="Taa-mB-IUq" firstAttribute="top" secondItem="GPx-PD-HjI" secondAttribute="top" id="qeU-Mj-6wJ"/>
+                <constraint firstItem="Taa-mB-IUq" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="wcf-i8-vKE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="433" height="616"/>
+            <connections>
+                <outlet property="iceCoverImageView" destination="GPx-PD-HjI" id="8CE-xp-UMn"/>
+                <outlet property="participantImageView" destination="Taa-mB-IUq" id="mcr-R4-py9"/>
+                <outlet property="participantNameLabel" destination="fIh-MR-s5N" id="a1Y-TG-nzr"/>
+            </connections>
+            <point key="canvasLocation" x="415.21739130434787" y="306.69642857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Ice" width="493" height="755"/>
+        <image name="taques" width="2316" height="3088"/>
+    </resources>
+</document>
