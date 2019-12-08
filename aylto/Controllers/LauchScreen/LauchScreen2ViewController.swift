@@ -2,7 +2,7 @@ import UIKit
 
 class TesteViewController: UIViewController {
     
-    var alwaysShowOnboarding = false
+    var alwaysShowOnboarding = true
     
     @IBOutlet weak var nameLabel: UILabel!
     

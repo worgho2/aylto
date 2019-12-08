@@ -1,11 +1,4 @@
-//
-//  CreateCardViewController.swift
-//  aylto
-//
-//  Created by Lary Tertuliano on 27/11/19.
-//  Copyright © 2019 Gabriel Taques. All rights reserved.
-//
-
+//o taques disse que vai fazer
 import UIKit
 
 class EventName: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -32,7 +25,7 @@ class EventName: UIViewController, UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -60,10 +53,7 @@ class EventName: UIViewController, UICollectionViewDataSource, UICollectionViewD
       case UICollectionView.elementKindSectionHeader:
         // 3
         guard
-          let headerView = collectionView.dequeueReusableSupplementaryView(
-            ofKind: kind,
-            withReuseIdentifier: "\(AlbumCollectionReusableView.self)",
-            for: indexPath) as? AlbumCollectionReusableView
+          let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "\(AlbumCollectionReusableView.self)", for: indexPath) as? AlbumCollectionReusableView
           else {
             fatalError("Invalid view type")
         }
@@ -92,16 +82,5 @@ class EventName: UIViewController, UICollectionViewDataSource, UICollectionViewD
       }
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
