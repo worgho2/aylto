@@ -265,10 +265,10 @@ to him :)</string>
             </objects>
             <point key="canvasLocation" x="-262.31884057971018" y="172.76785714285714"/>
         </scene>
-        <!--CardDetail-->
+        <!--ShowQR-->
         <scene sceneID="3lt-XT-mdE">
             <objects>
-                <viewControllerPlaceholder storyboardName="CardDetail" id="JnD-0C-xzR" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ShowQR" id="JnD-0C-xzR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-YD-kqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="418" y="173"/>

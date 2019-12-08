@@ -20,7 +20,6 @@ class QRCodeView: UIView {
     }
     
     func commonInit() {
-        
         self.addSubview(imageView)
     }
     
