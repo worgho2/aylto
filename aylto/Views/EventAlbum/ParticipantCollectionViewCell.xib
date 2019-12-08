@@ -53,6 +53,7 @@
             <connections>
                 <outlet property="iceCoverImageView" destination="GPx-PD-HjI" id="8CE-xp-UMn"/>
                 <outlet property="participantImageView" destination="Taa-mB-IUq" id="mcr-R4-py9"/>
+                <outlet property="participantNameLabel" destination="fIh-MR-s5N" id="a1Y-TG-nzr"/>
             </connections>
             <point key="canvasLocation" x="415.21739130434787" y="306.69642857142856"/>
         </collectionViewCell>

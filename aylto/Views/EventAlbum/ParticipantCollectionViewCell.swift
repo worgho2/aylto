@@ -12,6 +12,8 @@ class ParticipantCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var iceCoverImageView: UIImageView!
     @IBOutlet weak var participantImageView: UIImageView!
+    @IBOutlet weak var participantNameLabel: UILabel!
+    
     
 
     override func awakeFromNib() {
