@@ -4,6 +4,8 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var eventsColletionView: UICollectionView!
     
+    let selectionFeedback = UISelectionFeedbackGenerator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.eventsColletionView.delegate = self
@@ -22,7 +24,7 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+        selectionFeedback.selectionChanged()
         performSegue(withIdentifier: "GoToAddEventSegue", sender: nil)
     }
     

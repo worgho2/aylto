@@ -20,14 +20,18 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     @IBOutlet weak var skipButton: UIButton!
     
     var walkthroughPageViewController: WalkthroughPageViewController?
+    
+    let selectionFeedback = UISelectionFeedbackGenerator()
 
     @IBAction func skipButtonTapped(sender: UIButton) {
+        selectionFeedback.selectionChanged()
         UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
         self.performSegue(withIdentifier: "GoToEventsSegue", sender: nil)
 
     }
     
     @IBAction func nextButtonTapped(sender: UIButton) {
+        selectionFeedback.selectionChanged()
         if let index = walkthroughPageViewController?.currentIndex {
             switch index {
             case 0...1:

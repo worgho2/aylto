@@ -42,6 +42,8 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     var imagePicker = UIImagePickerController()
     
+    let selectionFeedback = UISelectionFeedbackGenerator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupPhraseTextField()
@@ -123,6 +125,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     @IBAction func onIntendsButton(_ sender : UIButton) {
         view.endEditing(true)
+        selectionFeedback.selectionChanged()
         switch sender.tag {
             case 0:
                 intendToNewJobButton.setImage(UIImage(named: isIntendToNewJobButtonActive ? "newjob" : "newjob_active")!, for: .normal)
@@ -154,6 +157,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     @IBAction func onInterestButton(_ sender: UIButton) {
         view.endEditing(true)
+        selectionFeedback.selectionChanged()
         switch sender.tag {
             case 0:
                 interestInDesignButton.backgroundColor = isInteresInArtButtonActive ? .white : #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
@@ -182,6 +186,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
+        selectionFeedback.selectionChanged()
         return true
     }
     
@@ -195,6 +200,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     @objc
     func openCamera(_ sender: UITapGestureRecognizer) {
+        selectionFeedback.selectionChanged()
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
