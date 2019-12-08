@@ -1,7 +1,7 @@
 //o taques disse que vai fazer
 import UIKit
 
-class EventName: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -18,20 +18,20 @@ class EventName: UIViewController, UICollectionViewDataSource, UICollectionViewD
         albumCollectionView.dataSource = self
         profilePicture.makeRounded()
         
-        albumCollectionView.register(UINib(nibName: "CardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cardCollectionViewCell")
+        albumCollectionView.register(UINib(nibName: "ParticipantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ParticipantCell")
         
         // Do any additional setup after loading the view.
         // Teste  do gitkraken
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = albumCollectionView.dequeueReusableCell(withReuseIdentifier: "cardCollectionViewCell", for: indexPath) as! CardCollectionViewCell
+        let cell = albumCollectionView.dequeueReusableCell(withReuseIdentifier: "ParticipantCell", for: indexPath) as! ParticipantCollectionViewCell
         
-        cell.testeVIew.image  =  UIImage(named: "teste")
+//        cell.testeVIew.image  =  UIImage(named: "teste")
     
         return cell
     }

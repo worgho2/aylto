@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Event Name-->
+        <!--Event Album View Controller-->
         <scene sceneID="Vpw-Jx-NJa">
             <objects>
-                <viewController id="aQo-hD-sow" customClass="EventName" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aQo-hD-sow" customClass="EventAlbumViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oee-1v-aR5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,11 +170,11 @@ to him :)</string>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyN-vd-fwO">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
-                                                <color key="backgroundColor" red="0.99607843137254903" green="0.98431372549019602" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5rW-hC-1PC">
-                                                <rect key="frame" x="0.0" y="60" width="414" height="499"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="559"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="SPZ-nm-zaR">
                                                     <size key="itemSize" width="264" height="266"/>
                                                     <size key="headerReferenceSize" width="50" height="50"/>
@@ -183,7 +183,7 @@ to him :)</string>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCollectionViewCell" id="kW6-CL-mcM">
-                                                        <rect key="frame" x="50" y="124.5" width="250" height="250"/>
+                                                        <rect key="frame" x="50" y="154.5" width="250" height="250"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NXt-2J-umJ">
                                                             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
@@ -193,14 +193,14 @@ to him :)</string>
                                                     </collectionViewCell>
                                                 </cells>
                                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AlbumCollectionReusableView" id="8da-Yt-6rK" customClass="AlbumCollectionReusableView" customModule="aylto" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="499"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="559"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slice_left" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-Xw-7kj">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="499"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="559"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="gQX-Xw-7kj" firstAttribute="height" secondItem="8da-Yt-6rK" secondAttribute="height" id="7xs-ZY-3a0"/>
                                                         <constraint firstItem="gQX-Xw-7kj" firstAttribute="centerX" secondItem="8da-Yt-6rK" secondAttribute="centerX" id="VXi-Nq-bLb"/>
@@ -209,7 +209,7 @@ to him :)</string>
                                                     </constraints>
                                                 </collectionReusableView>
                                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterCollectionReusableView" id="CVi-nW-B3q" customClass="FooterCollectionReusableView" customModule="aylto" customModuleProvider="target">
-                                                    <rect key="frame" x="300" y="0.0" width="50" height="499"/>
+                                                    <rect key="frame" x="300" y="0.0" width="50" height="559"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </collectionReusableView>
                                             </collectionView>
@@ -220,7 +220,7 @@ to him :)</string>
                                             <constraint firstAttribute="bottom" secondItem="5rW-hC-1PC" secondAttribute="bottom" constant="60" id="GMm-ej-vT7"/>
                                             <constraint firstAttribute="trailing" secondItem="5rW-hC-1PC" secondAttribute="trailing" id="e4s-Z1-A44"/>
                                             <constraint firstAttribute="trailing" secondItem="hyN-vd-fwO" secondAttribute="trailing" id="eMS-Mf-3JQ"/>
-                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="top" secondItem="TWg-5m-dIP" secondAttribute="top" constant="60" id="h6q-CE-bSP"/>
+                                            <constraint firstItem="5rW-hC-1PC" firstAttribute="top" secondItem="TWg-5m-dIP" secondAttribute="top" id="h6q-CE-bSP"/>
                                             <constraint firstItem="hyN-vd-fwO" firstAttribute="leading" secondItem="TWg-5m-dIP" secondAttribute="leading" id="ik6-Zq-Kpu"/>
                                             <constraint firstAttribute="bottom" secondItem="hyN-vd-fwO" secondAttribute="bottom" id="qnu-Rn-Icm"/>
                                             <constraint firstItem="hyN-vd-fwO" firstAttribute="top" secondItem="TWg-5m-dIP" secondAttribute="top" id="vnP-UN-b1d"/>
