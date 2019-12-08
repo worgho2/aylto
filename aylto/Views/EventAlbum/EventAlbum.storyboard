@@ -289,7 +289,7 @@ to him :)</string>
                 <viewControllerPlaceholder storyboardName="CardDetail" id="x4w-2e-KTz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sah-W3-LY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="244"/>
+            <point key="canvasLocation" x="-262" y="603"/>
         </scene>
     </scenes>
     <resources>
