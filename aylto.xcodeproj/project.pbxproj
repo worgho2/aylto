@@ -42,6 +42,8 @@
 		7A93B84F239C251B0087B5F2 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A93B84E239C251B0087B5F2 /* Events.storyboard */; };
 		7A93B855239C2D850087B5F2 /* EventCoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93B853239C2D850087B5F2 /* EventCoverCollectionViewCell.swift */; };
 		7A93B856239C2D850087B5F2 /* EventCoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A93B854239C2D850087B5F2 /* EventCoverCollectionViewCell.xib */; };
+		7AD05769239D676300EBB51A /* ShowQR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD05768239D676300EBB51A /* ShowQR.storyboard */; };
+		7AD0576B239D677800EBB51A /* ShowQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD0576A239D677800EBB51A /* ShowQRViewController.swift */; };
 		7AF8308E239C22BB00E2FBC4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */; };
 		7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
@@ -101,6 +103,8 @@
 		7A93B84E239C251B0087B5F2 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		7A93B853239C2D850087B5F2 /* EventCoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		7A93B854239C2D850087B5F2 /* EventCoverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		7AD05768239D676300EBB51A /* ShowQR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowQR.storyboard; sourceTree = "<group>"; };
+		7AD0576A239D677800EBB51A /* ShowQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowQRViewController.swift; sourceTree = "<group>"; };
 		7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigurinhaCollectionViewCell.swift; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -375,6 +379,7 @@
 		7A68CC6A239CCB11006D9DB3 /* ShowQR */ = {
 			isa = PBXGroup;
 			children = (
+				7AD0576A239D677800EBB51A /* ShowQRViewController.swift */,
 			);
 			path = ShowQR;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 		7A68CC6C239CCB2F006D9DB3 /* ShowQR */ = {
 			isa = PBXGroup;
 			children = (
+				7AD05768239D676300EBB51A /* ShowQR.storyboard */,
 			);
 			path = ShowQR;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 				7A68CC6F239D36D0006D9DB3 /* CardDetail.storyboard in Resources */,
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
+				7AD05769239D676300EBB51A /* ShowQR.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventAlbum.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
@@ -560,6 +567,7 @@
 				7A93B84C239C24C60087B5F2 /* EventsViewController.swift in Sources */,
 				F90F5BC02390586700AAA791 /* Album.swift in Sources */,
 				7A2A1747239C8BA40066F9A0 /* CreateCardViewController.swift in Sources */,
+				7AD0576B239D677800EBB51A /* ShowQRViewController.swift in Sources */,
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
 				7A045CEC239C03D200C3B4F0 /* Item.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* AddEventViewController.swift in Sources */,
