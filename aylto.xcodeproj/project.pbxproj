@@ -35,7 +35,6 @@
 		7A27075B239C46720039B673 /* AddEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A27075A239C46720039B673 /* AddEvent.storyboard */; };
 		7A2A1745239C7DFB0066F9A0 /* CreateCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A1744239C7DFB0066F9A0 /* CreateCard.storyboard */; };
 		7A2A1747239C8BA40066F9A0 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A1746239C8BA40066F9A0 /* CreateCardViewController.swift */; };
-		7A6A2261239CB893004F7304 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2260239CB893004F7304 /* NavigationViewController.swift */; };
 		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
 		7A93B84C239C24C60087B5F2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93B84B239C24C60087B5F2 /* EventsViewController.swift */; };
 		7A93B84F239C251B0087B5F2 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A93B84E239C251B0087B5F2 /* Events.storyboard */; };
@@ -97,7 +96,6 @@
 		7A27075A239C46720039B673 /* AddEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddEvent.storyboard; sourceTree = "<group>"; };
 		7A2A1744239C7DFB0066F9A0 /* CreateCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCard.storyboard; sourceTree = "<group>"; };
 		7A2A1746239C8BA40066F9A0 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
-		7A6A2260239CB893004F7304 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		7A93B84B239C24C60087B5F2 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 		29CCEC4A2388527700BF7A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7A6A225F239CB83B004F7304 /* Navigation */,
 				7A270758239C46230039B673 /* old */,
 				7A13DE1423997A4D007E32E4 /* LauchScreen */,
 				7A045CF2239C093F00C3B4F0 /* Onboarding */,
@@ -346,14 +343,6 @@
 				7A2A1746239C8BA40066F9A0 /* CreateCardViewController.swift */,
 			);
 			path = CreateCard;
-			sourceTree = "<group>";
-		};
-		7A6A225F239CB83B004F7304 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				7A6A2260239CB893004F7304 /* NavigationViewController.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		7A7D461C2391A190004E92E9 /* QRCode */ = {
@@ -535,7 +524,6 @@
 				3F048FD72391A5660033B6C6 /* CreateCardsViewController.swift in Sources */,
 				7AF8308E239C22BB00E2FBC4 /* CardCollectionViewCell.swift in Sources */,
 				7AF83090239C22BB00E2FBC4 /* EventAlbumCollectionViewCell.swift in Sources */,
-				7A6A2261239CB893004F7304 /* NavigationViewController.swift in Sources */,
 				3F048FCE238F16B60033B6C6 /* EventName.swift in Sources */,
 				7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
