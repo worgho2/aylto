@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CTM-tb-qmG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card Datail View Controller-->
         <scene sceneID="tBH-rn-8F0">
             <objects>
-                <viewController id="CTM-tb-qmG" sceneMemberID="viewController">
+                <viewController id="CTM-tb-qmG" customClass="CardDatailViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJd-Iu-c2Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,11 +29,17 @@
                                         <rect key="frame" x="165.5" y="484" width="165.5" height="54"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                         <state key="normal" title="Contact"/>
+                                        <connections>
+                                            <action selector="onContact:" destination="CTM-tb-qmG" eventType="touchUpInside" id="3WG-4f-8sc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWs-AV-6Se">
                                         <rect key="frame" x="0.0" y="484" width="165.5" height="54"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="onCancel:" destination="CTM-tb-qmG" eventType="touchUpInside" id="Tvd-a1-zhN"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fabio Vinicius Binder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sm-HS-8aq">
                                         <rect key="frame" x="64" y="61" width="203" height="27.5"/>
@@ -73,7 +79,6 @@
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-M9-5fW">
                                                                         <rect key="frame" x="105" y="0.0" width="40" height="40"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="70" id="Cbf-bn-SAN"/>
                                                                             <constraint firstAttribute="width" secondItem="o6h-M9-5fW" secondAttribute="height" multiplier="1:1" id="dp9-9H-1LN"/>
                                                                         </constraints>
                                                                         <state key="normal" image="imarecruiter"/>
@@ -81,7 +86,6 @@
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liK-Ni-hZM">
                                                                         <rect key="frame" x="210" y="0.0" width="40" height="40"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="70" id="BFX-Ma-qdB"/>
                                                                             <constraint firstAttribute="width" secondItem="liK-Ni-hZM" secondAttribute="height" multiplier="1:1" id="Dwb-Um-Ko1"/>
                                                                         </constraints>
                                                                         <state key="normal" image="givingatalk"/>
@@ -118,14 +122,12 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="OVY-QK-uRU" secondAttribute="height" multiplier="1:1" id="NMS-M0-068"/>
-                                                                            <constraint firstAttribute="height" constant="70" id="ZKk-m6-2iR"/>
                                                                         </constraints>
                                                                         <state key="normal" image="businesstalk"/>
                                                                     </button>
                                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6O-vu-4tU">
                                                                         <rect key="frame" x="105" y="0.0" width="40" height="40"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="70" id="Lyn-ns-8Pa"/>
                                                                             <constraint firstAttribute="width" secondItem="S6O-vu-4tU" secondAttribute="height" multiplier="1:1" id="W5p-Yu-Mk8"/>
                                                                         </constraints>
                                                                         <state key="normal" image="happyhour"/>
@@ -134,7 +136,6 @@
                                                                         <rect key="frame" x="210" y="0.0" width="40" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="9Vq-Ak-eHE" secondAttribute="height" multiplier="1:1" id="ZG5-gZ-opS"/>
-                                                                            <constraint firstAttribute="height" constant="70" id="mVn-Dq-UtH"/>
                                                                         </constraints>
                                                                         <state key="normal" image="needamentor"/>
                                                                     </button>
@@ -165,14 +166,14 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xss-7k-W7b">
-                                                        <rect key="frame" x="20" y="0.0" width="51" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intends:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xss-7k-W7b">
+                                                        <rect key="frame" x="20" y="0.0" width="55.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="mES-t0-98z" firstAttribute="top" secondItem="xss-7k-W7b" secondAttribute="bottom" constant="15" id="0Sk-Pd-oXd"/>
                                                     <constraint firstItem="xss-7k-W7b" firstAttribute="leading" secondItem="JuM-vU-ccL" secondAttribute="leading" constant="20" id="81l-ch-7eV"/>
@@ -182,7 +183,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="JuM-vU-ccL" firstAttribute="height" secondItem="OtP-c5-B6Q" secondAttribute="height" multiplier="0.7" id="I4u-5Y-6PD"/>
                                         </constraints>
@@ -237,7 +238,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="7H6-oJ-bKP" firstAttribute="top" secondItem="kAS-ef-Rf9" secondAttribute="bottom" constant="15" id="8mX-jG-3E6"/>
                                             <constraint firstItem="kAS-ef-Rf9" firstAttribute="leading" secondItem="bFY-Do-QUZ" secondAttribute="leading" constant="20" id="CXP-vA-i8q"/>
@@ -248,7 +249,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="tlh-Wg-zWE" firstAttribute="leading" secondItem="4mQ-cv-nkx" secondAttribute="leading" constant="20" id="0DB-GJ-hJM"/>
                                     <constraint firstItem="FZw-w0-4Ny" firstAttribute="height" secondItem="4mQ-cv-nkx" secondAttribute="height" multiplier="0.1" id="8IP-su-Hd8"/>
@@ -279,7 +280,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4mQ-cv-nkx" firstAttribute="height" secondItem="VJd-Iu-c2Q" secondAttribute="height" multiplier="0.6" id="2xH-us-sbp"/>
                             <constraint firstItem="4mQ-cv-nkx" firstAttribute="centerX" secondItem="3TF-9c-Kwr" secondAttribute="centerX" id="kog-Xo-Ad2"/>
@@ -288,6 +289,31 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3TF-9c-Kwr"/>
                     </view>
+                    <connections>
+                        <outlet property="cardCancelButton" destination="CWs-AV-6Se" id="9Qc-CI-oE5"/>
+                        <outlet property="cardContactButton" destination="FZw-w0-4Ny" id="k0c-ZB-VVv"/>
+                        <outlet property="cardDetailView" destination="4mQ-cv-nkx" id="mmX-ka-2u5"/>
+                        <outlet property="cardImageView" destination="hk7-nf-dtC" id="paa-48-Vcf"/>
+                        <outlet property="cardNameLabel" destination="0Sm-HS-8aq" id="OLm-z2-wUA"/>
+                        <outlet property="cardPhraseLabel" destination="tlh-Wg-zWE" id="4wF-cY-seb"/>
+                        <outlet property="intendToBusinessTalkButton" destination="OVY-QK-uRU" id="yeB-8q-cjV"/>
+                        <outlet property="intendToBusinessTalkLabel" destination="vfX-FM-269" id="14J-c4-ii8"/>
+                        <outlet property="intendToGivingATalkButton" destination="liK-Ni-hZM" id="K1P-FX-RJE"/>
+                        <outlet property="intendToGivingATalkLabel" destination="YGp-Ac-YIA" id="0Ur-kC-i97"/>
+                        <outlet property="intendToHappyHourButton" destination="S6O-vu-4tU" id="kT8-Fd-QrP"/>
+                        <outlet property="intendToHappyHourLabel" destination="W3y-Jg-1rk" id="Gmn-fP-MSa"/>
+                        <outlet property="intendToImARecruiterButton" destination="o6h-M9-5fW" id="n72-eY-7GS"/>
+                        <outlet property="intendToImARecruiterLabel" destination="8Wv-o5-q0j" id="p6z-kW-rEG"/>
+                        <outlet property="intendToNeedAMentorButton" destination="9Vq-Ak-eHE" id="KBi-Ew-B2v"/>
+                        <outlet property="intendToNeedAMentorLabel" destination="qNK-KK-BsH" id="qPR-G7-Elr"/>
+                        <outlet property="intendToNewJobButton" destination="0MF-Fb-BIZ" id="U6X-TH-KQ0"/>
+                        <outlet property="intendToNewJobLabel" destination="aEO-tn-wfN" id="efD-7D-cI8"/>
+                        <outlet property="interesInArtButton" destination="8tO-nn-THO" id="I3t-Bb-Dci"/>
+                        <outlet property="interesInBusinessButton" destination="hPa-E1-YaS" id="Xoq-Z0-wy1"/>
+                        <outlet property="interestInCodingButton" destination="sRe-GK-8cw" id="IKu-VN-7fR"/>
+                        <outlet property="interestInDesignButton" destination="qnW-lg-fqM" id="Zl0-WP-4cf"/>
+                        <outlet property="interestInSportsButton" destination="txs-CY-ofD" id="voE-wZ-ezW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPK-IN-70y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
