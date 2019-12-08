@@ -258,12 +258,21 @@ to him :)</string>
                         <outlet property="personsOnEventTextField" destination="0sZ-uc-xGR" id="In3-B8-9CE"/>
                         <outlet property="phraseTextField" destination="1Ek-Fi-Sby" id="uYm-se-Qs4"/>
                         <outlet property="profilePicture" destination="hll-7g-oF8" id="aJ3-kA-X0t"/>
-                        <segue destination="JnD-0C-xzR" kind="presentation" identifier="GoToCardDetailSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="tzE-1o-G80"/>
+                        <segue destination="JnD-0C-xzR" kind="presentation" identifier="GoToShowQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="tzE-1o-G80"/>
+                        <segue destination="C2y-Pv-dPb" kind="presentation" identifier="GoToScanQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="LmR-F5-jNg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="an6-AE-IEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-262.31884057971018" y="172.76785714285714"/>
+        </scene>
+        <!--CardDetail-->
+        <scene sceneID="T9c-6a-KvR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardDetail" id="C2y-Pv-dPb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTG-q0-Hyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="106"/>
         </scene>
         <!--ShowQR-->
         <scene sceneID="3lt-XT-mdE">

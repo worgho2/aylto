@@ -25,7 +25,7 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "GoToCardDetailSegue", sender: nil)
+        self.showQRCodeOptions()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -87,4 +87,26 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
 
+}
+
+
+extension EventAlbumViewController {
+    
+    func showQRCodeOptions() {
+        let scanAction = UIAlertController(title: "Choose an Option", message: nil, preferredStyle: .actionSheet)
+        
+        scanAction.addAction(UIAlertAction(title: "Scan QRCode", style: .default , handler: { _ in
+            self.performSegue(withIdentifier: "GoToScanQRCodeSegue", sender: nil)
+        }))
+        
+        scanAction.addAction(UIAlertAction(title: "Show QRCode", style: .default, handler: { _ in
+            self.performSegue(withIdentifier: "GoToShowQRCodeSegue", sender: nil)
+        }))
+        
+        scanAction.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        self.present(scanAction, animated: true)
+        
+    }
+    
 }
