@@ -37,7 +37,7 @@
 		7A68CC6F239D36D0006D9DB3 /* CardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A68CC6E239D36D0006D9DB3 /* CardDetail.storyboard */; };
 		7A68CC71239D36E5006D9DB3 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CC70239D36E5006D9DB3 /* CardDetailViewController.swift */; };
 		7A68CC73239D3A64006D9DB3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CC72239D3A64006D9DB3 /* UIButton.swift */; };
-		7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */; };
+		7A7D461E2391A1B6004E92E9 /* ShowQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D461D2391A1B6004E92E9 /* ShowQRView.swift */; };
 		7A93B84C239C24C60087B5F2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93B84B239C24C60087B5F2 /* EventsViewController.swift */; };
 		7A93B84F239C251B0087B5F2 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A93B84E239C251B0087B5F2 /* Events.storyboard */; };
 		7A93B855239C2D850087B5F2 /* EventCoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93B853239C2D850087B5F2 /* EventCoverCollectionViewCell.swift */; };
@@ -46,6 +46,8 @@
 		7AD0576B239D677800EBB51A /* ShowQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD0576A239D677800EBB51A /* ShowQRViewController.swift */; };
 		7AD0576D239D76C900EBB51A /* ScanQR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD0576C239D76C900EBB51A /* ScanQR.storyboard */; };
 		7AD0576F239D773D00EBB51A /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD0576E239D773D00EBB51A /* ScanQRViewController.swift */; };
+		7AD05771239D910C00EBB51A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD05770239D910C00EBB51A /* UIViewController.swift */; };
+		7AD05773239D923E00EBB51A /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD05772239D923E00EBB51A /* ScanQRView.swift */; };
 		7AF8308E239C22BB00E2FBC4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */; };
 		7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
@@ -99,8 +101,7 @@
 		7A68CC6E239D36D0006D9DB3 /* CardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetail.storyboard; sourceTree = "<group>"; };
 		7A68CC70239D36E5006D9DB3 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		7A68CC72239D3A64006D9DB3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
-		7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		7A7D461D2391A1B6004E92E9 /* ShowQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowQRView.swift; sourceTree = "<group>"; };
 		7A93B84B239C24C60087B5F2 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		7A93B84E239C251B0087B5F2 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		7A93B853239C2D850087B5F2 /* EventCoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCoverCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +110,8 @@
 		7AD0576A239D677800EBB51A /* ShowQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowQRViewController.swift; sourceTree = "<group>"; };
 		7AD0576C239D76C900EBB51A /* ScanQR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScanQR.storyboard; sourceTree = "<group>"; };
 		7AD0576E239D773D00EBB51A /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		7AD05770239D910C00EBB51A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		7AD05772239D923E00EBB51A /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
 		7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigurinhaCollectionViewCell.swift; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 				3F048FCF239043180033B6C6 /* UIView.swift */,
 				7A13DE112399796D007E32E4 /* UIImageView.swift */,
 				7A68CC72239D3A64006D9DB3 /* UIButton.swift */,
+				7AD05770239D910C00EBB51A /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -221,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				7A1B27DA23983E98007A7508 /* Sound */,
-				7A7D461C2391A190004E92E9 /* QRCode */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD05768239D676300EBB51A /* ShowQR.storyboard */,
+				7A7D461D2391A1B6004E92E9 /* ShowQRView.swift */,
 			);
 			path = ShowQR;
 			sourceTree = "<group>";
@@ -408,17 +412,9 @@
 			isa = PBXGroup;
 			children = (
 				7AD0576C239D76C900EBB51A /* ScanQR.storyboard */,
+				7AD05772239D923E00EBB51A /* ScanQRView.swift */,
 			);
 			path = ScanQR;
-			sourceTree = "<group>";
-		};
-		7A7D461C2391A190004E92E9 /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-				7A7D461F2391A1DC004E92E9 /* QRCodeReader.swift */,
-				7A7D461D2391A1B6004E92E9 /* QRCodeGenerator.swift */,
-			);
-			path = QRCode;
 			sourceTree = "<group>";
 		};
 		7A93B84D239C24E70087B5F2 /* Events */ = {
@@ -578,11 +574,12 @@
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
 				7A045CEC239C03D200C3B4F0 /* Item.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* AddEventViewController.swift in Sources */,
-				7A7D461E2391A1B6004E92E9 /* QRCodeGenerator.swift in Sources */,
+				7A7D461E2391A1B6004E92E9 /* ShowQRView.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
 				7A93B855239C2D850087B5F2 /* EventCoverCollectionViewCell.swift in Sources */,
 				29294CA9239D49DB009F04C0 /* ParticipantCollectionViewCell.swift in Sources */,
+				7AD05773239D923E00EBB51A /* ScanQRView.swift in Sources */,
 				7AD0576F239D773D00EBB51A /* ScanQRViewController.swift in Sources */,
 				7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */,
 				7A250130239CC8FC0030CAEC /* FooterCollectionReusableView.swift in Sources */,
@@ -596,6 +593,7 @@
 				7A045CF0239C05A400C3B4F0 /* Figurinha.swift in Sources */,
 				3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
+				7AD05771239D910C00EBB51A /* UIViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				7A68CC71239D36E5006D9DB3 /* CardDetailViewController.swift in Sources */,
 				7A68CC73239D3A64006D9DB3 /* UIButton.swift in Sources */,

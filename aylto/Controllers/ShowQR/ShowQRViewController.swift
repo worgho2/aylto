@@ -8,7 +8,7 @@ class ShowQRViewController: UIViewController {
     @IBOutlet weak var showQRNameLabel: UILabel!
     @IBOutlet weak var showQRPhraseLabel: UILabel!
 
-    @IBOutlet weak var qrCodeView: QRCodeView!
+    @IBOutlet weak var qrCodeView: ShowQRView!
     
     let showQRViewGrayColor = UIColor(red: 224.0/255.0, green: 224.0/255.0, blue: 224.0/255.0, alpha: 1)
     

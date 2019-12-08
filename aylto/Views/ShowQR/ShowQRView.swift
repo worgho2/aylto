@@ -1,6 +1,6 @@
 import UIKit
 
-class QRCodeView: UIView {
+class ShowQRView: UIView {
     lazy var filter = CIFilter(name: "CIQRCodeGenerator")
     lazy var imageView = UIImageView()
     

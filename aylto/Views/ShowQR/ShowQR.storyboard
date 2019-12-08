@@ -21,7 +21,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysh-7p-BEi">
                                         <rect key="frame" x="0.0" y="189.5" width="331" height="279.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nq-Bg-s94" customClass="QRCodeView" customModule="ICE" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nq-Bg-s94" customClass="ShowQRView" customModule="ICE" customModuleProvider="target">
                                                 <rect key="frame" x="54" y="28" width="223" height="223.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
