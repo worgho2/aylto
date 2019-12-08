@@ -24,6 +24,10 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
         // Teste  do gitkraken
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "GoToCardDetailSegue", sender: nil)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }

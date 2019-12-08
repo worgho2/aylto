@@ -3,10 +3,8 @@ import UIKit
 class CardDetailViewController: UIViewController {
     
     @IBOutlet weak var cardDetailView: UIView!
-    
     @IBOutlet weak var cardCancelButton: UIButton!
     @IBOutlet weak var cardContactButton: UIButton!
-    
     @IBOutlet weak var cardImageView: UIImageView!
     @IBOutlet weak var cardNameLabel: UILabel!
     @IBOutlet weak var cardPhraseLabel: UILabel!
@@ -56,6 +54,16 @@ class CardDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.animateView()
+    }
+    
+    func animateView() {
+        cardDetailView.alpha = 0;
+        self.cardDetailView.frame.origin.y = self.cardDetailView.frame.origin.y + 50
+        UIView.animate(withDuration: 0.4, animations: { () -> Void in
+            self.cardDetailView.alpha = 1.0;
+            self.cardDetailView.frame.origin.y = self.cardDetailView.frame.origin.y - 50
+        })
     }
     
     func setupView() {
@@ -136,13 +144,6 @@ class CardDetailViewController: UIViewController {
         interesInArtButton.backgroundColor = .white
         interestInSportsButton.backgroundColor = .white
     }
-    
-    func animateView() {
-        
-    }
-    
-    
-    
     
     @IBAction func onContact(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

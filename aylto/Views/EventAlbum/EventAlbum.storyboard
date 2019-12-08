@@ -11,7 +11,7 @@
         <!--Event Album View Controller-->
         <scene sceneID="Vpw-Jx-NJa">
             <objects>
-                <viewController id="aQo-hD-sow" customClass="EventAlbumViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aQo-hD-sow" customClass="EventAlbumViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oee-1v-aR5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,7 +192,7 @@ to him :)</string>
                                                         <size key="customSize" width="250" height="250"/>
                                                     </collectionViewCell>
                                                 </cells>
-                                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AlbumCollectionReusableView" id="8da-Yt-6rK" customClass="AlbumCollectionReusableView" customModule="aylto" customModuleProvider="target">
+                                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AlbumCollectionReusableView" id="8da-Yt-6rK" customClass="AlbumCollectionReusableView" customModule="ICE" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="559"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
@@ -208,7 +208,7 @@ to him :)</string>
                                                         <constraint firstItem="gQX-Xw-7kj" firstAttribute="centerY" secondItem="8da-Yt-6rK" secondAttribute="centerY" id="tSb-9Y-slY"/>
                                                     </constraints>
                                                 </collectionReusableView>
-                                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterCollectionReusableView" id="CVi-nW-B3q" customClass="FooterCollectionReusableView" customModule="aylto" customModuleProvider="target">
+                                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterCollectionReusableView" id="CVi-nW-B3q" customClass="FooterCollectionReusableView" customModule="ICE" customModuleProvider="target">
                                                     <rect key="frame" x="300" y="0.0" width="50" height="559"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </collectionReusableView>
@@ -258,11 +258,20 @@ to him :)</string>
                         <outlet property="personsOnEventTextField" destination="0sZ-uc-xGR" id="In3-B8-9CE"/>
                         <outlet property="phraseTextField" destination="1Ek-Fi-Sby" id="uYm-se-Qs4"/>
                         <outlet property="profilePicture" destination="hll-7g-oF8" id="aJ3-kA-X0t"/>
+                        <segue destination="JnD-0C-xzR" kind="presentation" identifier="GoToCardDetailSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="tzE-1o-G80"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="an6-AE-IEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-262.31884057971018" y="172.76785714285714"/>
+        </scene>
+        <!--CardDetail-->
+        <scene sceneID="3lt-XT-mdE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardDetail" id="JnD-0C-xzR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-YD-kqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="173"/>
         </scene>
     </scenes>
     <resources>

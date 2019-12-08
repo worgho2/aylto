@@ -54,7 +54,7 @@
 /* Begin PBXFileReference section */
 		29294CA7239D49DB009F04C0 /* ParticipantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantCollectionViewCell.swift; sourceTree = "<group>"; };
 		29294CA8239D49DB009F04C0 /* ParticipantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantCollectionViewCell.xib; sourceTree = "<group>"; };
-		29CCEC312388514700BF7A91 /* aylto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aylto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29CCEC312388514700BF7A91 /* ICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CCEC342388514700BF7A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CCEC362388514700BF7A91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		29CCEC3D2388514800BF7A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		29CCEC322388514700BF7A91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29CCEC312388514700BF7A91 /* aylto.app */,
+				29CCEC312388514700BF7A91 /* ICE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,7 +466,7 @@
 			);
 			name = aylto;
 			productName = aylto;
-			productReference = 29CCEC312388514700BF7A91 /* aylto.app */;
+			productReference = 29CCEC312388514700BF7A91 /* ICE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -728,7 +728,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -748,7 +748,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
