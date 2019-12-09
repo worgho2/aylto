@@ -37,7 +37,7 @@ class ShowQRViewController: UIViewController {
     }
     
     func setupQrCodeView() {
-        qrCodeView.generateCode("texto aqui")
+        qrCodeView.generateCode("Yumi is nice indeed")
     }
     
     

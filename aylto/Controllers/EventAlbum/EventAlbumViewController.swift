@@ -1,7 +1,15 @@
 //página critica
 import UIKit
 
-class EventAlbumViewController: UIViewController {
+class EventAlbumViewController: UIViewController, ObserverDelegate {
+    func notify() {
+        albumCollectionView.reloadData()
+    }
+    
+    func updateList() {
+        albumCollectionView.reloadData()
+    }
+    
 
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var albumNameLabel: UILabel!
@@ -28,6 +36,7 @@ class EventAlbumViewController: UIViewController {
         albumCollectionView.delegate = self
         albumCollectionView.dataSource = self
         albumCollectionView.register(UINib(nibName: "ParticipantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ParticipantCell")
+        Model.shared.dataObservers.append(self)
     }
     
     
@@ -84,9 +93,18 @@ extension EventAlbumViewController: UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = albumCollectionView.dequeueReusableCell(withReuseIdentifier: "ParticipantCell", for: indexPath) as! ParticipantCollectionViewCell
         let figurinhaAtual = Model.shared.figurinhas[indexPath.row]
-        cell.participantImageView.image = figurinhaAtual.fotoCongelada
         cell.participantNameLabel.text = figurinhaAtual.nome
-        cell.iceCoverImageView.alpha = 0.8
+        if Model.shared.figurinhas[indexPath.row].isCongelado == true {
+            cell.participantImageView.image = figurinhaAtual.fotoCongelada
+            cell.iceCoverImageView.alpha = 0.8
+        } else {
+            UIView.animate(withDuration: 2.5) {
+                cell.iceCoverImageView.alpha = 0
+            }
+            cell.participantImageView.image = figurinhaAtual.foto
+        }
+        
+        
         return cell
     }
     
@@ -169,7 +187,6 @@ extension EventAlbumViewController {
         }))
         
         scanAction.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        
         self.present(scanAction, animated: true)
     }
     

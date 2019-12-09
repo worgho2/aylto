@@ -12,6 +12,7 @@ class ScanQRViewController: UIViewController {
     @IBOutlet weak var scanQRNameLabel: UILabel!
     @IBOutlet weak var scanQRPhraseLabel: UILabel!
     
+    
     @IBOutlet weak var qrCodeView: ScanQRView!
     
     let scanQRViewGrayColor = UIColor(red: 224.0/255.0, green: 224.0/255.0, blue: 224.0/255.0, alpha: 1)
@@ -19,7 +20,10 @@ class ScanQRViewController: UIViewController {
     var qrData: QRData? = nil {
         didSet {
             if qrData != nil {
-                self.presentAlert(withTitle: "Success", message: qrData!.codeString!)
+//                self.presentAlert(withTitle: "Success", message: qrData!.codeString!)
+                Model.shared.figurinhas[0].isCongelado = false
+                Model.shared.dataObservers.forEach { $0.notify() }
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }
