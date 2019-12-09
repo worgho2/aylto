@@ -2,7 +2,7 @@ import UIKit
 
 class EventsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    let isDebbug: Bool = true
+    let isDebbug: Bool = false
     
     @IBOutlet weak var eventsColletionView: UICollectionView!
     
@@ -16,18 +16,20 @@ class EventsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return Model.shared.meusAlbuns.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = eventsColletionView.dequeueReusableCell(withReuseIdentifier: "EventCoverCell", for: indexPath) as! EventCoverCollectionViewCell
-        cell.setup(title: "NOME", date: "20-20-2020", indexControl: indexPath.item)
+        
+        cell.setup(title: Model.shared.meusEventos[indexPath.item].nomeDoEvento, date: Model.shared.meusEventos[indexPath.item].dataDoEvento, indexControl: indexPath.item)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectionFeedback.selectionChanged()
 
+        
         if indexPath.item == 0 || isDebbug {
             performSegue(withIdentifier: "GoToAddEventSegue", sender: nil)
         } else {
