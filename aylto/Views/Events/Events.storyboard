@@ -16,9 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-ul-883">
-                                <rect key="frame" x="25" y="113" width="364" height="749"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-ul-883">
+                                <rect key="frame" x="25" y="211" width="364" height="651"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yP8-pW-Oft">
                                     <size key="itemSize" width="137" height="155"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,22 +37,35 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <searchBar userInteractionEnabled="NO" contentMode="scaleAspectFit" barStyle="black" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dxi-89-t8f">
+                                <rect key="frame" x="0.0" y="88" width="414" height="103"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.97255545850000003" green="0.97253733870000003" blue="0.97254973649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <scopeButtonTitles>
+                                    <string>Name</string>
+                                    <string>Event Date</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="E7k-ft-NEs" firstAttribute="trailing" secondItem="5vr-ul-883" secondAttribute="trailing" constant="25" id="2vR-TF-kNk"/>
                             <constraint firstItem="5vr-ul-883" firstAttribute="leading" secondItem="E7k-ft-NEs" secondAttribute="leading" constant="25" id="DKM-Of-6ZT"/>
                             <constraint firstItem="E7k-ft-NEs" firstAttribute="bottom" secondItem="5vr-ul-883" secondAttribute="bottom" id="NFn-2M-WSq"/>
-                            <constraint firstItem="5vr-ul-883" firstAttribute="top" secondItem="E7k-ft-NEs" secondAttribute="top" constant="25" id="enq-ho-kbB"/>
+                            <constraint firstItem="Dxi-89-t8f" firstAttribute="centerX" secondItem="E7k-ft-NEs" secondAttribute="centerX" id="P3z-Pr-OVS"/>
+                            <constraint firstItem="Dxi-89-t8f" firstAttribute="top" secondItem="E7k-ft-NEs" secondAttribute="top" id="caY-U9-Lm4"/>
+                            <constraint firstItem="5vr-ul-883" firstAttribute="top" secondItem="Dxi-89-t8f" secondAttribute="bottom" constant="20" id="qdo-4o-v1D"/>
+                            <constraint firstItem="Dxi-89-t8f" firstAttribute="width" secondItem="7Jd-3j-FfT" secondAttribute="width" id="v5V-Hl-Mxb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E7k-ft-NEs"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Events" largeTitleDisplayMode="always" id="i7B-8j-8BJ">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="F4L-EP-wBA"/>
+                    <navigationItem key="navigationItem" title="Events" id="i7B-8j-8BJ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="F4L-EP-wBA"/>
                     </navigationItem>
                     <connections>
                         <outlet property="eventsColletionView" destination="5vr-ul-883" id="jBK-Sa-2lz"/>
-                        <segue destination="H7B-6y-LeV" kind="presentation" identifier="GoToAddEventSegue" id="T0K-9t-bft"/>
+                        <segue destination="H7B-6y-LeV" kind="presentation" identifier="GoToAddEventSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="T0K-9t-bft"/>
                         <segue destination="RRY-oK-rK2" kind="presentation" identifier="GoToEventAlbumSegue" modalPresentationStyle="fullScreen" id="9pc-Dg-R4U"/>
                     </connections>
                 </viewController>
@@ -68,14 +81,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NL7-Pn-D8s">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

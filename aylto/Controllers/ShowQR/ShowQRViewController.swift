@@ -25,6 +25,9 @@ class ShowQRViewController: UIViewController {
     }
     
     func setupView() {
+        showQRImageView.clipsToBounds = true
+        showQRImageView.layer.cornerRadius = (showQRImageView.frame.width + showQRImageView.frame.height) / 4
+        showQRImageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         showQRView.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
     }

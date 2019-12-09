@@ -43,6 +43,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     var imagePicker = UIImagePickerController()
     
     let selectionFeedback = UISelectionFeedbackGenerator()
+    let notificationFeedback = UINotificationFeedbackGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +58,6 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
         phraseTextField.layer.borderWidth = 1
         phraseTextField.layer.borderColor = #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)
         phraseTextField.layer.cornerRadius = 5
-        
     }
     
     func setupIntends() {
@@ -117,6 +117,9 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     }
     
     func setupCameraForAvatar() {
+        profileImageView.clipsToBounds = true
+        profileImageView.layer.cornerRadius = (profileImageView.frame.width + profileImageView.frame.height) / 4
+        profileImageView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.7856478217, alpha: 0.4347174658)
         imagePicker.delegate = self
         profileImageView.isUserInteractionEnabled = true
         profileImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openCamera(_:))))
@@ -192,7 +195,13 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     @IBAction func onDone(_ sender: Any) {
         view.endEditing(true)
-        performSegue(withIdentifier: "GoToEventAlbumSegue", sender: nil)
+        
+        if phraseTextField.text!.isEmpty {
+            notificationFeedback.notificationOccurred(.error)
+            showToast(message: "Sorry, the phrase cannot be empty.")
+        } else {
+            performSegue(withIdentifier: "GoToEventAlbumSegue", sender: nil)
+        }
     }
     
     @IBAction func tapGestureRecognizer(_ sender: Any) {

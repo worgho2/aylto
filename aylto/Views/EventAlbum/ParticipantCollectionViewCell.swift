@@ -1,11 +1,3 @@
-//
-//  ParticipantCollectionViewCell.swift
-//  aylto
-//
-//  Created by Gabriel Taques on 08/12/19.
-//  Copyright © 2019 Gabriel Taques. All rights reserved.
-//
-
 import UIKit
 
 class ParticipantCollectionViewCell: UICollectionViewCell {
@@ -14,11 +6,14 @@ class ParticipantCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var participantImageView: UIImageView!
     @IBOutlet weak var participantNameLabel: UILabel!
     
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    func setup(isItFrozen: Bool, image: UIImage, name: String) {
+        self.iceCoverImageView.image = UIImage(named: isItFrozen ? "COVER FROZEN" : "COVER NORMAL")
+        self.participantImageView.image = image
+        self.participantNameLabel.text = name
     }
 
 }

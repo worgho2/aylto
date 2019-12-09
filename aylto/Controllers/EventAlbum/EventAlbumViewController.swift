@@ -1,23 +1,29 @@
-//o taques disse que vai fazer
+//página critica
 import UIKit
 
 class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+
+    @IBOutlet weak var albumImageView: UIImageView!
+    @IBOutlet weak var albumNameLabel: UILabel!
     
-    @IBOutlet weak var profilePicture: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var phraseTextField: UITextView!
-    @IBOutlet weak var personsOnEventTextField: UITextField!
-    @IBOutlet weak var personsConnectedTextField: UITextField!
-    @IBOutlet weak var personsNotConnectedTextField: UITextField!
+    @IBOutlet weak var albumPeopleAtTheEventLabel: UILabel!
+    @IBOutlet weak var albumPeopleIFoundLabel: UILabel!
+    @IBOutlet weak var albumPeopleIDidntFindLabel: UILabel!
+    
+    @IBOutlet weak var albumNumberOfPeopleAtTheEventLabel: UILabel!
+    @IBOutlet weak var albumNumberOfPeopleIFoundLabel: UILabel!
+    @IBOutlet weak var albumNumberOfPeopleIDidntFindLabel: UILabel!
+    
+    @IBOutlet weak var albumShowMyCardButton: UIButton!
+    
     @IBOutlet weak var albumCoverView: UIView!
     @IBOutlet weak var albumCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupView()
         albumCollectionView.delegate = self
         albumCollectionView.dataSource = self
-        profilePicture.makeRounded()
-        
         albumCollectionView.register(UINib(nibName: "ParticipantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ParticipantCell")
     }
     
@@ -31,67 +37,59 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = albumCollectionView.dequeueReusableCell(withReuseIdentifier: "ParticipantCell", for: indexPath) as! ParticipantCollectionViewCell
-        
-//        cell.testeVIew.image  =  UIImage(named: "teste")
-    
+        //cell.setup(isItFrozen: <#T##Bool#>, image: <#T##UIImage#>, name: <#T##String#>)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = albumCollectionView.frame.width / 2
         let height = (albumCollectionView.frame.height - 100) / 2
-        print("WIDTH \(width)")
-        print("HEIGHT \(height)")
         return CGSize(width: width - 30, height: height - 15)
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                                 viewForSupplementaryElementOfKind kind: String,
-                                 at indexPath: IndexPath) -> UICollectionReusableView {
-      // 1
-      switch kind {
-      // 2
-      case UICollectionView.elementKindSectionHeader:
-        // 3
-        guard
-          let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "\(AlbumCollectionReusableView.self)", for: indexPath) as? AlbumCollectionReusableView
-          else {
-            fatalError("Invalid view type")
-        }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 
-        //let searchTerm = searches[indexPath.section].searchTerm
-        //headerView.label.text = searchTerm
-        return headerView
-        
-      case UICollectionView.elementKindSectionFooter:
-        // 3
-        guard
-          let footerView = collectionView.dequeueReusableSupplementaryView(
-            ofKind: kind,
-            withReuseIdentifier: "FooterCollectionReusableView",
-            for: indexPath) as? FooterCollectionReusableView
-          else {
-            fatalError("Invalid view type")
-        }
+        switch kind {
+            case UICollectionView.elementKindSectionHeader:
+                guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "\(AlbumCollectionReusableView.self)", for: indexPath) as? AlbumCollectionReusableView else {
+                fatalError("Invalid view type")
+                }
+                return headerView
 
-        //let searchTerm = searches[indexPath.section].searchTerm
-        //headerView.label.text = searchTerm
-        return footerView
-      default:
-        // 4
-        assert(false, "Invalid element type")
-      }
+            case UICollectionView.elementKindSectionFooter:
+                guard let footerView = collectionView.dequeueReusableSupplementaryView( ofKind: kind, withReuseIdentifier: "FooterCollectionReusableView", for: indexPath) as? FooterCollectionReusableView else {
+                fatalError("Invalid view type")
+                }
+                return footerView
+
+            default:
+                assert(false, "Invalid element type")
+        }
         
     }
     
+    func setupView() {
+        albumImageView.clipsToBounds = true
+        albumImageView.layer.cornerRadius = (albumImageView.frame.width + albumImageView.frame.height) / 4
+        albumImageView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.7856478217, alpha: 0.4347174658)
+        
+        albumShowMyCardButton.layer.cornerRadius = 10.0
+    }
     
-    @IBAction func onScanReadButton(_ sender: Any) {
+    
+    @IBAction func onShowMyCard(_ sender: Any) {
+        performSegue(withIdentifier: "GoToCardDetailSegue", sender: nil)
+    }
+    
+    @IBAction func onSwapButton(_ sender: Any) {
         self.showQRCodeOptions()
     }
     
-
+    @IBAction func onHomeButton(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: false)
+    }
+    
 }
-
 
 extension EventAlbumViewController {
     
@@ -109,7 +107,6 @@ extension EventAlbumViewController {
         scanAction.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         
         self.present(scanAction, animated: true)
-        
     }
     
 }

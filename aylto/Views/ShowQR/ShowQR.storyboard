@@ -19,10 +19,10 @@
                                 <rect key="frame" x="41.5" y="184" width="331" height="538"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysh-7p-BEi">
-                                        <rect key="frame" x="0.0" y="189.5" width="331" height="279.5"/>
+                                        <rect key="frame" x="0.0" y="191.5" width="331" height="277.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nq-Bg-s94" customClass="ShowQRView" customModule="ICE" customModuleProvider="target">
-                                                <rect key="frame" x="54" y="28" width="223" height="223.5"/>
+                                                <rect key="frame" x="54.5" y="28" width="222" height="222"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="6Nq-Bg-s94" secondAttribute="height" multiplier="1:1" id="g4S-BV-d9e"/>
@@ -36,7 +36,7 @@
                                             <constraint firstItem="6Nq-Bg-s94" firstAttribute="centerY" secondItem="ysh-7p-BEi" secondAttribute="centerY" id="uH3-9N-rFw"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_profile" translatesAutoresizingMaskIntoConstraints="NO" id="e27-07-R98">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="e27-07-R98">
                                         <rect key="frame" x="113" y="-52" width="105" height="105"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="105" id="cSy-Yp-7lG"/>
@@ -51,14 +51,14 @@
                                             <action selector="onCancel:" destination="JcX-kP-Qwa" eventType="touchUpInside" id="QPX-2x-9DT"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fabio Vinicius Binder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mH-CH-B4E">
-                                        <rect key="frame" x="64" y="61" width="203" height="27.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mH-CH-B4E">
+                                        <rect key="frame" x="112" y="68" width="107" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;ASHUDASUHDAS ASDHUASHD ASDHUASDH HASDU&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrK-Be-gIb">
-                                        <rect key="frame" x="20" y="133.5" width="291" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrK-Be-gIb">
+                                        <rect key="frame" x="20" y="135.5" width="291" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="zGw-Jx-obR"/>
                                         </constraints>
@@ -82,8 +82,8 @@
                                     <constraint firstItem="e27-07-R98" firstAttribute="centerX" secondItem="AoI-iq-vqU" secondAttribute="centerX" id="jQL-um-rXq"/>
                                     <constraint firstAttribute="bottom" secondItem="Q9e-cd-Bkz" secondAttribute="bottom" id="jwg-wa-7qD"/>
                                     <constraint firstAttribute="trailing" secondItem="xrK-Be-gIb" secondAttribute="trailing" constant="20" id="p1z-nx-wkj"/>
-                                    <constraint firstItem="xrK-Be-gIb" firstAttribute="top" secondItem="3mH-CH-B4E" secondAttribute="bottom" constant="45" id="qZS-ht-jNa"/>
-                                    <constraint firstItem="3mH-CH-B4E" firstAttribute="top" secondItem="e27-07-R98" secondAttribute="bottom" constant="8" id="x1F-l6-Pfw"/>
+                                    <constraint firstItem="xrK-Be-gIb" firstAttribute="top" secondItem="3mH-CH-B4E" secondAttribute="bottom" constant="40" id="qZS-ht-jNa"/>
+                                    <constraint firstItem="3mH-CH-B4E" firstAttribute="top" secondItem="e27-07-R98" secondAttribute="bottom" constant="15" id="x1F-l6-Pfw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -111,6 +111,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="placeholder_profile" width="105" height="105"/>
+        <image name="Avatar" width="354" height="429"/>
     </resources>
 </document>

@@ -13,7 +13,7 @@ extension UIViewController {
     
     func showToast(message : String, seconds: Double = 2.0) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alert.view.backgroundColor = UIColor.black
+        alert.view.backgroundColor = .white
         alert.view.alpha = 0.6
         alert.view.layer.cornerRadius = 15
         

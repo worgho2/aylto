@@ -50,6 +50,9 @@ class ScanQRViewController: UIViewController {
     }
     
     func setupView() {
+        scanQRImageView.clipsToBounds = true
+        scanQRImageView.layer.cornerRadius = (scanQRImageView.frame.width + scanQRImageView.frame.height) / 4
+        scanQRImageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         scanQRView.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
     }

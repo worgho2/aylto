@@ -19,10 +19,10 @@
                                 <rect key="frame" x="41.5" y="184" width="331" height="538"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDs-xJ-5gA">
-                                        <rect key="frame" x="0.0" y="189.5" width="331" height="279.5"/>
+                                        <rect key="frame" x="0.0" y="191.5" width="331" height="277.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sij-nd-KxE" customClass="ScanQRView" customModule="ICE" customModuleProvider="target">
-                                                <rect key="frame" x="33" y="7" width="265" height="265.5"/>
+                                                <rect key="frame" x="34" y="7" width="263" height="263.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="sij-nd-KxE" secondAttribute="height" multiplier="1:1" id="DkJ-GK-SXs"/>
@@ -36,7 +36,7 @@
                                             <constraint firstItem="sij-nd-KxE" firstAttribute="centerX" secondItem="WDs-xJ-5gA" secondAttribute="centerX" id="gGi-OT-Tco"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_profile" translatesAutoresizingMaskIntoConstraints="NO" id="i5k-D5-tng">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="i5k-D5-tng">
                                         <rect key="frame" x="113" y="-52" width="105" height="105"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="i5k-D5-tng" secondAttribute="height" multiplier="1:1" id="Xlj-Ej-OJz"/>
@@ -51,14 +51,14 @@
                                             <action selector="onCancel:" destination="2zu-Nc-I1N" eventType="touchUpInside" id="2Ll-Md-Wxb"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fabio Vinicius Binder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0st-PH-2cZ">
-                                        <rect key="frame" x="64" y="61" width="203" height="27.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0st-PH-2cZ">
+                                        <rect key="frame" x="112" y="68" width="107" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;ASHUDASUHDAS ASDHUASHD ASDHUASDH HASDU&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJd-nQ-e9A">
-                                        <rect key="frame" x="20" y="133.5" width="291" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJd-nQ-e9A">
+                                        <rect key="frame" x="20" y="135.5" width="291" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="YWf-cE-dm9"/>
                                         </constraints>
@@ -72,14 +72,14 @@
                                     <constraint firstItem="Ppk-N4-qEH" firstAttribute="leading" secondItem="eQb-GR-qe0" secondAttribute="leading" id="CfF-Nh-wLx"/>
                                     <constraint firstItem="WDs-xJ-5gA" firstAttribute="width" secondItem="eQb-GR-qe0" secondAttribute="width" id="EM4-nc-x4V"/>
                                     <constraint firstItem="XJd-nQ-e9A" firstAttribute="leading" secondItem="eQb-GR-qe0" secondAttribute="leading" constant="20" id="FyR-Zv-Igd"/>
-                                    <constraint firstItem="XJd-nQ-e9A" firstAttribute="top" secondItem="0st-PH-2cZ" secondAttribute="bottom" constant="45" id="MVq-h3-qiI"/>
+                                    <constraint firstItem="XJd-nQ-e9A" firstAttribute="top" secondItem="0st-PH-2cZ" secondAttribute="bottom" constant="40" id="MVq-h3-qiI"/>
                                     <constraint firstItem="Ppk-N4-qEH" firstAttribute="height" secondItem="eQb-GR-qe0" secondAttribute="height" multiplier="0.1" id="NRE-tT-xfr"/>
                                     <constraint firstItem="i5k-D5-tng" firstAttribute="centerX" secondItem="eQb-GR-qe0" secondAttribute="centerX" id="SLZ-Ra-gVL"/>
                                     <constraint firstAttribute="trailing" secondItem="XJd-nQ-e9A" secondAttribute="trailing" constant="20" id="SXA-Sg-fkb"/>
                                     <constraint firstItem="WDs-xJ-5gA" firstAttribute="top" secondItem="XJd-nQ-e9A" secondAttribute="bottom" constant="15" id="ZHj-Gg-XXH"/>
                                     <constraint firstAttribute="bottom" secondItem="Ppk-N4-qEH" secondAttribute="bottom" id="ZbQ-72-Wdv"/>
                                     <constraint firstItem="WDs-xJ-5gA" firstAttribute="centerX" secondItem="eQb-GR-qe0" secondAttribute="centerX" id="Zv8-6T-Lqv"/>
-                                    <constraint firstItem="0st-PH-2cZ" firstAttribute="top" secondItem="i5k-D5-tng" secondAttribute="bottom" constant="8" id="fmE-3u-hDB"/>
+                                    <constraint firstItem="0st-PH-2cZ" firstAttribute="top" secondItem="i5k-D5-tng" secondAttribute="bottom" constant="15" id="fmE-3u-hDB"/>
                                     <constraint firstItem="Ppk-N4-qEH" firstAttribute="width" secondItem="eQb-GR-qe0" secondAttribute="width" id="gfL-Qd-04I"/>
                                     <constraint firstItem="i5k-D5-tng" firstAttribute="top" secondItem="eQb-GR-qe0" secondAttribute="top" constant="-52" id="iah-o1-JcU"/>
                                     <constraint firstItem="0st-PH-2cZ" firstAttribute="centerX" secondItem="i5k-D5-tng" secondAttribute="centerX" id="uBw-YB-vaE"/>
@@ -111,6 +111,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="placeholder_profile" width="105" height="105"/>
+        <image name="Avatar" width="354" height="429"/>
     </resources>
 </document>

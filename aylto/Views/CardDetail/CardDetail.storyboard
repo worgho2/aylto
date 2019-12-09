@@ -18,7 +18,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mQ-cv-nkx">
                                 <rect key="frame" x="41.5" y="184" width="331" height="538"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_profile" translatesAutoresizingMaskIntoConstraints="NO" id="hk7-nf-dtC">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="hk7-nf-dtC">
                                         <rect key="frame" x="113" y="-52" width="105" height="105"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="105" id="dQ1-67-eYe"/>
@@ -41,13 +41,13 @@
                                             <action selector="onCancel:" destination="CTM-tb-qmG" eventType="touchUpInside" id="Tvd-a1-zhN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fabio Vinicius Binder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sm-HS-8aq">
-                                        <rect key="frame" x="64" y="61" width="203" height="27.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sm-HS-8aq">
+                                        <rect key="frame" x="112" y="61" width="107" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;ASHUDASUHDAS ASDHUASHD ASDHUASDH HASDU&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-Wg-zWE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-Wg-zWE">
                                         <rect key="frame" x="20" y="133.5" width="291" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="Ozb-mJ-UzZ"/>
@@ -321,12 +321,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Avatar" width="354" height="429"/>
         <image name="businesstalk" width="107" height="107"/>
         <image name="givingatalk" width="107" height="107"/>
         <image name="happyhour" width="107" height="107"/>
         <image name="imarecruiter" width="107" height="107"/>
         <image name="needamentor" width="107" height="107"/>
         <image name="newjob" width="107" height="107"/>
-        <image name="placeholder_profile" width="105" height="105"/>
     </resources>
 </document>

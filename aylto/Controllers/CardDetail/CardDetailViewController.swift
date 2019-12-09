@@ -58,7 +58,12 @@ class CardDetailViewController: UIViewController {
     }
     
     func animateView() {
+        cardImageView.clipsToBounds = true
+        cardImageView.layer.cornerRadius = (cardImageView.frame.width + cardImageView.frame.height) / 4
+        cardImageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
         cardDetailView.alpha = 0;
+        
         self.cardDetailView.frame.origin.y = self.cardDetailView.frame.origin.y + 50
         UIView.animate(withDuration: 0.4, animations: { () -> Void in
             self.cardDetailView.alpha = 1.0;
@@ -146,7 +151,7 @@ class CardDetailViewController: UIViewController {
     }
     
     @IBAction func onContact(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        showToast(message: "Coming Soon")
     }
     
     @IBAction func onCancel(_ sender: Any) {

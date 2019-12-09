@@ -4,7 +4,6 @@ class AddEventViewController: UIViewController {
         
     @IBOutlet var fields: Array<UITextField>!
     @IBOutlet weak var insertEventCodeHereView: UIView!
-    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var successLabel: UILabel!
     @IBOutlet weak var createCardButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,12 +21,12 @@ class AddEventViewController: UIViewController {
         insertEventCodeHereView.roundCorners(radius: 40.0)
         fields.first?.layer.borderWidth = 1
         fields.first?.layer.borderColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-        self.backgroundView.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        self.backgroundView.alpha = 0
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         
         self.successLabel.isHidden = true
         self.createCardButton.isHidden = true
         self.createCardButton.isEnabled = false
+        self.createCardButton.layer.cornerRadius = 10.0
     }
     
     @IBAction func onCreateCard(_ sender: Any) {
@@ -36,18 +35,20 @@ class AddEventViewController: UIViewController {
     
 
     @IBAction func dismissAddEvent(_ sender: Any) {
-        UIView.animate(withDuration: 0.1) {
-            self.backgroundView.alpha = 0
-        }
-        
         self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         fields.first?.becomeFirstResponder()
-        UIView.animate(withDuration: 0.3) {
-            self.backgroundView.alpha = 0.7
-        }
+    }
+    
+    func animateView() {
+        insertEventCodeHereView.alpha = 0;
+        self.insertEventCodeHereView.frame.origin.y = self.insertEventCodeHereView.frame.origin.y + 50
+        UIView.animate(withDuration: 0.4, animations: { () -> Void in
+            self.insertEventCodeHereView.alpha = 1.0;
+            self.insertEventCodeHereView.frame.origin.y = self.insertEventCodeHereView.frame.origin.y - 50
+        })
     }
         
     @IBAction func textChanged(_ sender: UITextField) {
@@ -82,8 +83,6 @@ class AddEventViewController: UIViewController {
                     }
                 }
             }
-            
-            
         } else {
             notification.notificationOccurred(.error)
             fields.forEach( { $0.text = "" } )

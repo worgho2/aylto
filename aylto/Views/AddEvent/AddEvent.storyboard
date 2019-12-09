@@ -10,26 +10,18 @@
         <!--Add Event View Controller-->
         <scene sceneID="cQC-mB-Myu">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="IKH-l4-Vxo" customClass="AddEventViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="IKH-l4-Vxo" customClass="AddEventViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jjc-qQ-hgm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLm-0r-Bly">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ETA-Om-VP7" appends="YES" id="ReV-6t-XW7"/>
-                                </connections>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaV-Td-aJJ" userLabel="InsertEventCodeHere">
                                 <rect key="frame" x="0.0" y="444" width="414" height="452"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIx-TV-8DV">
                                         <rect key="frame" x="0.0" y="90.5" width="414" height="67.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="b0g-Ex-n8t">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="b0g-Ex-n8t">
                                                 <rect key="frame" x="98.5" y="17" width="217" height="34"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="tGR-WK-zWc">
@@ -110,13 +102,14 @@
                                         <constraints>
                                             <constraint firstItem="b0g-Ex-n8t" firstAttribute="centerY" secondItem="ZIx-TV-8DV" secondAttribute="centerY" id="bpx-R9-Pl0"/>
                                             <constraint firstItem="b0g-Ex-n8t" firstAttribute="centerX" secondItem="ZIx-TV-8DV" secondAttribute="centerX" id="g27-hH-dpn"/>
+                                            <constraint firstItem="b0g-Ex-n8t" firstAttribute="width" secondItem="ZIx-TV-8DV" secondAttribute="width" multiplier="0.524155" id="s0g-vw-U5k"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6U3-B4-HU0">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="90.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert event code here:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fm-7M-Wjz">
-                                                <rect key="frame" x="50.5" y="26" width="313" height="38.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert event code here:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fm-7M-Wjz">
+                                                <rect key="frame" x="41.5" y="26" width="331" height="38.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -125,6 +118,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="6fm-7M-Wjz" firstAttribute="centerY" secondItem="6U3-B4-HU0" secondAttribute="centerY" id="Tlb-dJ-nso"/>
+                                            <constraint firstItem="6fm-7M-Wjz" firstAttribute="width" secondItem="6U3-B4-HU0" secondAttribute="width" multiplier="0.8" id="Y6N-wo-154"/>
                                             <constraint firstItem="6fm-7M-Wjz" firstAttribute="centerX" secondItem="6U3-B4-HU0" secondAttribute="centerX" id="ZE0-YN-OMW"/>
                                         </constraints>
                                     </view>
@@ -167,23 +161,22 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="QaV-Td-aJJ" firstAttribute="top" secondItem="L4a-KP-0SI" secondAttribute="bottom" constant="-206" id="DRL-ap-b6g"/>
                             <constraint firstItem="L4a-KP-0SI" firstAttribute="centerX" secondItem="QaV-Td-aJJ" secondAttribute="centerX" id="MGI-xo-8C7"/>
-                            <constraint firstAttribute="trailing" secondItem="dLm-0r-Bly" secondAttribute="trailing" id="PgY-BV-ygU"/>
-                            <constraint firstItem="dLm-0r-Bly" firstAttribute="top" secondItem="Jjc-qQ-hgm" secondAttribute="top" id="U0E-QN-DzA"/>
-                            <constraint firstItem="dLm-0r-Bly" firstAttribute="leading" secondItem="tMy-Pe-m8r" secondAttribute="leading" id="V4c-AT-zEQ"/>
                             <constraint firstItem="QaV-Td-aJJ" firstAttribute="top" secondItem="tMy-Pe-m8r" secondAttribute="top" constant="400" id="WQj-Y6-W66"/>
-                            <constraint firstItem="tMy-Pe-m8r" firstAttribute="bottom" secondItem="dLm-0r-Bly" secondAttribute="bottom" id="Won-Q8-nuO"/>
                             <constraint firstItem="QaV-Td-aJJ" firstAttribute="leading" secondItem="Jjc-qQ-hgm" secondAttribute="leadingMargin" constant="-20" id="YGy-jn-Go4"/>
                             <constraint firstAttribute="bottom" secondItem="QaV-Td-aJJ" secondAttribute="bottom" id="bor-fV-dVi"/>
                             <constraint firstItem="QaV-Td-aJJ" firstAttribute="centerX" secondItem="Jjc-qQ-hgm" secondAttribute="centerX" id="cRd-xz-7nu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tMy-Pe-m8r"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ETA-Om-VP7" appends="YES" id="rdM-2D-SY2"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="ZrU-3z-vOY"/>
                     <connections>
-                        <outlet property="backgroundView" destination="dLm-0r-Bly" id="aqB-qS-7de"/>
                         <outlet property="createCardButton" destination="FXM-iF-sUI" id="hPb-7M-FsW"/>
                         <outlet property="insertEventCodeHereView" destination="QaV-Td-aJJ" id="31K-Ck-n2F"/>
                         <outlet property="successLabel" destination="L4a-KP-0SI" id="Vo6-he-7FW"/>
