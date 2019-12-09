@@ -54,6 +54,8 @@
 		F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBD238F0BE500AAA791 /* Observer.swift */; };
 		F90F5BC02390586700AAA791 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBF2390586700AAA791 /* Album.swift */; };
 		F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BC12390587C00AAA791 /* Usuario.swift */; };
+		F9554005239E16C40020B25D /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9554004239E16C40020B25D /* LoginScreen.storyboard */; };
+		F9554008239E1C960020B25D /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9554007239E1C960020B25D /* LoginScreenViewController.swift */; };
 		F9C30E2D238D9E140044DF63 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C30E2C238D9E140044DF63 /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +120,9 @@
 		F90F5BBD238F0BE500AAA791 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		F90F5BBF2390586700AAA791 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		F90F5BC12390587C00AAA791 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		F9554004239E16C40020B25D /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		F9554007239E1C960020B25D /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		F9554009239E1FBE0020B25D /* ICE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ICE.entitlements; sourceTree = "<group>"; };
 		F9C30E2C238D9E140044DF63 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +159,7 @@
 		29CCEC332388514700BF7A91 /* aylto */ = {
 			isa = PBXGroup;
 			children = (
+				F9554009239E1FBE0020B25D /* ICE.entitlements */,
 				29CCEC422388514800BF7A91 /* Info.plist */,
 				29CCEC3D2388514800BF7A91 /* Assets.xcassets */,
 				29CCEC342388514700BF7A91 /* AppDelegate.swift */,
@@ -181,6 +187,7 @@
 		29CCEC492388527300BF7A91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F9554003239E16AA0020B25D /* LoginScreen */,
 				7A13DE1323997A20007E32E4 /* LauchScreen */,
 				7A045CF3239C0BEE00C3B4F0 /* Onboarding */,
 				7A93B850239C25210087B5F2 /* Events */,
@@ -197,6 +204,7 @@
 		29CCEC4A2388527700BF7A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9554006239E1C750020B25D /* LoginScreen */,
 				7A13DE1423997A4D007E32E4 /* LauchScreen */,
 				7A045CF2239C093F00C3B4F0 /* Onboarding */,
 				7A93B84D239C24E70087B5F2 /* Events */,
@@ -456,6 +464,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F9554003239E16AA0020B25D /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F9554004239E16C40020B25D /* LoginScreen.storyboard */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		F9554006239E1C750020B25D /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F9554007239E1C960020B25D /* LoginScreenViewController.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -521,6 +545,7 @@
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
 				7AD05769239D676300EBB51A /* ShowQR.storyboard in Resources */,
+				F9554005239E16C40020B25D /* LoginScreen.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventAlbum.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
@@ -576,6 +601,7 @@
 				3FA7A860238C57B8007CB05A /* AddEventViewController.swift in Sources */,
 				7A7D461E2391A1B6004E92E9 /* ShowQRView.swift in Sources */,
 				3F048FD0239043180033B6C6 /* UIView.swift in Sources */,
+				F9554008239E1C960020B25D /* LoginScreenViewController.swift in Sources */,
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
 				7A93B855239C2D850087B5F2 /* EventCoverCollectionViewCell.swift in Sources */,
 				29294CA9239D49DB009F04C0 /* ParticipantCollectionViewCell.swift in Sources */,
@@ -733,8 +759,9 @@
 			baseConfigurationReference = B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 373U5VR954;
+				DEVELOPMENT_TEAM = Y8J5WK586H;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -753,8 +780,9 @@
 			baseConfigurationReference = 74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 373U5VR954;
+				DEVELOPMENT_TEAM = Y8J5WK586H;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

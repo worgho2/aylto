@@ -10,7 +10,7 @@
         <!--Walkthrough View Controller-->
         <scene sceneID="K2z-Eg-Uwh">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughViewController" id="Jwf-Bl-Rmf" customClass="WalkthroughViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughViewController" id="Jwf-Bl-Rmf" customClass="WalkthroughViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIU-vP-X7b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="-833.33333333333337" y="82.366071428571431"/>
         </scene>
-        <!--Events-->
+        <!--LoginScreen-->
         <scene sceneID="ZAK-gR-5At">
             <objects>
-                <viewControllerPlaceholder storyboardName="Events" id="rGl-QU-zi6" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="LoginScreen" id="rGl-QU-zi6" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="U0a-DR-LMK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJz-8p-uZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -108,7 +108,7 @@
         <!--Walkthrough Page View Controller-->
         <scene sceneID="6im-kM-l4U">
             <objects>
-                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="59D-5X-KLk" customClass="WalkthroughPageViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="59D-5X-KLk" customClass="WalkthroughPageViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyZ-OA-y5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-12" y="80"/>
@@ -116,7 +116,7 @@
         <!--Walkthrough Content View Controller-->
         <scene sceneID="pxj-4p-2va">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughContentViewController" id="xef-DO-yJp" customClass="WalkthroughContentViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughContentViewController" id="xef-DO-yJp" customClass="WalkthroughContentViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygX-JI-tEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="623.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
