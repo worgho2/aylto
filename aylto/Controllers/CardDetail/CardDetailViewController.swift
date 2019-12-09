@@ -2,6 +2,8 @@ import UIKit
 
 class CardDetailViewController: UIViewController {
     
+    var figurinhaAtual: Figurinha!
+    
     @IBOutlet weak var cardDetailView: UIView!
     @IBOutlet weak var cardCancelButton: UIButton!
     @IBOutlet weak var cardContactButton: UIButton!
@@ -74,6 +76,10 @@ class CardDetailViewController: UIViewController {
     func setupView() {
         cardDetailView.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        self.cardNameLabel.text = self.figurinhaAtual.nome
+        self.cardPhraseLabel.text = self.figurinhaAtual.frase
+        self.cardImageView.image = self.figurinhaAtual.foto
+        self.cardImageView.contentMode = .scaleAspectFill
     }
     
     func setupButtons() {
@@ -103,6 +109,28 @@ class CardDetailViewController: UIViewController {
         intendToBusinessTalkButton.setImage(UIImage(named: "businesstalk")!, for: .normal)
         intendToHappyHourButton.setImage(UIImage(named: "happyhour")!, for: .normal)
         intendToNeedAMentorButton.setImage(UIImage(named: "needamentor")!, for: .normal)
+        
+        print(Model.shared.isIntendedTo)
+        
+        if Model.shared.figurinhaAtual!.onIntends.contains(0) {
+            intendToNewJobButton.setImage(UIImage(named: "newjob_active")!, for: .normal)
+        }
+        if Model.shared.figurinhaAtual!.onIntends.contains(1) {
+            intendToImARecruiterButton.setImage(UIImage(named: "imarecruiter_active")!, for: .normal)
+        }
+        if Model.shared.figurinhaAtual!.onIntends.contains(2) {
+            intendToGivingATalkButton.setImage(UIImage(named: "givingatalk_active")!, for: .normal)
+        }
+        if Model.shared.figurinhaAtual!.onIntends.contains(3) {
+            intendToBusinessTalkButton.setImage(UIImage(named: "businesstalk_active")!, for: .normal)
+        }
+        if Model.shared.figurinhaAtual!.onIntends.contains(4) {
+            intendToHappyHourButton.setImage(UIImage(named: "happyhour_active")!, for: .normal)
+        }
+        if Model.shared.figurinhaAtual!.onIntends.contains(5) {
+            intendToNeedAMentorButton.setImage(UIImage(named: "needamentor_active")!, for: .normal)
+        }
+        
         
         intendToNewJobLabel.textColor = #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)
         intendToImARecruiterLabel.textColor = #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)
@@ -157,5 +185,5 @@ class CardDetailViewController: UIViewController {
     @IBAction func onCancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
+
 }

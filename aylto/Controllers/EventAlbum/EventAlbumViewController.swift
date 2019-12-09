@@ -19,6 +19,9 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
     @IBOutlet weak var albumCoverView: UIView!
     @IBOutlet weak var albumCollectionView: UICollectionView!
     
+    var myCard: Bool = false
+    var indexCard: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
@@ -28,16 +31,21 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        myCard = false
+        indexCard = indexPath.row
         performSegue(withIdentifier: "GoToCardDetailSegue", sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return Model.shared.figurinhas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = albumCollectionView.dequeueReusableCell(withReuseIdentifier: "ParticipantCell", for: indexPath) as! ParticipantCollectionViewCell
-        //cell.setup(isItFrozen: <#T##Bool#>, image: <#T##UIImage#>, name: <#T##String#>)
+        let figurinhaAtual = Model.shared.figurinhas[indexPath.row]
+        cell.participantImageView.image = figurinhaAtual.fotoCongelada
+        cell.participantNameLabel.text = figurinhaAtual.nome
+        cell.iceCoverImageView.alpha = 0.8
         return cell
     }
     
@@ -76,8 +84,22 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
         albumShowMyCardButton.layer.cornerRadius = 10.0
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToCardDetailSegue" {
+            if let vc = segue.destination as? CardDetailViewController {
+                if self.myCard {
+                    vc.figurinhaAtual = Model.shared.figurinhaAtual
+                } else {
+                    vc.figurinhaAtual = Model.shared.figurinhas[self.indexCard]
+                }
+                
+            }
+        }
+    }
+    
     
     @IBAction func onShowMyCard(_ sender: Any) {
+        myCard = true
         performSegue(withIdentifier: "GoToCardDetailSegue", sender: nil)
     }
     

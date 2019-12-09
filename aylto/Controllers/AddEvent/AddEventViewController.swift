@@ -89,6 +89,12 @@ class AddEventViewController: UIViewController {
             fields.first?.becomeFirstResponder()
         }
     }
+    
+    func createEvent(code: String, nomeDoEvento: String="Swift is cool - Meetup") {
+        var evento: Evento = Evento(idDoEvento: code, nomeDoEvento: nomeDoEvento, dataDoEvento: "")
+        Model.shared.eventos.append(evento)
+        
+    }
 
 }
 

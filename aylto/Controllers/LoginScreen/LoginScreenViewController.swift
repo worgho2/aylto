@@ -64,21 +64,21 @@ extension LoginScreenViewController: ASAuthorizationControllerPresentationContex
 }
 
 func loadData(credentials: ASAuthorizationAppleIDCredential) {
-    for usuario in Model.shared.usuarios {
-        if usuario.idDoUsuario == credentials.user {
-            Model.shared.usuarioAtual = usuario
-        }
-    }
-    for album in Model.shared.albuns {
-        if album.idDoDono == Model.shared.usuarioAtual.idDoUsuario {
-            Model.shared.meusAlbuns.append(album)
-        }
-    }
-    for evento in Model.shared.eventos {
-        for album in Model.shared.albuns {
-            if evento.idDoEvento == album.idDoEvento {
-                Model.shared.meusEventos.append(evento)
-            }
-        }
-    }
+//    for usuario in Model.shared.usuarios {
+//        if usuario.idDoUsuario == credentials.user {
+//            Model.shared.usuarioAtual = usuario
+//        }
+//    }
+//    for album in Model.shared.albuns {
+//        if album.idDoDono == Model.shared.usuarioAtual.idDoUsuario {
+//            Model.shared.meusAlbuns.append(album)
+//        }
+//    }
+//    for evento in Model.shared.eventos {
+//        for album in Model.shared.albuns {
+//            if evento.idDoEvento == album.idDoEvento {
+//                Model.shared.meusEventos.append(evento)
+//            }
+//        }
+//    }
 }

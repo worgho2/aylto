@@ -129,6 +129,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     @IBAction func onIntendsButton(_ sender : UIButton) {
         view.endEditing(true)
         selectionFeedback.selectionChanged()
+        addRemoveOnIntend(tag: sender.tag)
         switch sender.tag {
             case 0:
                 intendToNewJobButton.setImage(UIImage(named: isIntendToNewJobButtonActive ? "newjob" : "newjob_active")!, for: .normal)
@@ -161,6 +162,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     @IBAction func onInterestButton(_ sender: UIButton) {
         view.endEditing(true)
         selectionFeedback.selectionChanged()
+        addRemoveInterest(tag: sender.tag)
         switch sender.tag {
             case 0:
                 interestInDesignButton.backgroundColor = isInteresInArtButtonActive ? .white : #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
@@ -200,6 +202,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
             notificationFeedback.notificationOccurred(.error)
             showToast(message: "Sorry, the phrase cannot be empty.")
         } else {
+            createCard()
             performSegue(withIdentifier: "GoToEventAlbumSegue", sender: nil)
         }
     }
@@ -228,5 +231,33 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func createCard() {
+        Model.shared.figurinhaAtual = Figurinha(idDaFigurinha: 1, foto: profileImageView.image ?? UIImage(named: "login")!, fotoCongelada: profileImageView.image ?? UIImage(named: "login")!, nome: profileNameLabel.text!, frase: phraseTextField.text!, interests: Model.shared.interests, onIntends: Model.shared.isIntendedTo)
+    }
+    
+    func addRemoveInterest(tag: Int) {
+        if Model.shared.interests.contains(tag) {
+            Model.shared.interests = Model.shared.interests.filter { $0 != tag }
+        } else {
+            Model.shared.interests.append(tag)
+        }
+        for i in Model.shared.interests {
+            print(i)
+        }
+        
+    }
+    
+    func addRemoveOnIntend(tag: Int) {
+        if Model.shared.isIntendedTo.contains(tag) {
+            Model.shared.isIntendedTo = Model.shared.isIntendedTo.filter { $0 != tag }
+        } else {
+            Model.shared.isIntendedTo.append(tag)
+        }
+        for i in Model.shared.isIntendedTo {
+            print(i)
+        }
+        
     }
 }

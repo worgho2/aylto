@@ -3,39 +3,28 @@ import UIKit
 
 class Model {
     static let shared = Model()
+    
     private init() {
            
     }
     
-    var usuarios = [
-        Usuario(idDoUsuario: "001818.d21931b6979443b787636b9192711adf.1836", primeiroNome: "André", sobrenome: "Tosin", email: "andre_tosin@icloud.com", idDasFigurinhas: [0, 1, 2], idDosAlbuns: [1, 2, 3, 4]),
-        
-    ]
-    
-    var albuns = [
-        Album(idDoAlbum: 1, idDoDono: "001818.d21931b6979443b787636b9192711adf.1836", idDoEvento: 123456, idDasFigurinhas: [0, 1, 2]),
-        Album(idDoAlbum: 2, idDoDono: "001818.d21931b6979443b787636b9192711adf.1836", idDoEvento: 111111, idDasFigurinhas: [0, 1, 2]),
-        Album(idDoAlbum: 3, idDoDono: "001818.d21931b6979443b787636b9192711adf.1836", idDoEvento: 222222, idDasFigurinhas: [0, 1, 2])
-
-    ]
-    
-    var figurinhas = [
-        Figurinha(idDaFigurinha: 0, idDoDono: "001818.d21931b6979443b787636b9192711adf.1836", foto: "foto0.jpeg", nome: "Figurinha 0 Andre", frase: "Frase 0 Andre", interesse: "Interesse 0 andre", buscoNoEvento: "Busco 0 andre"),
-        Figurinha(idDaFigurinha: 1, idDoDono: "001818.d21931b6979443b787636b9192711adf.1836", foto: "foto1.jpeg", nome: "Figurinha 1 Andre", frase: "Frase 1 Andre", interesse: "Interesse 1 andre", buscoNoEvento: "Busco 1 andre"),
-        Figurinha(idDaFigurinha: 2, idDoDono: "001818.d21931b6979443b787636b9192711adf.1836", foto: "foto2.jpeg", nome: "Figurinha 2 Andre", frase: "Frase 2 Andre", interesse: "Interesse 2 andre", buscoNoEvento: "Busco 2 andre")
-    ]
-    
-    var eventos = [
-        Evento(idDoEvento: 123456, idDosAlbuns: [1], nomeDoEvento: "Evento 1", dataDoEvento: "20/12/12", fotoDeCapa: "Foto de capa evento 1"),
-        Evento(idDoEvento: 111111, idDosAlbuns: [1], nomeDoEvento: "Evento 2", dataDoEvento: "20/12/12", fotoDeCapa: "Foto de capa evento 1"),
-        Evento(idDoEvento: 222222, idDosAlbuns: [1], nomeDoEvento: "Evento 3", dataDoEvento: "20/12/12", fotoDeCapa: "Foto de capa evento 1")
-    ]
-    
-    
-    var usuarioAtual = Usuario(idDoUsuario: "", primeiroNome: "", sobrenome: "", email: "", idDasFigurinhas: [], idDosAlbuns: [])
-    var meusAlbuns: [Album] = []
-    var meusEventos: [Evento] = []
+    var interests:[Int] = []
+    var isIntendedTo: [Int] = []
    
-    
+    var usuario: Usuario! = Usuario(idDoUsuario: "", primeiroNome: "Lary", sobrenome: "Tertuliano", email: "", idDasFigurinhas: [], idDosAlbuns: [])
+    var figurinhaAtual: Figurinha?
+    var figurinhaSelecionadaIndex: Int! = 0
+    var eventos: [Evento]! = [
+        Evento(idDoEvento: "90321", idDosAlbuns: [], nomeDoEvento: "WWDC - 2019", dataDoEvento: "", fotoDeCapa: ""),
+        Evento(idDoEvento: "10321", idDosAlbuns: [], nomeDoEvento: "CocoaPods", dataDoEvento: "", fotoDeCapa: ""),
+        Evento(idDoEvento: "20321", idDosAlbuns: [], nomeDoEvento: "NS Brazil", dataDoEvento: "", fotoDeCapa: ""),
+    ]
+    var albums: [Album]! = []
+    var figurinhas: [Figurinha]! = [
+        Figurinha(idDaFigurinha: 0, foto: UIImage(named: "yumi")!, fotoCongelada: UIImage(named: "yumi_gelo")!, nome: "Yumi", frase: "Frase aqui", interests: [0,3,4], onIntends: [0, 3]),
+        Figurinha(idDaFigurinha: 0, foto: UIImage(named: "andre")!, fotoCongelada: UIImage(named: "andre_gelo")!, nome: "Andre", frase: "Frase aqui", interests: [1], onIntends: [1, 3]),
+        Figurinha(idDaFigurinha: 0, foto: UIImage(named: "otavio")!, fotoCongelada: UIImage(named: "otavio_gelo")!, nome: "Otavio", frase: "Frase aqui", interests: [4], onIntends: [1, 2, 4]),
+        Figurinha(idDaFigurinha: 0, foto: UIImage(named: "taques")!, fotoCongelada: UIImage(named: "taques_gelo")!, nome: "Taques", frase: "Frase aqui", interests: [3], onIntends: [2, 3, 4])
+    ]
     
 }

@@ -2,44 +2,24 @@ import UIKit
 
 class Figurinha {
     var idDaFigurinha: Int
-    var idDoDono: String
-    var foto: String
+    var foto: UIImage
+    var fotoCongelada: UIImage
     var nome: String
     var frase: String
     //code, design, etc
-    var interesse: String
+    var interests: [Int]
     //trabalho, recrutar alguém, happy hour, etc
-    var buscoNoEvento: String
+    var onIntends: [Int]
+    var isCongelado: Bool
     
-    init(idDaFigurinha: Int, idDoDono: String, foto: String, nome: String, frase: String, interesse: String, buscoNoEvento: String) {
+    init(idDaFigurinha: Int, foto: UIImage, fotoCongelada: UIImage, nome: String, frase: String, interests: [Int], onIntends: [Int], isCongelado: Bool = true) {
         self.idDaFigurinha = idDaFigurinha
-        self.idDoDono = idDoDono
         self.foto = foto
+        self.fotoCongelada = fotoCongelada
         self.nome = nome
         self.frase = frase
-        self.interesse = interesse
-        self.buscoNoEvento = buscoNoEvento
+        self.interests = interests
+        self.onIntends = onIntends
+        self.isCongelado = isCongelado
     }
 }
-
-//func unique(array: [Figurinha]) -> [Figurinha] {
-//    var returnArray: [Figurinha] = []
-//    var indexArray: [Int] = []
-//    var ctrl: Bool = true
-//    
-//    for item in array {
-//        indexArray.append(item.idDaFigurinha)
-//    }
-//    indexArray.removeDuplicates()
-//    
-//    for index in indexArray {
-//        ctrl = true
-//        for item in array {
-//            if item.idDaFigurinha == index && ctrl {
-//                returnArray.append(item)
-//                ctrl = false
-//            }
-//        }
-//    }
-//    return returnArray
-//}
