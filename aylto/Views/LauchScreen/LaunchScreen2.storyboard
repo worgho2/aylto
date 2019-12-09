@@ -10,40 +10,30 @@
         <!--Teste View Controller-->
         <scene sceneID="C2g-wM-Git">
             <objects>
-                <viewController id="Mhx-1v-oCX" customClass="TesteViewController" customModule="aylto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mhx-1v-oCX" customClass="TesteViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j8i-xD-Xpi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNg-9d-awi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgS-qP-xgm">
-                                        <rect key="frame" x="166" y="413.5" width="82" height="69"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.2861481011" green="0.51843595499999995" blue="0.98435920480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="xgS-qP-xgm" firstAttribute="centerY" secondItem="hNg-9d-awi" secondAttribute="centerY" id="afd-u7-1R5"/>
-                                    <constraint firstItem="xgS-qP-xgm" firstAttribute="centerX" secondItem="hNg-9d-awi" secondAttribute="centerX" id="o3O-aM-0Ba"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctm-Vb-GpW">
+                                <rect key="frame" x="166" y="418.5" width="82" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.51764705879999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hNg-9d-awi" secondAttribute="bottom" id="7Yc-VK-MqV"/>
-                            <constraint firstItem="Joi-IN-xGp" firstAttribute="trailing" secondItem="hNg-9d-awi" secondAttribute="trailing" id="Qzq-sB-U4q"/>
-                            <constraint firstItem="hNg-9d-awi" firstAttribute="top" secondItem="j8i-xD-Xpi" secondAttribute="top" id="dHz-nD-tMH"/>
-                            <constraint firstItem="hNg-9d-awi" firstAttribute="leading" secondItem="Joi-IN-xGp" secondAttribute="leading" id="swF-Th-GTW"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="centerY" secondItem="Joi-IN-xGp" secondAttribute="centerY" id="BBo-jT-QpX"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="centerX" secondItem="Joi-IN-xGp" secondAttribute="centerX" id="Mff-PT-CXs"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="width" secondItem="j8i-xD-Xpi" secondAttribute="width" multiplier="0.198068" id="hMF-Xh-iKe"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="height" secondItem="j8i-xD-Xpi" secondAttribute="height" multiplier="0.0770089" id="xlD-wi-9AH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Joi-IN-xGp"/>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="xgS-qP-xgm" id="B3l-Cc-jhU"/>
-                        <segue destination="cAx-xQ-s94" kind="presentation" identifier="GoToEventsSegue" modalPresentationStyle="fullScreen" id="y69-XY-LS3"/>
+                        <outlet property="nameLabel" destination="ctm-Vb-GpW" id="sBu-35-7jD"/>
+                        <segue destination="cAx-xQ-s94" kind="presentation" identifier="GoToEventsSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="y69-XY-LS3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0lC-IU-BPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -53,7 +43,9 @@
         <!--Events-->
         <scene sceneID="5LD-1f-rtk">
             <objects>
-                <viewControllerPlaceholder storyboardName="Events" id="cAx-xQ-s94" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Events" id="cAx-xQ-s94" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ysc-P2-X5o"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5E-RC-HKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="375" y="179"/>

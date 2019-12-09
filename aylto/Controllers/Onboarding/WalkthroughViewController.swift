@@ -49,12 +49,28 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     func updateUI() {
         if let index = walkthroughPageViewController?.currentIndex {
             switch index {
-                case 0...1:
-                    nextButton.setTitle("NEXT", for: .normal)
-                    skipButton.isHidden = false
+                case 0,1:
+                    UIView.animate(withDuration: 0.1, animations: {
+                        self.nextButton.setTitleColor(#colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1), for: .normal)
+                    }) { _ in
+                        self.nextButton.setTitle("NEXT", for: .normal)
+                        UIView.animate(withDuration: 0.4) {
+                            self.nextButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+                            self.skipButton.isEnabled = true
+                            self.skipButton.alpha = 1
+                        }
+                    }
                 case 2:
-                    nextButton.setTitle("GET STARTED", for: .normal)
-                    skipButton.isHidden = true
+                    UIView.animate(withDuration: 0.1, animations: {
+                        self.nextButton.setTitleColor(#colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1), for: .normal)
+                    }) { _ in
+                        self.nextButton.setTitle("GET STARTED", for: .normal)
+                        UIView.animate(withDuration: 0.4) {
+                            self.nextButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+                            self.skipButton.isEnabled = false
+                            self.skipButton.alpha = 0
+                        }
+                    }
                 default: break
             }
             pageControl.currentPage = index
