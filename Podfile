@@ -6,10 +6,12 @@ target 'aylto' do
   use_frameworks!
 
   # Pods for aylto
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Core'
-  pod 'Firebase/Firestore'
-  pod 'Firebase/Auth'
+
+  #DESCOMENTAR PARA USAR O FIREBASE
+  #pod 'Firebase/Analytics'
+  #pod 'Firebase/Core'
+  #pod 'Firebase/Firestore'
+  #pod 'Firebase/Auth'
 
 
 end

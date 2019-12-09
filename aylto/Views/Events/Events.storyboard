@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qSG-H9-N9s">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Events-->
+        <scene sceneID="3bl-P0-dwO">
+            <objects>
+                <viewController id="b9p-th-jzk" customClass="EventsViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Jd-3j-FfT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-ul-883">
+                                <rect key="frame" x="25" y="108" width="364" height="754"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yP8-pW-Oft">
+                                    <size key="itemSize" width="137" height="155"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventCoverCell" id="YNi-W2-XW5" customClass="EventCoverCollectionViewCell" customModule="ICE" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yaF-ZI-TXG">
+                                            <rect key="frame" x="0.0" y="0.0" width="137" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="137" height="155"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E7k-ft-NEs" firstAttribute="trailing" secondItem="5vr-ul-883" secondAttribute="trailing" constant="25" id="2vR-TF-kNk"/>
+                            <constraint firstItem="5vr-ul-883" firstAttribute="leading" secondItem="E7k-ft-NEs" secondAttribute="leading" constant="25" id="DKM-Of-6ZT"/>
+                            <constraint firstItem="5vr-ul-883" firstAttribute="top" secondItem="E7k-ft-NEs" secondAttribute="top" constant="20" id="HtZ-Kf-xF9"/>
+                            <constraint firstItem="E7k-ft-NEs" firstAttribute="bottom" secondItem="5vr-ul-883" secondAttribute="bottom" id="NFn-2M-WSq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E7k-ft-NEs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events" id="i7B-8j-8BJ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="F4L-EP-wBA"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventsColletionView" destination="5vr-ul-883" id="jBK-Sa-2lz"/>
+                        <segue destination="H7B-6y-LeV" kind="presentation" identifier="GoToAddEventSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="T0K-9t-bft"/>
+                        <segue destination="RRY-oK-rK2" kind="presentation" identifier="GoToEventAlbumSegue" modalPresentationStyle="fullScreen" id="9pc-Dg-R4U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9P2-si-6Aj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111.594202898551" y="38.839285714285715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vbd-Qp-fFD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qSG-H9-N9s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NL7-Pn-D8s">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b9p-th-jzk" kind="relationship" relationship="rootViewController" id="ke0-b9-NF4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4S-As-E4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202.8985507246377" y="38.839285714285715"/>
+        </scene>
+        <!--EventAlbum-->
+        <scene sceneID="r2m-MB-rHQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EventAlbum" id="RRY-oK-rK2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFu-BM-Pmt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112" y="474"/>
+        </scene>
+        <!--AddEvent-->
+        <scene sceneID="aW5-rK-yd2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddEvent" id="H7B-6y-LeV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1Y9-iG-9IP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLM-2x-tRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2837" y="39"/>
+        </scene>
+    </scenes>
+</document>

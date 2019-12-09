@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mhx-1v-oCX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teste View Controller-->
+        <scene sceneID="C2g-wM-Git">
+            <objects>
+                <viewController id="Mhx-1v-oCX" customClass="TesteViewController" customModule="ICE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j8i-xD-Xpi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJO-Wq-8wZ">
+                                <rect key="frame" x="-1" y="0.5" width="416" height="905"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctm-Vb-GpW">
+                                <rect key="frame" x="166" y="418.5" width="82" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.51764705879999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fJO-Wq-8wZ" firstAttribute="height" secondItem="j8i-xD-Xpi" secondAttribute="height" multiplier="1.01" id="4qO-vR-dD3"/>
+                            <constraint firstItem="fJO-Wq-8wZ" firstAttribute="centerX" secondItem="Joi-IN-xGp" secondAttribute="centerX" id="AeP-vL-lKv"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="centerY" secondItem="Joi-IN-xGp" secondAttribute="centerY" id="BBo-jT-QpX"/>
+                            <constraint firstItem="fJO-Wq-8wZ" firstAttribute="centerY" secondItem="Joi-IN-xGp" secondAttribute="centerY" id="Eri-Vq-zmp"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="centerX" secondItem="Joi-IN-xGp" secondAttribute="centerX" id="Mff-PT-CXs"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="width" secondItem="j8i-xD-Xpi" secondAttribute="width" multiplier="0.198068" id="hMF-Xh-iKe"/>
+                            <constraint firstItem="ctm-Vb-GpW" firstAttribute="height" secondItem="j8i-xD-Xpi" secondAttribute="height" multiplier="0.0770089" id="xlD-wi-9AH"/>
+                            <constraint firstItem="fJO-Wq-8wZ" firstAttribute="width" secondItem="j8i-xD-Xpi" secondAttribute="width" multiplier="1.005" id="yXC-j4-whT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Joi-IN-xGp"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="fJO-Wq-8wZ" id="hPv-I2-c7I"/>
+                        <outlet property="nameLabel" destination="ctm-Vb-GpW" id="sBu-35-7jD"/>
+                        <segue destination="cAx-xQ-s94" kind="presentation" identifier="GoToEventsSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="y69-XY-LS3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0lC-IU-BPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="179"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="5LD-1f-rtk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" id="cAx-xQ-s94" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ysc-P2-X5o"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5E-RC-HKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="179"/>
+        </scene>
+    </scenes>
+</document>

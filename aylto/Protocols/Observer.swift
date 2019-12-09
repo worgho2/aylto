@@ -1,5 +1,3 @@
 protocol ObserverDelegate {
-    
     func notify()
-    
 }
