@@ -273,6 +273,7 @@
                         <segue destination="JnD-0C-xzR" kind="presentation" identifier="GoToShowQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="tzE-1o-G80"/>
                         <segue destination="C2y-Pv-dPb" kind="presentation" identifier="GoToScanQRCodeSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="LmR-F5-jNg"/>
                         <segue destination="x4w-2e-KTz" kind="presentation" identifier="GoToCardDetailSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="yMS-KH-gRT"/>
+                        <segue destination="Hka-Bx-csP" kind="presentation" id="24I-GU-po5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="an6-AE-IEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -293,7 +294,15 @@
                 <viewControllerPlaceholder storyboardName="ShowQR" id="JnD-0C-xzR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-YD-kqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326.8115942028987" y="172.76785714285714"/>
+            <point key="canvasLocation" x="1324" y="173"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="T6i-yg-45u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" id="Hka-Bx-csP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7y-nK-suE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="237"/>
         </scene>
         <!--CardDetail-->
         <scene sceneID="X4D-ws-MfA">

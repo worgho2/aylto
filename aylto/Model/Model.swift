@@ -20,7 +20,7 @@ class Model {
         Evento(idDoEvento: "20321", idDosAlbuns: [], nomeDoEvento: "NS Brazil", dataDoEvento: "", fotoDeCapa: ""),
     ]
     var albums: [Album]! = []
-    var figurinhas: [Figurinha]! = [
+    var figurinhas: [Figurinha] = [
         Figurinha(idDaFigurinha: 0, foto: UIImage(named: "yumi")!, fotoCongelada: UIImage(named: "yumi_gelo")!, nome: "Yumi", frase: "Frase aqui", interests: [0,3,4], onIntends: [0, 3]),
         Figurinha(idDaFigurinha: 0, foto: UIImage(named: "andre")!, fotoCongelada: UIImage(named: "andre_gelo")!, nome: "Andre", frase: "Frase aqui", interests: [1], onIntends: [1, 3]),
         Figurinha(idDaFigurinha: 0, foto: UIImage(named: "otavio")!, fotoCongelada: UIImage(named: "otavio_gelo")!, nome: "Otavio", frase: "Frase aqui", interests: [4], onIntends: [1, 2, 4]),
