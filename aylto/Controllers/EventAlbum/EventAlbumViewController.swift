@@ -117,6 +117,42 @@ extension EventAlbumViewController: UICollectionViewDataSource, UICollectionView
         
     }
     
+//    func setupView() {
+//        albumImageView.clipsToBounds = true
+//        albumImageView.layer.cornerRadius = (albumImageView.frame.width + albumImageView.frame.height) / 4
+//        albumImageView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.7856478217, alpha: 0.4347174658)
+//        
+//        albumShowMyCardButton.layer.cornerRadius = 10.0
+//    }
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "GoToCardDetailSegue" {
+//            if let vc = segue.destination as? CardDetailViewController {
+//                if self.myCard {
+//                    vc.figurinhaAtual = Model.shared.figurinhaAtual
+//                } else {
+//                    vc.figurinhaAtual = Model.shared.figurinhas[self.indexCard]
+//                    
+//                }
+//                
+//            }
+//        }
+//    }
+//    
+//    
+//    @IBAction func onShowMyCard(_ sender: Any) {
+//        myCard = true
+//        performSegue(withIdentifier: "GoToCardDetailSegue", sender: nil)
+//    }
+//    
+//    @IBAction func onSwapButton(_ sender: Any) {
+//        self.showQRCodeOptions()
+//    }
+//    
+//    @IBAction func onHomeButton(_ sender: Any) {
+//        self.navigationController?.popToRootViewController(animated: false)
+//    }
+    
 }
 
 extension EventAlbumViewController {

@@ -255,6 +255,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
         } else {
             Model.shared.onIntends.append(tag)
         }
+        print(Model.shared.onIntends)
 //        for i in Model.shared.onIntends {
 //            print(i)
 //        }
