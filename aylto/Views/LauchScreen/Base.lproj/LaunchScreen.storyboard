@@ -15,29 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-Ic-jSP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZo-AF-Pvu">
-                                        <rect key="frame" x="166" y="413.5" width="82" height="69"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
-                                        <color key="textColor" red="0.33787459139999998" green="0.52356564999999999" blue="0.95298391579999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="jZo-AF-Pvu" firstAttribute="centerY" secondItem="JU4-Ic-jSP" secondAttribute="centerY" id="Bqy-I3-1iE"/>
-                                    <constraint firstItem="jZo-AF-Pvu" firstAttribute="centerX" secondItem="JU4-Ic-jSP" secondAttribute="centerX" id="UBU-0R-QuT"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx7-ag-iKB">
+                                <rect key="frame" x="166" y="418.5" width="82" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" red="0.33787459139999998" green="0.52356564999999999" blue="0.95298391579999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="JU4-Ic-jSP" secondAttribute="bottom" id="Mfy-xd-IBT"/>
-                            <constraint firstItem="JU4-Ic-jSP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Xaz-Ls-fSy"/>
-                            <constraint firstAttribute="trailing" secondItem="JU4-Ic-jSP" secondAttribute="trailing" id="esz-2R-Co2"/>
-                            <constraint firstItem="JU4-Ic-jSP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lkJ-xc-n9e"/>
+                            <constraint firstItem="Xx7-ag-iKB" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.198068" id="HbE-L2-hgK"/>
+                            <constraint firstItem="Xx7-ag-iKB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WK5-KT-LvS"/>
+                            <constraint firstItem="Xx7-ag-iKB" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.0770089" id="afG-ng-URX"/>
+                            <constraint firstItem="Xx7-ag-iKB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xKC-uW-Lme"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
