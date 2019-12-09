@@ -9,7 +9,7 @@ class Model {
     }
     
     var interests:[Int] = []
-    var isIntendedTo: [Int] = []
+    var onIntends: [Int] = []
    
     var usuario: Usuario! = Usuario(idDoUsuario: "", primeiroNome: "Lary", sobrenome: "Tertuliano", email: "", idDasFigurinhas: [], idDosAlbuns: [])
     var figurinhaAtual: Figurinha?

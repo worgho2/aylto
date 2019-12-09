@@ -110,7 +110,6 @@ class CardDetailViewController: UIViewController {
         intendToHappyHourButton.setImage(UIImage(named: "happyhour")!, for: .normal)
         intendToNeedAMentorButton.setImage(UIImage(named: "needamentor")!, for: .normal)
         
-        print(Model.shared.isIntendedTo)
         
         if Model.shared.figurinhaAtual!.onIntends.contains(0) {
             intendToNewJobButton.setImage(UIImage(named: "newjob_active")!, for: .normal)

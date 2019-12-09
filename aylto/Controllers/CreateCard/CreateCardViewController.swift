@@ -234,7 +234,7 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     }
     
     func createCard() {
-        Model.shared.figurinhaAtual = Figurinha(idDaFigurinha: 1, foto: profileImageView.image ?? UIImage(named: "login")!, fotoCongelada: profileImageView.image ?? UIImage(named: "login")!, nome: profileNameLabel.text!, frase: phraseTextField.text!, interests: Model.shared.interests, onIntends: Model.shared.isIntendedTo)
+        Model.shared.figurinhaAtual = Figurinha(idDaFigurinha: 1, foto: profileImageView.image ?? UIImage(named: "login")!, fotoCongelada: profileImageView.image ?? UIImage(named: "login")!, nome: profileNameLabel.text!, frase: phraseTextField.text!, interests: Model.shared.interests, onIntends: Model.shared.onIntends)
     }
     
     func addRemoveInterest(tag: Int) {
@@ -243,21 +243,21 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
         } else {
             Model.shared.interests.append(tag)
         }
-        for i in Model.shared.interests {
-            print(i)
-        }
+//        for i in Model.shared.interests {
+//            print(i)
+//        }
         
     }
     
     func addRemoveOnIntend(tag: Int) {
-        if Model.shared.isIntendedTo.contains(tag) {
-            Model.shared.isIntendedTo = Model.shared.isIntendedTo.filter { $0 != tag }
+        if Model.shared.onIntends.contains(tag) {
+            Model.shared.onIntends = Model.shared.onIntends.filter { $0 != tag }
         } else {
-            Model.shared.isIntendedTo.append(tag)
+            Model.shared.onIntends.append(tag)
         }
-        for i in Model.shared.isIntendedTo {
-            print(i)
-        }
+//        for i in Model.shared.onIntends {
+//            print(i)
+//        }
         
     }
 }
