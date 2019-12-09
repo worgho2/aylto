@@ -48,6 +48,7 @@ class CardDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(figurinhaAtual.onIntends)
         self.setupView()
         self.setupButtons()
         self.setupIntends()
@@ -111,22 +112,22 @@ class CardDetailViewController: UIViewController {
         intendToNeedAMentorButton.setImage(UIImage(named: "needamentor")!, for: .normal)
         
         
-        if Model.shared.figurinhaAtual!.onIntends.contains(0) {
+        if self.figurinhaAtual.onIntends.contains(0) {
             intendToNewJobButton.setImage(UIImage(named: "newjob_active")!, for: .normal)
         }
-        if Model.shared.figurinhaAtual!.onIntends.contains(1) {
+        if self.figurinhaAtual!.onIntends.contains(1) {
             intendToImARecruiterButton.setImage(UIImage(named: "imarecruiter_active")!, for: .normal)
         }
-        if Model.shared.figurinhaAtual!.onIntends.contains(2) {
+        if self.figurinhaAtual!.onIntends.contains(2) {
             intendToGivingATalkButton.setImage(UIImage(named: "givingatalk_active")!, for: .normal)
         }
-        if Model.shared.figurinhaAtual!.onIntends.contains(3) {
+        if self.figurinhaAtual!.onIntends.contains(3) {
             intendToBusinessTalkButton.setImage(UIImage(named: "businesstalk_active")!, for: .normal)
         }
-        if Model.shared.figurinhaAtual!.onIntends.contains(4) {
+        if self.figurinhaAtual!.onIntends.contains(4) {
             intendToHappyHourButton.setImage(UIImage(named: "happyhour_active")!, for: .normal)
         }
-        if Model.shared.figurinhaAtual!.onIntends.contains(5) {
+        if self.figurinhaAtual!.onIntends.contains(5) {
             intendToNeedAMentorButton.setImage(UIImage(named: "needamentor_active")!, for: .normal)
         }
         
@@ -175,6 +176,28 @@ class CardDetailViewController: UIViewController {
         interesInBusinessButton.backgroundColor = .white
         interesInArtButton.backgroundColor = .white
         interestInSportsButton.backgroundColor = .white
+        
+        if self.figurinhaAtual.interests.contains(0) {
+            interestInDesignButton.backgroundColor = #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
+            interestInDesignButton.setTitleColor(.white, for: .normal)
+        }
+        if self.figurinhaAtual!.interests.contains(1) {
+            interestInCodingButton.backgroundColor = #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
+            interestInCodingButton.setTitleColor(.white, for: .normal)
+            
+        }
+        if self.figurinhaAtual!.interests.contains(2) {
+            interesInBusinessButton.backgroundColor = #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
+           interesInBusinessButton.setTitleColor(.white, for: .normal)
+        }
+        if self.figurinhaAtual!.interests.contains(3) {
+            interesInArtButton.backgroundColor = #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
+            interesInArtButton.setTitleColor(.white, for: .normal)
+        }
+        if self.figurinhaAtual!.interests.contains(4) {
+            interestInSportsButton.backgroundColor = #colorLiteral(red: 0.3333333333, green: 0.4980392157, blue: 0.9450980392, alpha: 1)
+            interestInSportsButton.setTitleColor(.white, for: .normal)
+        }
     }
     
     @IBAction func onContact(_ sender: Any) {

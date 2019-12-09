@@ -91,6 +91,7 @@ class EventAlbumViewController: UIViewController, UICollectionViewDataSource, UI
                     vc.figurinhaAtual = Model.shared.figurinhaAtual
                 } else {
                     vc.figurinhaAtual = Model.shared.figurinhas[self.indexCard]
+                    
                 }
                 
             }
