@@ -2,7 +2,7 @@ import UIKit
 
 class Figurinha {
     var idDaFigurinha: Int
-    var idDoDono: Int
+    var idDoDono: String
     var foto: String
     var nome: String
     var frase: String
@@ -11,7 +11,7 @@ class Figurinha {
     //trabalho, recrutar alguém, happy hour, etc
     var buscoNoEvento: String
     
-    init(idDaFigurinha: Int, idDoDono: Int, foto: String, nome: String, frase: String, interesse: String, buscoNoEvento: String) {
+    init(idDaFigurinha: Int, idDoDono: String, foto: String, nome: String, frase: String, interesse: String, buscoNoEvento: String) {
         self.idDaFigurinha = idDaFigurinha
         self.idDoDono = idDoDono
         self.foto = foto

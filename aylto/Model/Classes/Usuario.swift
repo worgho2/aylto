@@ -1,7 +1,8 @@
 import UIKit
 
 class Usuario {
-    internal init(idDoUsuario: Int, primeiroNome: String, sobrenome: String, email: String, idDasFigurinhas: [Int], idDosAlbuns: [Int]) {
+    
+    internal init(idDoUsuario: String, primeiroNome: String, sobrenome: String, email: String, idDasFigurinhas: [Int], idDosAlbuns: [Int]) {
         self.idDoUsuario = idDoUsuario
         self.primeiroNome = primeiroNome
         self.sobrenome = sobrenome
@@ -10,7 +11,7 @@ class Usuario {
         self.idDosAlbuns = idDosAlbuns
     }
     
-    var idDoUsuario: Int
+    var idDoUsuario: String
     var primeiroNome: String
     var sobrenome: String
     var email: String

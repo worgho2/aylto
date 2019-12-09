@@ -22,7 +22,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfg-7c-w5C" userLabel="image">
                                 <rect key="frame" x="0.0" y="85" width="414" height="351.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jsn-6D-e1H">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login2" translatesAutoresizingMaskIntoConstraints="NO" id="jsn-6D-e1H">
                                         <rect key="frame" x="54" y="23" width="306" height="306"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="jsn-6D-e1H" secondAttribute="height" id="TFa-v5-sTB"/>
@@ -61,7 +61,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-KH-MHh" userLabel="footer">
                                 <rect key="frame" x="0.0" y="772" width="414" height="82"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ao fazer login, você aceita nossos Termos de uso e Política de Privacidade." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-hH-ksc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By logging in, you accept our terms of use and privacy policy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-hH-ksc">
                                         <rect key="frame" x="10.5" y="30.5" width="393" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
@@ -104,11 +104,25 @@
                     </view>
                     <connections>
                         <outlet property="buttonView" destination="h6p-jG-7hx" id="QAt-2r-2Ky"/>
+                        <segue destination="uB1-Wx-H3f" kind="show" identifier="showEventAlbum" id="JxD-P5-DfU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dco-dA-XTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="-723"/>
+            <point key="canvasLocation" x="-384" y="-737"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="5Ut-ZN-R8A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" id="uB1-Wx-H3f" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oIl-84-rhI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsH-pq-V8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="-737"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Login2" width="756" height="742"/>
+    </resources>
 </document>
