@@ -1,7 +1,6 @@
 import AVFoundation
 
 enum SongLibrary : String, CaseIterable {
-    case dance = "dance-elevation.mp3"
     case night = "night-at-the-club.mp3"
 }
 
@@ -19,4 +18,5 @@ enum IntroWithLoopLibrary: CaseIterable {
 enum SoundEffectLibrary : String, CaseIterable {
     case synth = "click-synth.mp3"
     case double = "click-double.mp3"
+    case freeze = "freeze.mp3"
 }

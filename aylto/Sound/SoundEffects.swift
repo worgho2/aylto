@@ -25,6 +25,7 @@ class SoundEffect {
     func play() {
         for player in players {
             if player.isPlaying == false {
+                player.setVolume(0.05, fadeDuration: 0.1)
                 player.play()
                 return
             }

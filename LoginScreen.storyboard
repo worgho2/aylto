@@ -104,7 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonView" destination="h6p-jG-7hx" id="QAt-2r-2Ky"/>
-                        <segue destination="uB1-Wx-H3f" kind="show" identifier="showEventAlbum" id="JxD-P5-DfU"/>
+                        <segue destination="uB1-Wx-H3f" kind="presentation" identifier="GoToEventsSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="JxD-P5-DfU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dco-dA-XTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -119,7 +119,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsH-pq-V8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="617" y="-737"/>
+            <point key="canvasLocation" x="343" y="-737"/>
         </scene>
     </scenes>
     <resources>

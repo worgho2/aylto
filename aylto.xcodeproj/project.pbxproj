@@ -48,6 +48,17 @@
 		7AD0576F239D773D00EBB51A /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD0576E239D773D00EBB51A /* ScanQRViewController.swift */; };
 		7AD05771239D910C00EBB51A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD05770239D910C00EBB51A /* UIViewController.swift */; };
 		7AD05773239D923E00EBB51A /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD05772239D923E00EBB51A /* ScanQRView.swift */; };
+		7AD05777239EC76A00EBB51A /* AudioLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B27DD23983E98007A7508 /* AudioLibrary.swift */; };
+		7AD05778239EC76A00EBB51A /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B27DE23983E98007A7508 /* AudioManager.swift */; };
+		7AD05779239EC76A00EBB51A /* IntroWithLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B27DB23983E98007A7508 /* IntroWithLoop.swift */; };
+		7AD0577A239EC76A00EBB51A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B27DC23983E98007A7508 /* Song.swift */; };
+		7AD0577B239EC76A00EBB51A /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B27DF23983E98007A7508 /* SoundEffects.swift */; };
+		7AD05782239EC7C100EBB51A /* click-double.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B27E323983F9A007A7508 /* click-double.mp3 */; };
+		7AD05783239EC7C100EBB51A /* click-synth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B27E523983F9A007A7508 /* click-synth.mp3 */; };
+		7AD05784239EC7C100EBB51A /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B27E223983F9A007A7508 /* intro.mp3 */; };
+		7AD05785239EC7C100EBB51A /* loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B27E623983F9B007A7508 /* loop.mp3 */; };
+		7AD05786239EC7C100EBB51A /* night-at-the-club.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B27E423983F9A007A7508 /* night-at-the-club.mp3 */; };
+		7AD0578C239ECE9D00EBB51A /* freeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AD0578B239ECE9D00EBB51A /* freeze.mp3 */; };
 		7AF8308E239C22BB00E2FBC4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */; };
 		7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
@@ -114,6 +125,7 @@
 		7AD0576E239D773D00EBB51A /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		7AD05770239D910C00EBB51A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7AD05772239D923E00EBB51A /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
+		7AD0578B239ECE9D00EBB51A /* freeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = freeze.mp3; sourceTree = "<group>"; };
 		7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigurinhaCollectionViewCell.swift; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +176,7 @@
 				29CCEC3D2388514800BF7A91 /* Assets.xcassets */,
 				29CCEC342388514700BF7A91 /* AppDelegate.swift */,
 				29CCEC362388514700BF7A91 /* SceneDelegate.swift */,
+				7A1B27DA23983E98007A7508 /* Sound */,
 				29CCEC4C2388528300BF7A91 /* Modules */,
 				7A13DE0C23997756007E32E4 /* Protocols */,
 				29CCEC4B2388527D00BF7A91 /* Extensions */,
@@ -187,9 +200,9 @@
 		29CCEC492388527300BF7A91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F9554003239E16AA0020B25D /* LoginScreen */,
 				7A13DE1323997A20007E32E4 /* LauchScreen */,
 				7A045CF3239C0BEE00C3B4F0 /* Onboarding */,
+				F9554003239E16AA0020B25D /* LoginScreen */,
 				7A93B850239C25210087B5F2 /* Events */,
 				7A270759239C46460039B673 /* AddEvent */,
 				7A2A173E239C73390066F9A0 /* CreateCard */,
@@ -204,9 +217,9 @@
 		29CCEC4A2388527700BF7A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F9554006239E1C750020B25D /* LoginScreen */,
 				7A13DE1423997A4D007E32E4 /* LauchScreen */,
 				7A045CF2239C093F00C3B4F0 /* Onboarding */,
+				F9554006239E1C750020B25D /* LoginScreen */,
 				7A93B84D239C24E70087B5F2 /* Events */,
 				7A27075C239C467D0039B673 /* AddEvent */,
 				7A2A173F239C734D0066F9A0 /* CreateCard */,
@@ -232,7 +245,6 @@
 		29CCEC4C2388528300BF7A91 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				7A1B27DA23983E98007A7508 /* Sound */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -316,6 +328,7 @@
 		7A1B27E723983FA5007A7508 /* SoudTracks */ = {
 			isa = PBXGroup;
 			children = (
+				7AD0578B239ECE9D00EBB51A /* freeze.mp3 */,
 				7A1B27E323983F9A007A7508 /* click-double.mp3 */,
 				7A1B27E523983F9A007A7508 /* click-synth.mp3 */,
 				7A1B27E223983F9A007A7508 /* intro.mp3 */,
@@ -542,19 +555,25 @@
 				7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */,
 				7A68CC6F239D36D0006D9DB3 /* CardDetail.storyboard in Resources */,
 				7AD0576D239D76C900EBB51A /* ScanQR.storyboard in Resources */,
+				7AD0578C239ECE9D00EBB51A /* freeze.mp3 in Resources */,
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
 				7AD05769239D676300EBB51A /* ShowQR.storyboard in Resources */,
 				F9554005239E16C40020B25D /* LoginScreen.storyboard in Resources */,
 				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
+				7AD05783239EC7C100EBB51A /* click-synth.mp3 in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventAlbum.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
 				7A27075B239C46720039B673 /* AddEvent.storyboard in Resources */,
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 				7A2A1745239C7DFB0066F9A0 /* CreateCard.storyboard in Resources */,
+				7AD05782239EC7C100EBB51A /* click-double.mp3 in Resources */,
 				29294CAA239D49DB009F04C0 /* ParticipantCollectionViewCell.xib in Resources */,
+				7AD05785239EC7C100EBB51A /* loop.mp3 in Resources */,
 				7A93B856239C2D850087B5F2 /* EventCoverCollectionViewCell.xib in Resources */,
 				7A93B84F239C251B0087B5F2 /* Events.storyboard in Resources */,
+				7AD05786239EC7C100EBB51A /* night-at-the-club.mp3 in Resources */,
+				7AD05784239EC7C100EBB51A /* intro.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,13 +609,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD05779239EC76A00EBB51A /* IntroWithLoop.swift in Sources */,
 				F9C30E2D238D9E140044DF63 /* Model.swift in Sources */,
 				29CCEC352388514700BF7A91 /* AppDelegate.swift in Sources */,
+				7AD05777239EC76A00EBB51A /* AudioLibrary.swift in Sources */,
 				7A93B84C239C24C60087B5F2 /* EventsViewController.swift in Sources */,
 				F90F5BC02390586700AAA791 /* Album.swift in Sources */,
 				7A2A1747239C8BA40066F9A0 /* CreateCardViewController.swift in Sources */,
 				7AD0576B239D677800EBB51A /* ShowQRViewController.swift in Sources */,
 				F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */,
+				7AD05778239EC76A00EBB51A /* AudioManager.swift in Sources */,
 				7A045CEC239C03D200C3B4F0 /* Item.swift in Sources */,
 				3FA7A860238C57B8007CB05A /* AddEventViewController.swift in Sources */,
 				7A7D461E2391A1B6004E92E9 /* ShowQRView.swift in Sources */,
@@ -605,6 +627,7 @@
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
 				7A93B855239C2D850087B5F2 /* EventCoverCollectionViewCell.swift in Sources */,
 				29294CA9239D49DB009F04C0 /* ParticipantCollectionViewCell.swift in Sources */,
+				7AD0577B239EC76A00EBB51A /* SoundEffects.swift in Sources */,
 				7AD05773239D923E00EBB51A /* ScanQRView.swift in Sources */,
 				7AD0576F239D773D00EBB51A /* ScanQRViewController.swift in Sources */,
 				7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */,
@@ -623,6 +646,7 @@
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
 				7A68CC71239D36E5006D9DB3 /* CardDetailViewController.swift in Sources */,
 				7A68CC73239D3A64006D9DB3 /* UIButton.swift in Sources */,
+				7AD0577A239EC76A00EBB51A /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,14 +785,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y8J5WK586H;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.ayltoa;
 				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -782,14 +806,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y8J5WK586H;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.ayltoa;
 				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
