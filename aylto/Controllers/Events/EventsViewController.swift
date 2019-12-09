@@ -12,7 +12,7 @@ class EventsViewController: UIViewController {
         }
     }
         
-    var filteredEvents = Model.shared.meusEventos
+    var filteredEvents = Model.shared.eventos
     
     let selectionFeedback = UISelectionFeedbackGenerator()
     
@@ -30,12 +30,12 @@ class EventsViewController: UIViewController {
 
 extension EventsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return filteredEvents.count + 1
+        return filteredEvents!.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = eventsColletionView.dequeueReusableCell(withReuseIdentifier: "EventCoverCell", for: indexPath) as! EventCoverCollectionViewCell
-        cell.setup(title: filteredEvents.indices.contains(indexPath.item - 1) ? filteredEvents[indexPath.item -  1].nomeDoEvento : "", date: filteredEvents.indices.contains(indexPath.item - 1) ? filteredEvents[indexPath.item - 1].dataDoEvento : "", indexControl: indexPath.item)
+        cell.setup(title: filteredEvents!.indices.contains(indexPath.item - 1) ? filteredEvents![indexPath.item -  1].nomeDoEvento : "", date: filteredEvents!.indices.contains(indexPath.item - 1) ? filteredEvents![indexPath.item - 1].dataDoEvento : "", indexControl: indexPath.item)
         return cell
     }
     
@@ -54,7 +54,7 @@ extension EventsViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchBar.selectedScopeButtonIndex)
         if !searchText.isEmpty {
-            self.filteredEvents = Model.shared.meusEventos.filter({ event -> Bool in
+            self.filteredEvents! = Model.shared.eventos.filter({ event -> Bool in
                 guard let text = searchBar.text else { return false }
                 
                 var occurrences = [Bool]()
@@ -72,7 +72,7 @@ extension EventsViewController: UISearchBarDelegate {
             })
             self.eventsColletionView.reloadData()
         } else {
-            self.filteredEvents = Model.shared.meusEventos
+            self.filteredEvents! = Model.shared.eventos
             self.eventsColletionView.reloadData()
         }
     }
