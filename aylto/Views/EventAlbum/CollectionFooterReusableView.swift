@@ -14,7 +14,7 @@ class CollectionFooterReusableView: UICollectionReusableView {
         self.view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
         self.addSubview(self.view)
         
-        self.view.backgroundColor = .black
+        self.view.backgroundColor = .white
     }
     
 }

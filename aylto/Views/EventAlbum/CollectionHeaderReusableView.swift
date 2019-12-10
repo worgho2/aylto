@@ -14,7 +14,7 @@ class CollectionHeaderReusableView: UICollectionReusableView {
         self.view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
         self.addSubview(self.view)
         
-        self.view.backgroundColor = .black
+        self.view.backgroundColor = .white
     }
     
 }
