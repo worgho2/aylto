@@ -48,6 +48,8 @@ class EventAlbumViewController: UIViewController {
         albumImageView.clipsToBounds = true
         albumImageView.layer.cornerRadius = (albumImageView.frame.width + albumImageView.frame.height) / 4
         albumImageView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.7856478217, alpha: 0.4347174658)
+        albumImageView.image = Model.shared.figurinhaAtual?.foto
+        albumImageView.contentMode = .scaleAspectFill
         
         albumShowMyCardButton.layer.cornerRadius = 10.0
     }
