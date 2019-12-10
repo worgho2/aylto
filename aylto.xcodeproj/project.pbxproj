@@ -22,18 +22,19 @@
 		3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */; };
 		3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */; };
 		3FA7A860238C57B8007CB05A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7A85F238C57B8007CB05A /* AddEventViewController.swift */; };
-		4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */; };
 		7A045CEC239C03D200C3B4F0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEB239C03D200C3B4F0 /* Item.swift */; };
 		7A045CF0239C05A400C3B4F0 /* Figurinha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEE239C05A300C3B4F0 /* Figurinha.swift */; };
 		7A045CF1239C05A400C3B4F0 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A045CEF239C05A300C3B4F0 /* Evento.swift */; };
 		7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A045CF4239C0C5000C3B4F0 /* Onboarding.storyboard */; };
 		7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13DE112399796D007E32E4 /* UIImageView.swift */; };
 		7A13DE1623997B58007E32E4 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A13DE1523997B58007E32E4 /* LaunchScreen2.storyboard */; };
-		7A25012F239CC8FC0030CAEC /* AlbumCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A25012D239CC8FC0030CAEC /* AlbumCollectionReusableView.swift */; };
-		7A250130239CC8FC0030CAEC /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A25012E239CC8FC0030CAEC /* FooterCollectionReusableView.swift */; };
 		7A27075B239C46720039B673 /* AddEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A27075A239C46720039B673 /* AddEvent.storyboard */; };
 		7A2A1745239C7DFB0066F9A0 /* CreateCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A1744239C7DFB0066F9A0 /* CreateCard.storyboard */; };
 		7A2A1747239C8BA40066F9A0 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A1746239C8BA40066F9A0 /* CreateCardViewController.swift */; };
+		7A5E7998239F117D001A5DB9 /* CollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E7996239F117D001A5DB9 /* CollectionHeaderReusableView.swift */; };
+		7A5E7999239F117D001A5DB9 /* CollectionHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E7997239F117D001A5DB9 /* CollectionHeaderReusableView.xib */; };
+		7A5E799C239F209F001A5DB9 /* CollectionFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E799A239F209F001A5DB9 /* CollectionFooterReusableView.swift */; };
+		7A5E799D239F209F001A5DB9 /* CollectionFooterReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E799B239F209F001A5DB9 /* CollectionFooterReusableView.xib */; };
 		7A68CC6F239D36D0006D9DB3 /* CardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A68CC6E239D36D0006D9DB3 /* CardDetail.storyboard */; };
 		7A68CC71239D36E5006D9DB3 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CC70239D36E5006D9DB3 /* CardDetailViewController.swift */; };
 		7A68CC73239D3A64006D9DB3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CC72239D3A64006D9DB3 /* UIButton.swift */; };
@@ -59,8 +60,6 @@
 		7AD05785239EC7C100EBB51A /* loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B27E623983F9B007A7508 /* loop.mp3 */; };
 		7AD05786239EC7C100EBB51A /* night-at-the-club.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B27E423983F9A007A7508 /* night-at-the-club.mp3 */; };
 		7AD0578C239ECE9D00EBB51A /* freeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AD0578B239ECE9D00EBB51A /* freeze.mp3 */; };
-		7AF8308E239C22BB00E2FBC4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */; };
-		7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */; };
 		A7CF86588D6B6080E1698C30 /* Pods_aylto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFF51254F1AAA63BA9D0EE /* Pods_aylto.framework */; };
 		F90F5BBE238F0BE500AAA791 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBD238F0BE500AAA791 /* Observer.swift */; };
 		F90F5BC02390586700AAA791 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5BBF2390586700AAA791 /* Album.swift */; };
@@ -88,7 +87,6 @@
 		3FA7A853238C55CD007CB05A /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		3FA7A854238C55CD007CB05A /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		3FA7A85F238C57B8007CB05A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
-		4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		74A0BECB984E70DBAD05E6CF /* Pods-aylto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.release.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.release.xcconfig"; sourceTree = "<group>"; };
 		7A045CEB239C03D200C3B4F0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7A045CEE239C05A300C3B4F0 /* Figurinha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Figurinha.swift; sourceTree = "<group>"; };
@@ -106,11 +104,13 @@
 		7A1B27E423983F9A007A7508 /* night-at-the-club.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "night-at-the-club.mp3"; sourceTree = "<group>"; };
 		7A1B27E523983F9A007A7508 /* click-synth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "click-synth.mp3"; sourceTree = "<group>"; };
 		7A1B27E623983F9B007A7508 /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
-		7A25012D239CC8FC0030CAEC /* AlbumCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCollectionReusableView.swift; sourceTree = "<group>"; };
-		7A25012E239CC8FC0030CAEC /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		7A27075A239C46720039B673 /* AddEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddEvent.storyboard; sourceTree = "<group>"; };
 		7A2A1744239C7DFB0066F9A0 /* CreateCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCard.storyboard; sourceTree = "<group>"; };
 		7A2A1746239C8BA40066F9A0 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
+		7A5E7996239F117D001A5DB9 /* CollectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderReusableView.swift; sourceTree = "<group>"; };
+		7A5E7997239F117D001A5DB9 /* CollectionHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderReusableView.xib; sourceTree = "<group>"; };
+		7A5E799A239F209F001A5DB9 /* CollectionFooterReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooterReusableView.swift; sourceTree = "<group>"; };
+		7A5E799B239F209F001A5DB9 /* CollectionFooterReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionFooterReusableView.xib; sourceTree = "<group>"; };
 		7A68CC6E239D36D0006D9DB3 /* CardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetail.storyboard; sourceTree = "<group>"; };
 		7A68CC70239D36E5006D9DB3 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		7A68CC72239D3A64006D9DB3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
@@ -126,8 +126,6 @@
 		7AD05770239D910C00EBB51A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7AD05772239D923E00EBB51A /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
 		7AD0578B239ECE9D00EBB51A /* freeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = freeze.mp3; sourceTree = "<group>"; };
-		7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
-		7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigurinhaCollectionViewCell.swift; sourceTree = "<group>"; };
 		B06AFB0FBAF70F2CFA7A3092 /* Pods-aylto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aylto.debug.xcconfig"; path = "Target Support Files/Pods-aylto/Pods-aylto.debug.xcconfig"; sourceTree = "<group>"; };
 		F90F5BBD238F0BE500AAA791 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		F90F5BBF2390586700AAA791 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 				7A13DE0C23997756007E32E4 /* Protocols */,
 				29CCEC4B2388527D00BF7A91 /* Extensions */,
 				29CCEC482388526D00BF7A91 /* Model */,
-				7AF8307D239C217700E2FBC4 /* old(precisaAnalisarSeAlgumaCoisaServe) */,
 				29CCEC4A2388527700BF7A91 /* Controllers */,
 				29CCEC492388527300BF7A91 /* Views */,
 			);
@@ -352,6 +349,10 @@
 				3F048FCB238F0F270033B6C6 /* EventAlbum.storyboard */,
 				29294CA7239D49DB009F04C0 /* ParticipantCollectionViewCell.swift */,
 				29294CA8239D49DB009F04C0 /* ParticipantCollectionViewCell.xib */,
+				7A5E7996239F117D001A5DB9 /* CollectionHeaderReusableView.swift */,
+				7A5E7997239F117D001A5DB9 /* CollectionHeaderReusableView.xib */,
+				7A5E799A239F209F001A5DB9 /* CollectionFooterReusableView.swift */,
+				7A5E799B239F209F001A5DB9 /* CollectionFooterReusableView.xib */,
 			);
 			path = EventAlbum;
 			sourceTree = "<group>";
@@ -456,18 +457,6 @@
 			path = Events;
 			sourceTree = "<group>";
 		};
-		7AF8307D239C217700E2FBC4 /* old(precisaAnalisarSeAlgumaCoisaServe) */ = {
-			isa = PBXGroup;
-			children = (
-				7A25012D239CC8FC0030CAEC /* AlbumCollectionReusableView.swift */,
-				7A25012E239CC8FC0030CAEC /* FooterCollectionReusableView.swift */,
-				7AF83089239C22BB00E2FBC4 /* CardCollectionViewCell.swift */,
-				7AF8308C239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift */,
-				4B7C10422399771D005E3372 /* CardCollectionViewCell.xib */,
-			);
-			path = "old(precisaAnalisarSeAlgumaCoisaServe)";
-			sourceTree = "<group>";
-		};
 		8CEBE84DDA289ED485BDDD08 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,8 +548,8 @@
 				29CCEC412388514800BF7A91 /* LaunchScreen.storyboard in Resources */,
 				7A045CF5239C0C5000C3B4F0 /* Onboarding.storyboard in Resources */,
 				7AD05769239D676300EBB51A /* ShowQR.storyboard in Resources */,
+				7A5E799D239F209F001A5DB9 /* CollectionFooterReusableView.xib in Resources */,
 				F9554005239E16C40020B25D /* LoginScreen.storyboard in Resources */,
-				4B7C10442399771D005E3372 /* CardCollectionViewCell.xib in Resources */,
 				7AD05783239EC7C100EBB51A /* click-synth.mp3 in Resources */,
 				3F048FCC238F0F270033B6C6 /* EventAlbum.storyboard in Resources */,
 				3F048FD223918BED0033B6C6 /* (null) in Resources */,
@@ -568,6 +557,7 @@
 				29CCEC3E2388514800BF7A91 /* Assets.xcassets in Resources */,
 				7A2A1745239C7DFB0066F9A0 /* CreateCard.storyboard in Resources */,
 				7AD05782239EC7C100EBB51A /* click-double.mp3 in Resources */,
+				7A5E7999239F117D001A5DB9 /* CollectionHeaderReusableView.xib in Resources */,
 				29294CAA239D49DB009F04C0 /* ParticipantCollectionViewCell.xib in Resources */,
 				7AD05785239EC7C100EBB51A /* loop.mp3 in Resources */,
 				7A93B856239C2D850087B5F2 /* EventCoverCollectionViewCell.xib in Resources */,
@@ -627,20 +617,18 @@
 				F90F5BC22390587C00AAA791 /* Usuario.swift in Sources */,
 				7A93B855239C2D850087B5F2 /* EventCoverCollectionViewCell.swift in Sources */,
 				29294CA9239D49DB009F04C0 /* ParticipantCollectionViewCell.swift in Sources */,
+				7A5E799C239F209F001A5DB9 /* CollectionFooterReusableView.swift in Sources */,
 				7AD0577B239EC76A00EBB51A /* SoundEffects.swift in Sources */,
 				7AD05773239D923E00EBB51A /* ScanQRView.swift in Sources */,
 				7AD0576F239D773D00EBB51A /* ScanQRViewController.swift in Sources */,
-				7AF83091239C22BB00E2FBC4 /* FigurinhaCollectionViewCell.swift in Sources */,
-				7A250130239CC8FC0030CAEC /* FooterCollectionReusableView.swift in Sources */,
-				7AF8308E239C22BB00E2FBC4 /* CardCollectionViewCell.swift in Sources */,
 				3F048FCE238F16B60033B6C6 /* EventAlbumViewController.swift in Sources */,
-				7A25012F239CC8FC0030CAEC /* AlbumCollectionReusableView.swift in Sources */,
 				7A13DE122399796D007E32E4 /* UIImageView.swift in Sources */,
 				3FA7A855238C55CE007CB05A /* WalkthroughPageViewController.swift in Sources */,
 				3FA7A858238C55CE007CB05A /* WalkthroughViewController.swift in Sources */,
 				7A045CF1239C05A400C3B4F0 /* Evento.swift in Sources */,
 				7A045CF0239C05A400C3B4F0 /* Figurinha.swift in Sources */,
 				3F048FDD2395A6210033B6C6 /* LauchScreen2ViewController.swift in Sources */,
+				7A5E7998239F117D001A5DB9 /* CollectionHeaderReusableView.swift in Sources */,
 				3FA7A857238C55CE007CB05A /* WalkthroughContentViewController.swift in Sources */,
 				7AD05771239D910C00EBB51A /* UIViewController.swift in Sources */,
 				29CCEC372388514700BF7A91 /* SceneDelegate.swift in Sources */,
@@ -785,14 +773,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9M62WF3J6;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.ayltoa;
 				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -806,14 +794,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9M62WF3J6;
+				DEVELOPMENT_TEAM = 373U5VR954;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.ayltoa;
 				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
