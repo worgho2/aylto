@@ -773,14 +773,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 373U5VR954;
+				DEVELOPMENT_TEAM = Z9M62WF3J6;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.ayltoa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylton;
 				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -794,14 +794,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = aylto/ICE.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 373U5VR954;
+				DEVELOPMENT_TEAM = Z9M62WF3J6;
 				INFOPLIST_FILE = aylto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.ayltoa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taquesboringcompany.aylton;
 				PRODUCT_NAME = ICE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

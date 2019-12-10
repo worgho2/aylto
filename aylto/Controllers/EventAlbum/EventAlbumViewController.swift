@@ -35,6 +35,7 @@ class EventAlbumViewController: UIViewController {
         self.setupView()
         
         Model.shared.dataObservers.append(self)
+        
     }
     
     
@@ -97,6 +98,7 @@ extension EventAlbumViewController: UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = albumCollectionView.dequeueReusableCell(withReuseIdentifier: "ParticipantCell", for: indexPath) as! ParticipantCollectionViewCell
+        cell.backgroundColor = .blue
         let figurinhaAtual = Model.shared.figurinhas[indexPath.row]
         cell.participantNameLabel.text = figurinhaAtual.nome
         if Model.shared.figurinhas[indexPath.row].isCongelado == true {
@@ -116,8 +118,8 @@ extension EventAlbumViewController: UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = albumCollectionView.frame.width / 2
-        let height = (albumCollectionView.frame.height - 100) / 2
-        return CGSize(width: width - 30, height: height - 15)
+        let height = (albumCollectionView.frame.height) / 2
+        return CGSize(width: width - 30, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -131,7 +133,9 @@ extension EventAlbumViewController: UICollectionViewDataSource, UICollectionView
             footerView.setup()
             return footerView
         } else {
-            return UICollectionReusableView()
+           let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footerReusableView", for: indexPath) as! CollectionFooterReusableView
+            footerView.setup()
+            return footerView
         }
         
 
