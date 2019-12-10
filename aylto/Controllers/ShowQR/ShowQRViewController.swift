@@ -2,11 +2,26 @@ import UIKit
 
 class ShowQRViewController: UIViewController {
     
+    let figurinha = Model.shared.figurinhaAtual
+    
     @IBOutlet weak var showQRView: UIView!
     @IBOutlet weak var showQRCancelButton: UIButton!
-    @IBOutlet weak var showQRImageView: UIImageView!
-    @IBOutlet weak var showQRNameLabel: UILabel!
-    @IBOutlet weak var showQRPhraseLabel: UILabel!
+    @IBOutlet weak var showQRImageView: UIImageView! {
+        didSet {
+            self.showQRImageView.image = figurinha?.foto
+            self.showQRImageView.contentMode = .scaleAspectFill
+        }
+    }
+    @IBOutlet weak var showQRNameLabel: UILabel! {
+        didSet {
+            self.showQRNameLabel.text = figurinha?.nome
+        }
+    }
+    @IBOutlet weak var showQRPhraseLabel: UILabel! {
+        didSet {
+            self.showQRPhraseLabel.text = "\"" + String(figurinha!.frase) + "\""
+        }
+    }
 
     @IBOutlet weak var qrCodeView: ShowQRView!
     
@@ -30,6 +45,7 @@ class ShowQRViewController: UIViewController {
         showQRImageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         showQRView.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        
     }
     
     func setupButtons() {

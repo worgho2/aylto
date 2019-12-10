@@ -78,7 +78,7 @@ class CardDetailViewController: UIViewController {
         cardDetailView.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         self.cardNameLabel.text = self.figurinhaAtual.nome
-        self.cardPhraseLabel.text = self.figurinhaAtual.frase
+        self.cardPhraseLabel.text = "\"" + self.figurinhaAtual.frase + "\""
         self.cardImageView.image = self.figurinhaAtual.foto
         self.cardImageView.contentMode = .scaleAspectFill
     }

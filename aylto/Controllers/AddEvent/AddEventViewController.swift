@@ -4,9 +4,9 @@ class AddEventViewController: UIViewController {
         
     @IBOutlet var fields: Array<UITextField>!
     @IBOutlet weak var insertEventCodeHereView: UIView!
-    @IBOutlet weak var successLabel: UILabel!
     @IBOutlet weak var createCardButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var ilustraImageView: UIImageView!
     
     let notification = UINotificationFeedbackGenerator()
     
@@ -23,7 +23,7 @@ class AddEventViewController: UIViewController {
         fields.first?.layer.borderColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         
-        self.successLabel.isHidden = true
+        self.ilustraImageView.isHidden = true
         self.createCardButton.isHidden = true
         self.createCardButton.isEnabled = false
         self.createCardButton.layer.cornerRadius = 10.0
@@ -73,11 +73,11 @@ class AddEventViewController: UIViewController {
                 
             }) { _ in
                 UIView.animate(withDuration: 0.0001, animations: {
-                    self.titleLabel.text = "cool, now it's time to:"
+                    self.titleLabel.text = "Cool, now it's time to create your card"
                 }) { _ in
                     UIView.animate(withDuration: 0.2) {
                         self.titleLabel.alpha = 1.0
-                        self.successLabel.isHidden = false
+                        self.ilustraImageView.isHidden = false
                         self.createCardButton.isHidden = false
                         self.createCardButton.isEnabled = true
                     }
@@ -85,6 +85,7 @@ class AddEventViewController: UIViewController {
             }
         } else {
             notification.notificationOccurred(.error)
+            
             fields.forEach( { $0.text = "" } )
             fields.first?.becomeFirstResponder()
         }

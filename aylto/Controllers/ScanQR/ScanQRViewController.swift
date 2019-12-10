@@ -6,11 +6,26 @@ struct QRData {
 
 class ScanQRViewController: UIViewController {
     
+    let figurinha = Model.shared.figurinhaAtual
+    
     @IBOutlet weak var scanQRView: UIView!
     @IBOutlet weak var scanQRCancelButton: UIButton!
-    @IBOutlet weak var scanQRImageView: UIImageView!
-    @IBOutlet weak var scanQRNameLabel: UILabel!
-    @IBOutlet weak var scanQRPhraseLabel: UILabel!
+    @IBOutlet weak var scanQRImageView: UIImageView! {
+        didSet {
+            self.scanQRImageView.image = figurinha?.foto
+            self.scanQRImageView.contentMode = .scaleAspectFill
+        }
+    }
+    @IBOutlet weak var scanQRNameLabel: UILabel! {
+        didSet {
+            self.scanQRNameLabel.text = figurinha?.nome
+        }
+    }
+    @IBOutlet weak var scanQRPhraseLabel: UILabel! {
+        didSet {
+            self.scanQRPhraseLabel.text = "\"" + String(figurinha!.frase) + "\""
+        }
+    }
     
     
     @IBOutlet weak var qrCodeView: ScanQRView!
@@ -20,7 +35,6 @@ class ScanQRViewController: UIViewController {
     var qrData: QRData? = nil {
         didSet {
             if qrData != nil {
-//                self.presentAlert(withTitle: "Success", message: qrData!.codeString!)
                 Model.shared.figurinhas[0].isCongelado = false
                 Model.shared.dataObservers.forEach { $0.notify() }
                 self.dismiss(animated: true, completion: nil)

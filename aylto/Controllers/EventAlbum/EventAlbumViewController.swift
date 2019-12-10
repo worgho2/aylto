@@ -51,7 +51,13 @@ class EventAlbumViewController: UIViewController {
         albumImageView.image = Model.shared.figurinhaAtual?.foto
         albumImageView.contentMode = .scaleAspectFill
         
+        albumNameLabel.text = Model.shared.figurinhaAtual?.nome
+        
         albumShowMyCardButton.layer.cornerRadius = 10.0
+        
+        self.albumNumberOfPeopleAtTheEventLabel.text = "05"
+        self.albumNumberOfPeopleIFoundLabel.text = "00"
+        self.albumNumberOfPeopleIDidntFindLabel.text = "04"
     }
 
     @IBAction func onShowMyCard(_ sender: Any) {
@@ -86,6 +92,9 @@ extension EventAlbumViewController: UICollectionViewDataSource, UICollectionView
     
     func notify() {
         albumCollectionView.reloadData()
+        self.albumNumberOfPeopleAtTheEventLabel.text = "05"
+        self.albumNumberOfPeopleIFoundLabel.text = "01"
+        self.albumNumberOfPeopleIDidntFindLabel.text = "03"
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

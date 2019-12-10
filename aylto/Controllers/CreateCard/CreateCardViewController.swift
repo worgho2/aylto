@@ -3,7 +3,7 @@ import UIKit
 class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var profileNameLabel: UILabel!
+    @IBOutlet weak var profileNameTextField: UITextField!
     
     @IBOutlet weak var phraseTextField: UITextField!
     
@@ -47,17 +47,22 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupPhraseTextField()
+        self.setupTextFields()
         self.setupIntends()
         self.setupInterests()
         self.setupCameraForAvatar()
     }
     
-    func setupPhraseTextField() {
+    func setupTextFields() {
         phraseTextField.delegate = self
         phraseTextField.layer.borderWidth = 1
         phraseTextField.layer.borderColor = #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)
         phraseTextField.layer.cornerRadius = 5
+        
+        profileNameTextField.delegate = self
+        profileNameTextField.layer.borderWidth = 1
+        profileNameTextField.layer.borderColor = #colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)
+        profileNameTextField.layer.cornerRadius = 5
     }
     
     func setupIntends() {
@@ -198,7 +203,10 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     @IBAction func onDone(_ sender: Any) {
         view.endEditing(true)
         
-        if phraseTextField.text!.isEmpty {
+        if profileNameTextField.text!.isEmpty {
+            notificationFeedback.notificationOccurred(.error)
+            showToast(message: "Sorry, the name cannot be empty.")
+        } else if phraseTextField.text!.isEmpty {
             notificationFeedback.notificationOccurred(.error)
             showToast(message: "Sorry, the phrase cannot be empty.")
         } else {
@@ -234,7 +242,8 @@ class CreateCardViewController: UIViewController, UITextFieldDelegate, UIImagePi
     }
     
     func createCard() {
-        Model.shared.figurinhaAtual = Figurinha(idDaFigurinha: 1, foto: profileImageView.image ?? UIImage(named: "login")!, fotoCongelada: profileImageView.image ?? UIImage(named: "login")!, nome: profileNameLabel.text!, frase: phraseTextField.text!, interests: Model.shared.interests, onIntends: Model.shared.onIntends)
+        notificationFeedback.notificationOccurred(.success)
+        Model.shared.figurinhaAtual = Figurinha(idDaFigurinha: 1, foto: profileImageView.image ?? UIImage(named: "login")!, fotoCongelada: profileImageView.image ?? UIImage(named: "login")!, nome: profileNameTextField.text!, frase: phraseTextField.text!, interests: Model.shared.interests, onIntends: Model.shared.onIntends)
     }
     
     func addRemoveInterest(tag: Int) {

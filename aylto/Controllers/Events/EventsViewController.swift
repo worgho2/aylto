@@ -2,7 +2,7 @@ import UIKit
 
 class EventsViewController: UIViewController {
     
-    let isDebbug: Bool = false
+    let isDebbug: Bool = true
     
     @IBOutlet weak var eventsColletionView: UICollectionView! {
         didSet {
