@@ -1,18 +1,20 @@
-//
-//  CollectionFooterReusableView.swift
-//  aylto
-//
-//  Created by Otávio Baziewicz Filho on 09/12/19.
-//  Copyright © 2019 Gabriel Taques. All rights reserved.
-//
-
 import UIKit
 
 class CollectionFooterReusableView: UICollectionReusableView {
 
+    @IBOutlet weak var view: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    func setup() {
+        self.view.layer.cornerRadius = 25
+        
+        self.view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        self.addSubview(self.view)
+        
+        self.view.backgroundColor = .black
     }
     
 }

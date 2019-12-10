@@ -1,11 +1,6 @@
 import UIKit
 
-enum reusableViewType {
-    case header
-    case footer
-}
-
-class CollectionReusableView: UICollectionReusableView {
+class CollectionHeaderReusableView: UICollectionReusableView {
     
     @IBOutlet weak var view: UIView!
     
